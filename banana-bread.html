@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="https://cdn.bladewyrm.dev/global/images/favicon.png">
+    <title>bana bead | tou café | bladewyrm.dev</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- stylesheets -->
+    <!-- global -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/colors.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/style.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/mobile.css">
+
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/cursor.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/wakelock.css">
+    <!-- disabling these while I figure everything else out (this is a low priority) link rel="stylesheet" href="../cdn/global/css/gallery.css"-->
+
+    <!-- local -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <!-- scripts -->
+    <!-- global -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.bladewyrm.dev/global/javascript/boilerplate.js"></script>
+
+    <script src="https://cdn.bladewyrm.dev/global/javascript/cursor.js"></script>
+    <script src="https://cdn.bladewyrm.dev/global/javascript/wakelock.js"></script>
+    <!--script src="../cdn/global/javascript/gallery.js"></script-->
+
+    <script>
+        // insert header and footer
+        $(document).ready(function () {
+            footer();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="asset_cursor"></div>
+
+    <header></header>
+
+    <main>
+        <div class="card">
+            <div class="header" style="justify-content: space-between;">
+                <b>recipe</b>
+                <div class="mobileshow" id="wakelocker">
+                    <label for="wakelock">keep the screen on</label>
+                    <input id="wlCheckbox" type="checkbox" name="wakelock">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="column-100">
+                        <div class="h1">banana bread</div>
+                    </div>
+                </div>
+                <hr style="border-color: var(--black);">
+                <div class="row">
+                    <div class="column-35">
+                        <hr class="mobileshow" style="border-color: var(--black);">
+                        <br class="mobileshow">
+                        <div id="pictures">
+                            <div class="gallery">
+                                <div class="pictures">
+                                    <div class="picture"><img src="" alt="🍌🍞🖼️ pictures coming soon (maybe)" width="180" style="aspect-ratio: 4/3"></div>
+                                    <!--div class="picture"><img src="images/banana-bread/01.jpg" alt="🖼️"></div>
+                                    <div class="picture"><img src="images/banana-bread/02.jpg" alt="🍞"></div>
+                                    <div class="picture"><img src="images/banana-bread/03.jpg" alt="🍌"></div-->
+                                </div>
+                                <!--button class="previous">&#10094;</button>
+                                <button class="next">&#10095;</button-->
+                            </div>
+                            <!--div class="dots">
+                                <span class="dot" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                                <span class="dot" data-index="3"></span>
+                            </div-->
+                        </div>
+                        <div class="mobilehide" id="ingredients">
+                            <ul>
+                                <li>ripe bananas</li>
+                                <li>(un?)salted butter</li>
+                                <li>baking soda</li>
+                                <li>salt</li>
+                                <li>(granulated) sugar</li>
+                                <li>large eggs</li>
+                                <li>vanilla extract</li>
+                                <li>(all-purpose) flour</li>
+                                <li>chocolate chips (any kind)</li>
+                                <li>butter or cooking spray</li>
+                            </ul>
+                        </div>
+                        <div class="mobilehide" id="equipment">
+                            <ul>
+                                <li>small microwave-safe bowl</li>
+                                <li>medium-sized bowl</li>
+                                <li>huge fork</li>
+                                <li>spatula</li>
+                                <li>9x5 inch loaf pan</li>
+                                <li>oven at 350°f</li>
+                                <li>big cool-looking plate</li>
+                            </ul>
+                        </div>
+                        <div class="mobilehide" id="commentary">
+                            <p>this banana bread is very pog everyone likes it</p>
+                        </div>
+                    </div>
+                    <div class="column-65">
+                        <div id="instructions">
+                            <div>
+                                melt 1/3 cup (5 1/3 tbsp) butter into a small microwafe-safe bowl
+                                <ul>
+                                    <li>butter can be unsalted or salted</li>
+                                    <li>to melt, cover the top with plastic wrap and microwave for 36 seconds, then in 9-second intervals until it's all/mostly liquid</li>
+                                </ul>
+                            </div>
+                            <div>
+                                using a huge fork, mash 2+ ripe bananas into a medium-sized bowl
+                                <ul>
+                                    <li>the more bananas the better (3-4 is the sweet spot)</li>
+                                    <li>the riper the banana the better (75%+ brown is good)</li>
+                                    <li>standard banana size is 6-8 inches</li>
+                                </ul>
+                            </div>
+                            <div>mix the butter into bananas</div>
+                            <div>
+                                beat 1 large egg
+                                <ul>
+                                    <li>do it in the bowl used for the butter</li>
+                                </ul>
+                            </div>
+                            <div>mix in 1/2 tsp baking soda and 1 pinch (1/16 tsp) salt</div>
+                            <div>mix in 3/4 cup (granulated) sugar, the beaten egg, and ~2 tsp vanilla extract</div>
+                            <div>mix in 1 1/2 cup flour until everything's just been mixed</div>
+                            <div>
+                                mix in chocolate chips until it looks like there's enough
+                                <ul>
+                                    <li>any kind of chocolate works; semi-sweet or white are the best ones</li>
+                                </ul>
+                            </div>
+                            <div>preheat the oven to 350°f</div>
+                            <div>butter all sides of a 9x5 inch loaf pan (with actual butter or with cooking spray)</div>
+                            <div>transfer to the pan</div>
+                            <div>add some more chocolate chips on the top and spread them around</div>
+                            <div>bake for ~55 minutes or until a toothpick stabbed into the bread comes out clean</div>
+                            <div>transfer to a cool-looking plate big enough to hold the banana bread</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a class="button" href="index.html">return home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

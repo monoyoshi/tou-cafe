@@ -1,0 +1,11 @@
+/* - - - - - - - - - */
+/* mobile adjust */
+/* - - - - - - - - - */
+
+@media only screen and (max-aspect-ratio: 1) {
+    .row {
+        flex-direction: column-reverse;
+    }
+}
+
+/* - - - - - - - - - */

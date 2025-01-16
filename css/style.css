@@ -1,0 +1,28 @@
+/* - - - - - - - - - */
+/* classes */
+/* - - - - - - - - - */
+
+/* grid-view */
+.row {
+    display: flex;
+}
+
+/* - - - - - - - - - */
+
+#instructions > * {
+    padding: 25px;
+    border-radius: 25px;
+    margin: 10px 0;
+}
+
+#instructions > *:first-of-type {
+    margin-top: 0;
+}
+
+#instructions > *:nth-child(odd) {
+    background-color: var(--a_lightblue);
+}
+
+#instructions > *:nth-child(even) {
+    background-color: var(--a_lightgray);
+}
