@@ -1,8 +1,39 @@
-/* - - - - - - - - - */
-/* mobile adjust */
-/* - - - - - - - - - */
+@media only screen and not (max-aspect-ratio: 1) {
+    .topbar > .hamburger {
+        display: none;
+    }
+}
 
 @media only screen and (max-aspect-ratio: 1) {
+    .topbar {
+        justify-content: space-between;
+    }
+
+    .topbar > a:not(.logo):not(.hamburger) {
+        display: none;
+    }
+
+    .topbar > .hamburger {
+        display: block;
+        float: right;
+    }
+
+    .topbar.responsive {
+        position: relative;
+    }
+
+    .topbar.responsive .hamburger {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
     .row {
         flex-direction: column-reverse;
     }

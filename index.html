@@ -19,7 +19,10 @@
     <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/mobile.css">
     
     <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/cursor.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/dust.css">
+
+    <!-- local -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- scripts -->
     <!-- global -->
@@ -28,7 +31,7 @@
     <script src="https://cdn.bladewyrm.dev/global/javascript/boilerplate.js"></script>
     
     <script src="https://cdn.bladewyrm.dev/global/javascript/cursor.js"></script>
-    <script src="https://cdn.bladewyrm.dev/global/javascript/dust.js"></script>
+
 
     <script>
         // insert header and footer
@@ -44,18 +47,60 @@
     <header></header>
 
     <main>
-        <div class="row">
-            <div class="column-100">
-                <p>i am shef (also my gf)</p>
-                <ul>
-                    <li><a href="banana-bread.html">banana bread</a></li>
-                    <li><a href="red-velvet-cookies.html">red velvet cookies</a></li>
-                    <li><a href="pumpkin-muffin.html">pumpklin muffin</a></li>
-                </ul>
+        <div class="topbar">
+            <a class="active logo"><img src="images/logo.png" width="auto" height="50"></a>
+            <a>menu</a>
+            <a>about</a>
+            <a>shop</a>
+            <a>contact</a>
+            <a class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </div>
+        <div class="fullscreen" style="display: flex; align-items: center; height: calc(100vh - 75px); margin-top: 75px; background-image: url(images/banana-bread/04.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+            <div class="content" style="width: 40%; margin-left: 100px; padding: 15px 20px; background-color: var(--strongshadow);">
+                <div class="row">
+                    <div class="column-100" style="font-size: 2em;">
+                        i am shef (also my gf)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-80">
+                        and from the depths of the void, out comes another silly project... woahhh doesn't this website look cool? please say it looks cool; I worked really hard on it 🥺
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div id="asset_dust"></div>
+        <div class="fullscreen" style="display: flex; align-items: center; height: calc(100vh - 75px); background-image: url(images/banana-bread/01.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+            <div class="content" style="width: 40%; margin-left: 100px; padding: 15px 20px; background-color: var(--strongshadow);">
+                <div class="row">
+                    <div class="column-100" style="font-size: 2em;">
+                        idk what else to put here
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-80">
+                        im just testing to see if multiple cards can work (they do)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fullscreen" style="display: flex; align-items: center; justify-content: center; height: 300px; background-color: var(--white);">
+            <div class="content" style="width: 40%; color: var(--black);">
+                <div class="row">
+                    <div class="column-100" style="font-size: 2em;">
+                        feet?
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-80">
+                        I don't really have a branding...
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer></footer>
