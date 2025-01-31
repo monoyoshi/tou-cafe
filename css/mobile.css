@@ -1,34 +1,35 @@
 @media only screen and not (max-aspect-ratio: 1) {
-    .topbar > .hamburger {
+    .topnav > .hamburger {
         display: none;
     }
 }
 
 @media only screen and (max-aspect-ratio: 1) {
-    .topbar {
+    .topnav {
         justify-content: space-between;
+        height: 50px;
     }
 
-    .topbar > a:not(.logo):not(.hamburger) {
+    .topnav > a:not(.logo):not(.hamburger) {
         display: none;
     }
 
-    .topbar > .hamburger {
+    .topnav > .hamburger {
         display: block;
         float: right;
     }
 
-    .topbar.responsive {
+    .topnav.responsive {
         position: relative;
     }
 
-    .topbar.responsive .hamburger {
+    .topnav.responsive .hamburger {
         position: absolute;
         right: 0;
         top: 0;
     }
 
-    .topbar.responsive a {
+    .topnav.responsive a {
         float: none;
         display: block;
         text-align: left;
