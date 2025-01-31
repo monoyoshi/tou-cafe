@@ -34,9 +34,13 @@
     <script src="https://cdn.bladewyrm.dev/global/javascript/cursor.js"></script>
     <script src="https://cdn.bladewyrm.dev/global/javascript/dust.js"></script>
 
+    <!-- local -->
+    <script src="javascript/boilerplate.js"></script>
+
     <script>
         // insert header and footer
         $(document).ready(function () {
+            header("menu");
             footer();
         });
     </script>
@@ -48,18 +52,6 @@
     <header></header>
 
     <main class="flex">
-        <div class="topnav">
-            <a class="logo" href="index.html"><img src="images/logo.png" width="auto" height="50"></a>
-            <a class="active" href="menu.html">menu</a>
-            <a>about</a>
-            <a>shop</a>
-            <a>contact</a>
-            <a class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </a>
-        </div>
         <div class="row">
             <div class="column-100">
                 <p>i am shef (also my gf)</p>
