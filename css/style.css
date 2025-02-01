@@ -1,3 +1,7 @@
+footer {
+    z-index: 90;
+}
+
 /* - - - - - - - - - */
 /* classes */
 /* - - - - - - - - - */
@@ -25,7 +29,7 @@
     height: 75px;
     background-color: var(--white);
     overflow: hidden;
-    z-index: 99;
+    z-index: 81;
     box-shadow: 0px 2px var(--shadow);
     user-select: none;
 }
@@ -61,16 +65,37 @@
     background-color: var(--a_lightblue);
 }
 
-.navbar > .hamburger {
+.hamburger {
     display: inline-block;
     cursor: pointer;
 }
 
-.navbar > .hamburger > div {
+.hamburger > div {
     width: 25px;
     height: 3px;
     background-color: var(--black);
     margin: 5px 0;
+}
+
+.hbmenu {
+    position: fixed;
+    top: 0;
+    right: -50vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    z-index: 90
+}
+
+.hbmenu > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 77px;
+    padding-right: 30px;
+    background-color: var(--a_lightgray);
+    border-bottom: 2px solid var(--a_gray);
 }
 
 /* - - - - - - - - - */

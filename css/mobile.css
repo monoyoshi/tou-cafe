@@ -8,16 +8,21 @@
     
     .navbar {
         justify-content: space-between;
-        height: 50px;
     }
 
     .navbar > div {
         display: none;
     }
 
+    .navbar > a.logo {
+        width: auto;
+        margin: 5px 30px;
+    }
+
     .navbar > .hamburger {
         display: block;
         float: right;
+        margin: 5px 30px;
     }
 
     .navbar.responsive {
