@@ -5,7 +5,6 @@
 }
 
 @media only screen and (max-aspect-ratio: 1) {
-    
     .navbar {
         justify-content: space-between;
     }
@@ -23,22 +22,6 @@
         display: block;
         float: right;
         margin: 5px 30px;
-    }
-
-    .navbar.responsive {
-        position: relative;
-    }
-
-    .navbar.responsive .hamburger {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
     }
 
     footer {

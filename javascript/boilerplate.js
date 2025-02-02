@@ -113,69 +113,69 @@ function header(active) {
 };
 
 function hamburger(active, close) {
-    // active = active "section" of the website
-    // my funny workaround is just an array
     let current = preheader(active);
 
     let $hamburger = $(".navbar > .hamburger");
-    $("header")
-        .append($("<div>", {
-            class: "hbmenu"
-        })
-            .append($("<div>", {
-                
-            })
-                .append($("<a>", {
-                    class: "hamburger",
-                    onclick: `hamburger("${active}", true)`
-                })
-                    .append($("<div>"))
-                    .append($("<div>"))
-                    .append($("<div>"))
-                )
-            )
-            .append($("<div>", {
-                id: current.menu[0]
-            })
-                .append($("<a>", {
-                    href: current.menu[1]
-                })
-                    .text("menu")
-                )
-            )
-            .append($("<div>", {
-                id: current.about[0]
-            })
-                .append($("<a>", {
-                    href: current.about[1]
-                })
-                    .text("about")
-                )
-            )
-            .append($("<div>", {
-                id: current.shop[0]
-            })
-                .append($("<a>", {
-                    href: current.shop[1]
-                })
-                    .text("shop")
-                )
-            )
-            .append($("<div>", {
-                id: current.contact[0]
-            })
-                .append($("<a>", {
-                    href: current.contact[1]
-                })
-                    .text("contact")
-                )
-            )
-        )
     if (close) {
         $(".hbmenu").animate({right: "-50vh"}, 150, function () {
-            $(".hbmenu").remove()
+            $(this).remove()
         });
     }
-    else $(".hbmenu").animate({right: "0"}, 150);
+    else {
+        $("header")
+            .append($("<div>", {
+                class: "hbmenu"
+            })
+                .append($("<div>", {
+                    
+                })
+                    .append($("<a>", {
+                        class: "hamburger",
+                        onclick: `hamburger("${active}", true)`
+                    })
+                        .append($("<div>"))
+                        .append($("<div>"))
+                        .append($("<div>"))
+                    )
+                )
+                .append($("<div>", {
+                    id: current.menu[0]
+                })
+                    .append($("<a>", {
+                        href: current.menu[1]
+                    })
+                        .text("menu")
+                    )
+                )
+                .append($("<div>", {
+                    id: current.about[0]
+                })
+                    .append($("<a>", {
+                        href: current.about[1]
+                    })
+                        .text("about")
+                    )
+                )
+                .append($("<div>", {
+                    id: current.shop[0]
+                })
+                    .append($("<a>", {
+                        href: current.shop[1]
+                    })
+                        .text("shop")
+                    )
+                )
+                .append($("<div>", {
+                    id: current.contact[0]
+                })
+                    .append($("<a>", {
+                        href: current.contact[1]
+                    })
+                        .text("contact")
+                    )
+                )
+            );
+        $(".hbmenu").animate({right: "0"}, 150);
+    };
 
 }
