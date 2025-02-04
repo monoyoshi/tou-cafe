@@ -24,6 +24,57 @@
         margin: 5px 30px;
     }
 
+    .hbmenu {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--white);
+        z-index: 90;
+    }
+    
+    .hbmenu > * {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 2px;
+        padding-right: 30px;
+        color: var(--black);
+        box-shadow: 0px 2px var(--strongshadow);
+    }
+    
+    .hbmenu > a {
+        background: linear-gradient(to right, var(--a_lightgray) 50%, rgba(0,0,0,0) 50%) left;
+        background-size: 200%;
+        transition-duration: 250ms;
+    }
+    
+    .hbmenu > a:hover {
+        background-position: right;
+    }
+    
+    .hbmenu > a:hover:active:not(a.button) {
+        background: linear-gradient(to left, var(--a_lightblue) 50%, rgba(0,0,0,0) 50%) right;
+        background-size: 200%;
+        background-position: left;
+        color: var(--white);
+        transition-duration: 0s;
+        animation-name: wipe;
+        animation-duration: 250ms;
+        animation-fill-mode: forwards;
+    }
+    
+    .hbmenu a.hamburger > div:first-child {
+        transform: translate(0, 4px) rotate(45deg);
+    }
+    
+    .hbmenu a.hamburger > div:last-child {
+        transform: translate(0, -4px) rotate(-45deg);
+    }
+
     footer {
         top: auto;
         bottom: 0;
@@ -33,6 +84,15 @@
 
     .row {
         flex-direction: column-reverse;
+    }
+
+    @keyframes wipe {
+        0% {
+            background-position: left;
+        }
+        100% {
+            background-position: right;
+        }
     }
 }
 

@@ -55,13 +55,13 @@ footer {
 .navbar > div > a:hover {
     background: linear-gradient(to right, rgba(0,0,0,0) 30%, var(--a_lightgray) 30%, var(--a_lightgray) 70%, rgba(0,0,0,0) 70%) right;
     background-size: 400%;
-    animation-name: rlslide;
+    animation-name: wave;
     animation-duration: 550ms;
 }
 
 .navbar > div > a:hover:active,
 .navbar > div#active > a {
-    background-color: var(--a_lightblue);
+    background: var(--a_lightblue);
     color: var(--white);
 }
 
@@ -77,56 +77,6 @@ footer {
     margin: 5px 0;
 }
 
-.hbmenu {
-    position: fixed;
-    top: 0;
-    right: -50vh;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--white);
-    z-index: 90;
-}
-
-.hbmenu > * {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    margin-bottom: 2px;
-    padding-right: 30px;
-    color: var(--black);
-    box-shadow: 0px 2px var(--strongshadow);
-}
-
-.hbmenu > a {
-    background: linear-gradient(to right, var(--a_lightgray) 50%, rgba(0,0,0,0) 50%) left;
-    background-size: 200%;
-    transition-duration: 250ms;
-}
-
-.hbmenu > a:hover {
-    background-position: right;
-}
-
-.hbmenu > a:hover:active {
-    background: linear-gradient(to left, var(--a_lightblue) 50%, rgba(0,0,0,0) 50%) right;
-    background-size: 200%;
-    background-position: left;
-    animation-name: lrslide;
-    animation-duration: 250ms;
-    animation-fill-mode: forwards;
-    color: var(--white);
-}
-
-.hbmenu a.hamburger > div:first-child {
-    transform: translate(0, 4px) rotate(45deg);
-}
-
-.hbmenu a.hamburger > div:last-child {
-    transform: translate(0, -4px) rotate(-45deg);
-}
-
 /* - - - - - - - - - */
 
 #instructions > * {
@@ -138,7 +88,7 @@ footer {
     margin-top: 0;
 }
 
-@keyframes rlslide {
+@keyframes wave {
     0% {
         background-position: 100%;
     }
@@ -152,13 +102,4 @@ footer {
         background-position: 0;
     }
 
-}
-
-@keyframes lrslide {
-    0% {
-        background-position: left;
-    }
-    100% {
-        background-position: right;
-    }
 }

@@ -116,7 +116,7 @@ function hamburger(active, close) {
     let current = preheader(active);
 
     if (close) {
-        $(".hbmenu").animate({right: "-50vh"}, 150, function () {
+        $(".hbmenu").animate({right: "-100vw"}, 150, function () {
             $(this).remove()
         });
     }
