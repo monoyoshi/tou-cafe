@@ -44,7 +44,7 @@ footer {
     height: 45px;
     text-decoration: none;
     color: var(--black);
-    margin: 5px 30px;
+    margin: 5px 25px;
 }
 
 .navbar > div > a {
@@ -53,16 +53,16 @@ footer {
 }
 
 .navbar > div > a:hover {
-    background-color: var(--a_lightgray);
+    background: linear-gradient(to right, rgba(0,0,0,0) 30%, var(--a_lightgray) 30%, var(--a_lightgray) 70%, rgba(0,0,0,0) 70%) right;
+    background-size: 400%;
+    animation-name: rlslide;
+    animation-duration: 550ms;
 }
 
-.navbar > div > a:hover:active {
-    background-color: var(--a_lightblue);
-    color: var(--white);
-}
-
+.navbar > div > a:hover:active,
 .navbar > div#active > a {
     background-color: var(--a_lightblue);
+    color: var(--white);
 }
 
 .hamburger {
@@ -84,18 +84,47 @@ footer {
     width: 100vw;
     height: 100vh;
     background-color: var(--white);
-    z-index: 90
+    z-index: 90;
 }
 
-.hbmenu > div {
+.hbmenu > * {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 62px;
+    height: 60px;
+    margin-bottom: 2px;
     padding-right: 30px;
-    background-color: var(--a_lightgray);
-    border-bottom: 2px solid var(--a_gray);
+    color: var(--black);
+    box-shadow: 0px 2px var(--strongshadow);
+}
+
+.hbmenu > a {
+    background: linear-gradient(to right, var(--a_lightgray) 50%, rgba(0,0,0,0) 50%) left;
+    background-size: 200%;
+    transition-duration: 250ms;
+}
+
+.hbmenu > a:hover {
+    background-position: right;
+}
+
+.hbmenu > a:hover:active {
+    background: linear-gradient(to left, var(--a_lightblue) 50%, rgba(0,0,0,0) 50%) right;
+    background-size: 200%;
+    background-position: left;
+    animation-name: lrslide;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+    color: var(--white);
+}
+
+.hbmenu a.hamburger > div:first-child {
+    transform: translate(0, 4px) rotate(45deg);
+}
+
+.hbmenu a.hamburger > div:last-child {
+    transform: translate(0, -4px) rotate(-45deg);
 }
 
 /* - - - - - - - - - */
@@ -107,4 +136,29 @@ footer {
 
 #instructions > *:first-of-type {
     margin-top: 0;
+}
+
+@keyframes rlslide {
+    0% {
+        background-position: 100%;
+    }
+    25% {
+        background-position: 50%;
+    }
+    75% {
+        background-position: 50%;
+    }
+    100% {
+        background-position: 0;
+    }
+
+}
+
+@keyframes lrslide {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
 }

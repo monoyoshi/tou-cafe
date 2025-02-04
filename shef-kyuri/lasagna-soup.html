@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="https://cdn.bladewyrm.dev/global/images/favicon.png">
+    <title>lasaga soup | tou café | bladewyrm.dev</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- stylesheets -->
+    <!-- global -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/colors.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/style.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/mobile.css">
+
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/cursor.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/wakelock.css">
+    <!-- disabling these while I figure everything else out (this is a low priority) link rel="stylesheet" href="../cdn/global/css/gallery.css"-->
+
+    <!-- local -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+
+    <!-- scripts -->
+    <!-- global -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.bladewyrm.dev/global/javascript/boilerplate.js"></script>
+
+    <script src="https://cdn.bladewyrm.dev/global/javascript/cursor.js"></script>
+    <script src="https://cdn.bladewyrm.dev/global/javascript/wakelock.js"></script>
+    <!--script src="../cdn/global/javascript/gallery.js"></script-->
+
+    <!-- local -->
+    <script src="../javascript/boilerplate.js"></script>
+
+    <script>
+        // insert header and footer
+        $(document).ready(function () {
+            header("recipe");
+            footer();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="asset_cursor"></div>
+
+    <header></header>
+
+    <main class="flex">
+        <div class="card">
+            <div class="header" style="justify-content: space-between;">
+                <b>recipe</b>
+                <div class="mobileshow" id="wakelocker">
+                    <label for="wakelock">keep the screen on</label>
+                    <input id="wlCheckbox" type="checkbox" name="wakelock">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="column-100">
+                        <div class="h1">lasagna soup</div>
+                    </div>
+                </div>
+                <hr style="border-color: var(--black);">
+                <br>
+                <div class="row">
+                    <div class="column-35">
+                        <hr class="mobileshow" style="border-color: var(--black);">
+                        <br class="mobileshow">
+                        <div id="pictures">
+                            <div class="gallery">
+                                <div class="pictures">
+                                    <div class="picture"><img src="" alt="🍝🍲🖼️ pictures coming soon (maybe)" width="180" style="aspect-ratio: 4/3"></div>
+                                    <!--div class="picture"><img src="images/crepe-cake/01.jpg" alt="🍝"></div>
+                                    <div class="picture"><img src="images/crepe-cake/02.jpg" alt="🍲"></div>
+                                    <div class="picture"><img src="images/crepe-cake/03.jpg" alt="🖼️"></div-->
+                                </div>
+                                <!--button class="previous">&#10094;</button>
+                                <button class="next">&#10095;</button-->
+                            </div>
+                            <!--div class="dots">
+                                <span class="dot" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                                <span class="dot" data-index="3"></span>
+                                <span class="dot" data-index="4"></span>
+                            </div-->
+                        </div>
+                        <div class="mobilehide" id="ingredients">
+                            <ul>
+                                <li>a lot</li>
+                            </ul>
+                        </div>
+                        <div class="mobilehide" id="equipment">
+                            <ul>
+                                <li>a lot</li>
+                            </ul>
+                        </div>
+                        <div class="mobilehide" id="commentary">
+                            <p>bro thinks they cooked (they did)</p>
+                        </div>
+                    </div>
+                    <div class="column-65">
+                        <div id="instructions">
+                            go away u shouldn't be here
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a class="button" href="../index.html">return home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

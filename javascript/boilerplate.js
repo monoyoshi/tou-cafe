@@ -115,7 +115,6 @@ function header(active) {
 function hamburger(active, close) {
     let current = preheader(active);
 
-    let $hamburger = $(".navbar > .hamburger");
     if (close) {
         $(".hbmenu").animate({right: "-50vh"}, 150, function () {
             $(this).remove()
@@ -135,44 +134,31 @@ function hamburger(active, close) {
                     })
                         .append($("<div>"))
                         .append($("<div>"))
-                        .append($("<div>"))
                     )
                 )
-                .append($("<div>", {
-                    id: current.menu[0]
+                .append($("<a>", {
+                    id: current.menu[0],
+                    href: current.menu[1]
                 })
-                    .append($("<a>", {
-                        href: current.menu[1]
-                    })
                         .text("menu")
-                    )
                 )
-                .append($("<div>", {
-                    id: current.about[0]
+                .append($("<a>", {
+                    id: current.about[0],
+                    href: current.about[1]
                 })
-                    .append($("<a>", {
-                        href: current.about[1]
-                    })
-                        .text("about")
-                    )
+                    .text("about")
                 )
-                .append($("<div>", {
-                    id: current.shop[0]
+                .append($("<a>", {
+                    id: current.shop[0],
+                    href: current.shop[1]
                 })
-                    .append($("<a>", {
-                        href: current.shop[1]
-                    })
-                        .text("shop")
-                    )
+                    .text("shop")
                 )
-                .append($("<div>", {
-                    id: current.contact[0]
+                .append($("<a>", {
+                    id: current.contact[0],
+                    href: current.contact[1]
                 })
-                    .append($("<a>", {
-                        href: current.contact[1]
-                    })
-                        .text("contact")
-                    )
+                    .text("contact")
                 )
             );
         $(".hbmenu").animate({right: "0"}, 150);
