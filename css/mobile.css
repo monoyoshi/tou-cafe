@@ -82,7 +82,11 @@
         border-radius: 15px 0 0 0;
     }
 
-    .row {
+    .rtc {
+        flex-direction: column;
+    }
+
+    .row.recipe {
         flex-direction: column-reverse;
     }
 
