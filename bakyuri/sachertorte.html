@@ -45,6 +45,8 @@
         $(document).ready(function () {
             header("recipe");
             footer();
+
+            tcFooter();
         });
     </script>
 </head>
@@ -54,149 +56,149 @@
 
     <header></header>
 
-    <main class="flex">
-        <div class="card">
-            <div class="header" style="justify-content: space-between;">
-                <b>recipe</b>
-                <div class="mobileshow" id="wakelocker">
-                    <label for="wakelock">keep the screen on</label>
-                    <input id="wlCheckbox" type="checkbox" name="wakelock">
+    <main>
+        <div class="widescreen" style="flex-direction: column; min-height: calc(100vh - 60px); margin-top: 60px; background-color: var(--white);">
+            <div class="row recipe">
+                <div class="column-100">
+                    <div class="h1">sachertorte</div>
+                    <hr style="border-color: var(--black);">
+                    <br>
                 </div>
             </div>
 
-            <div class="content">
-                <div class="row">
-                    <div class="column-100">
-                        <div class="h1">sachertorte</div>
-                    </div>
-                </div>
-                <hr style="border-color: var(--black);">
-                <br>
+            <div class="row recipe" style="align-items: flex-start;">
+                <div class="column-10"></div>
 
-                <div class="row recipe">
-                    <div class="column-35">
-                        <hr class="mobileshow" style="border-color: var(--black);">
-                        <br class="mobileshow">
+                <div class="column-30">
+                    <hr class="mobileshow" style="border-color: var(--black);">
+                    <br class="mobileshow">
 
-                        <div class="mobilehide" id="ingredients">
-                            <div class="h3">ingredients</div>
-                            <ul>
-                                <li>(cake) flour</li>
-                                <li>baking powder</li>
-                                <li>salt</li>
-                                <li>
-                                    <span>large eggs</span>
-                                    <ul>
-                                        <li>separate egg yolks and egg whites</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span>butter</span>
-                                    <ul>
-                                        <li>butter can be salted or unsalted</li>
-                                        <li>to soften, unwrap and let it sit at room temperature for ~30 minutes until it gets dented by lightly poking</li>
-                                    </ul>
-                                </li>
-                                <li>(granulated) sugar</li>
-                                <li>vanilla extract</li>
-                                <li>semi-sweet chocolate</li>
-                                <li>apricot preserves</li>
-                                <li>corn syrup</li>
-                                <li>strawberries</li>
-                                <li>blueberries</li>
-                            </ul>
-                        </div>
-
-                        <div class="mobilehide" id="equipment">
-                            <div class="h3">equipment</div>
-                            <ul>
-                                <li>small microwave-safe bowl</li>
-                                <li>9x3 inch cake pan</li>
-                                <li>parchment paper</li>
-                                <li>medium bowl</li>
-                                <li>stand mixer with wire whip attachment</li>
-                                <li>hand mixer</li>
-                                <li>oven at 350°f</li>
-                                <li>wire rack</li>
-                                <li>small bowl</li>
-                                <li>small microwave-safe bowl</li>
-                                <li>big cool-looking plate</li>
-                            </ul>
-                        </div>
+                    <div class="mobilehide" id="ingredients">
+                        <div class="h3">ingredients</div>
+                        <ul>
+                            <li>(cake) flour</li>
+                            <li>baking powder</li>
+                            <li>salt</li>
+                            <li>
+                                <span>large eggs</span>
+                                <ul>
+                                    <li>separate egg yolks and egg whites</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>butter</span>
+                                <ul>
+                                    <li>butter can be salted or unsalted</li>
+                                    <li>to soften, unwrap and let it sit at room temperature for ~30 minutes until it gets dented by lightly poking</li>
+                                </ul>
+                            </li>
+                            <li>(granulated) sugar</li>
+                            <li>vanilla extract</li>
+                            <li>semi-sweet chocolate</li>
+                            <li>apricot preserves</li>
+                            <li>corn syrup</li>
+                            <li>strawberries</li>
+                            <li>blueberries</li>
+                        </ul>
                     </div>
 
-                    <div class="column-65">
-                        <div id="instructions">
-                            <div class="h3 mobilehide">instructions</div>
-
-                            <div class="hinstructions">baking</div>
-                            <div>soften 1 cup butter</div>
-                            <div>melt 6 ounce semi-sweet chocolate</div>
-                            <div>line a 9x3 inch cake pan with parchment paper</div>
-                            <div>beat the butter and 1/2 cup (granulated) sugar using the stand mixer with the wire whip attachment and cream it for ~2 minutes or until it's light and aerated</div>
-                            <div>separate 8 large eggs; put the egg yolks into the stand mixer and put the egg whites in a medium-sized mixing bowl</div>
-                            <div>whip the egg whites until they form soft peaks</div>
-                            <div>beat in ~3 teaspoon vanilla extract until it is all combined</div>
-                            <div>sift 1 cup (cake) flour, 1/2 teaspoon baking powder, and 1/4 teaspoon salt into the stand mixer</div>
-                            <div>beat until all combined</div>
-                            <div>beat in the semi-sweet chocolate</div>
-                            <div>fold and mix the egg whites into the stand mixer bowl in thirds until the egg white isn't visible</div>
-                            <div>preheat the oven to 350°f</div>
-                            <div>pour batter into cake pan and spread it evenly</div>
-                            <div>bake for ~45 minutes or until a toothpick stabbed into the middle comes out clean</div>
-                            <div>cool in the pan for ~10 minutes</div>
-                            <div>place on a cooling rack to completely cool (~8 hours)</div>
-                            <br>
-
-                            <div class="hinstructions">assembling pt. 1</div>
-                            <div>trim the top of the cake so it is flat</div>
-                            <div>cut the cake horizontally and equally into 2 layers</div>
-                            <div>spread 1/2 cup apricot preserves on top of one layer</div>
-                            <div>stack the other layer on top</div>
-                            <div>warm 1 cup apricot preserves and get rid of/flatten out the chunky bits</div>
-                            <div>ice the top and the sides of the cake</div>
-                            <div>let cake air-dry for ~1 hour</div>
-                            <br>
-
-                            <div class="hinstructions">assembling pt. 2</div>
-                            <div>melt 4 ounce semi-sweet chocolate and 2 ounce butter into a small bowl</div>
-                            <div>mix in 1 tablespoon corn syrup</div>
-                            <div>pour glaze over cake and use a small spatula to smooth it out and let it set</div>
-                            <div>transfer to a cool-looking plate big enough to hold the sachertorte</div>
-                            <div>decorate with strawberries and blueberries</div>
-                        </div>
+                    <div class="mobilehide" id="equipment">
+                        <div class="h3">equipment</div>
+                        <ul>
+                            <li>small microwave-safe bowl</li>
+                            <li>9x3 inch cake pan</li>
+                            <li>parchment paper</li>
+                            <li>medium bowl</li>
+                            <li>stand mixer with wire whip attachment</li>
+                            <li>hand mixer</li>
+                            <li>oven at 350°f</li>
+                            <li>wire rack</li>
+                            <li>small bowl</li>
+                            <li>small microwave-safe bowl</li>
+                            <li>big cool-looking plate</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="column-100">
-                        <br class="mobilehide">
-                        <div id="pictures">
-                            <div class="gallery">
-                                <div class="pictures">
-                                    <div class="picture"><img src="../images/bakyuri/sachertorte/01.jpg" alt="🇦🇹🍫🎂🖼️ pictures coming soon (maybe)"></div>
-                                    <!--div class="picture"><img src="" alt="🖼️"></div-->
-                                </div>
-                                <!--button class="previous">&#10094;</button>
-                                <button class="next">&#10095;</button-->
+                <div class="column-5"></div>
+
+                <div class="column-45">
+                    <div id="instructions">
+                        <div class="h3 mobilehide">instructions</div>
+
+                        <div class="hinstructions">baking</div>
+                        <div>soften 1 cup butter</div>
+                        <div>melt 6 ounce semi-sweet chocolate</div>
+                        <div>line a 9x3 inch cake pan with parchment paper</div>
+                        <div>beat the butter and 1/2 cup (granulated) sugar using the stand mixer with the wire whip attachment and cream it for ~2 minutes or until it's light and aerated</div>
+                        <div>separate 8 large eggs; put the egg yolks into the stand mixer and put the egg whites in a medium-sized mixing bowl</div>
+                        <div>whip the egg whites until they form soft peaks</div>
+                        <div>beat in ~3 teaspoon vanilla extract until it is all combined</div>
+                        <div>sift 1 cup (cake) flour, 1/2 teaspoon baking powder, and 1/4 teaspoon salt into the stand mixer</div>
+                        <div>beat until all combined</div>
+                        <div>beat in the semi-sweet chocolate</div>
+                        <div>fold and mix the egg whites into the stand mixer bowl in thirds until the egg white isn't visible</div>
+                        <div>preheat the oven to 350°f</div>
+                        <div>pour batter into cake pan and spread it evenly</div>
+                        <div>bake for ~45 minutes or until a toothpick stabbed into the middle comes out clean</div>
+                        <div>cool in the pan for ~10 minutes</div>
+                        <div>place on a cooling rack to completely cool (~8 hours)</div>
+                        <br>
+
+                        <div class="hinstructions">assembling pt. 1</div>
+                        <div>trim the top of the cake so it is flat</div>
+                        <div>cut the cake horizontally and equally into 2 layers</div>
+                        <div>spread 1/2 cup apricot preserves on top of one layer</div>
+                        <div>stack the other layer on top</div>
+                        <div>warm 1 cup apricot preserves and get rid of/flatten out the chunky bits</div>
+                        <div>ice the top and the sides of the cake</div>
+                        <div>let cake air-dry for ~1 hour</div>
+                        <br>
+
+                        <div class="hinstructions">assembling pt. 2</div>
+                        <div>melt 4 ounce semi-sweet chocolate and 2 ounce butter into a small bowl</div>
+                        <div>mix in 1 tablespoon corn syrup</div>
+                        <div>pour glaze over cake and use a small spatula to smooth it out and let it set</div>
+                        <div>transfer to a cool-looking plate big enough to hold the sachertorte</div>
+                        <div>decorate with strawberries and blueberries</div>
+                    </div>
+                </div>
+
+                <div class="column-10"></div>
+            </div>
+            
+            <div class="row recipe">
+                <div class="column-10"></div>
+
+                <div class="column-80">
+                    <br class="mobilehide">
+                    <br class="mobilehide">
+
+                    <div id="pictures">
+                        <div class="gallery">
+                            <div class="pictures">
+                                <div class="picture"><img src="../images/bakyuri/sachertorte/01.jpg" alt="🇦🇹🍫🎂🖼️ pictures coming soon (maybe)"></div>
+                                <!--div class="picture"><img src="" alt="🖼️"></div-->
                             </div>
-                            <!--div class="dots">
-                                <span class="dot" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div-->
+                            <!--button class="previous">&#10094;</button>
+                            <button class="next">&#10095;</button-->
                         </div>
+                        <!--div class="dots">
+                            <span class="dot" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div-->
+                    </div>
 
-                        <div class="mobilehide" id="commentary">
-                            <p>rizz advice: ask ur partner what their favorite kind of cake is, then make it in secret for their bday (true story, i was the cake)</p>
-                        </div>
+                    <div class="mobilehide" id="commentary">
+                        <p>rizz advice: ask ur partner what their favorite kind of cake is, then make it in secret for their bday (true story, i was the cake)</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="actions">
-                <a class="button" href="../index.html">return home</a>
+                
+                <div class="column-10"></div>
             </div>
         </div>
+
+        <div id="tcfooter"></div>
     </main>
 
     <footer></footer>

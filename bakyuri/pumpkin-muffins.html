@@ -45,6 +45,8 @@
         $(document).ready(function () {
             header("recipe");
             footer();
+
+            tcFooter();
         });
     </script>
 </head>
@@ -54,125 +56,126 @@
 
     <header></header>
 
-    <main class="flex">
-        <div class="card">
-            <div class="header" style="justify-content: space-between;">
-                <b>recipe</b>
-                <div class="mobileshow" id="wakelocker">
-                    <label for="wakelock">keep the screen on</label>
-                    <input id="wlCheckbox" type="checkbox" name="wakelock">
+    <main>
+        <div class="widescreen" style="flex-direction: column; min-height: calc(100vh - 60px); margin-top: 60px; background-color: var(--white);">
+            <div class="row recipe">
+                <div class="column-100">
+                    <div class="h1">pumpkin muffins</div>
+                    <hr style="border-color: var(--black);">
+                    <br>
                 </div>
             </div>
 
-            <div class="content">
-                <div class="row">
-                    <div class="column-100">
-                        <div class="h1">pumpkin muffins</div>
-                    </div>
-                </div>
-                <hr style="border-color: var(--black);">
-                <br>
+            <div class="row recipe" style="align-items: flex-start;">
+                <div class="column-10"></div>
 
-                <div class="row recipe">
-                    <div class="column-35">
-                        <hr class="mobileshow" style="border-color: var(--black);">
-                        <br class="mobileshow">
+                <div class="column-30">
+                    <hr class="mobileshow" style="border-color: var(--black);">
+                    <br class="mobileshow">
 
-                        <div class="mobilehide" id="ingredients">
-                            <div class="h3">ingredients</div>
-                            <ul>
-                                <li>(all-purpose) flour</li>
-                                <li>(granulated) sugar</li>
-                                <li>baking powder</li>
-                                <li>baking soda</li>
-                                <li>salt</li>
-                                <li>pumpkin spice</li>
-                                <li>pumpkin purée</li>
-                                <li>
-                                    <span>butter</span>
-                                    <ul>
-                                        <li>butter can be salted or unsalted</li>
-                                        <li>to soften, unwrap and let it sit at room temperature for ~30 minutes until it gets dented by lightly poking</li>
-                                    </ul>
-                                </li>
-                                <li>vanilla extract</li>
-                                <li>eggs</li>
-                                <li>cream cheese</li>
-                                <li>milk</li>
-                            </ul>
-                        </div>
-
-                        <div class="mobilehide" id="equipment">
-                            <div class="h3">equipment</div>
-                            <ul>
-                                <li>2 small microwave-safe bowls</li>
-                                <li>large bowl</li>
-                                <li>medium bowl</li>
-                                <li>muffin tin</li>
-                                <li>piping bag/ziplock bag with one of its bottom corners cut off</li>
-                                <li>oven at 350°f</li>
-                                <li>wire rack</li>
-                                <li>cupcake wrappers</li>
-                                <li>big cool-looking plate</li>
-                            </ul>
-                        </div>
+                    <div class="mobilehide" id="ingredients">
+                        <div class="h3">ingredients</div>
+                        <ul>
+                            <li>(all-purpose) flour</li>
+                            <li>(granulated) sugar</li>
+                            <li>baking powder</li>
+                            <li>baking soda</li>
+                            <li>salt</li>
+                            <li>pumpkin spice</li>
+                            <li>pumpkin purée</li>
+                            <li>
+                                <span>butter</span>
+                                <ul>
+                                    <li>butter can be salted or unsalted</li>
+                                    <li>to soften, unwrap and let it sit at room temperature for ~30 minutes until it gets dented by lightly poking</li>
+                                </ul>
+                            </li>
+                            <li>vanilla extract</li>
+                            <li>eggs</li>
+                            <li>cream cheese</li>
+                            <li>milk</li>
+                        </ul>
                     </div>
 
-                    <div class="column-65">
-                        <div id="instructions">
-                            <div class="h3 mobilehide">instructions</div>
-
-                            <div>melt 1/4 cup butter in a small microwave-safe bowl</div>
-                            <div>lightly beat 1 large egg into another small bowl</div>
-                            <div>mix 1 1/2 cup (all-purpose) flour, 3/4 cup (granulated) sugar, 1 teaspoon baking powder, 1 teaspoon baking soda, 1/4 teaspoon salt, and 1 teaspoon pumpkin spice into a large bowl until combined</div>
-                            <div>mix 1 1/2 cup pumpkin purée, the butter, ~2 teaspoon vanilla extract, and the egg into a medium bowl</div>
-                            <div>make a crater in the middle of the large bowl and pour/spoon the contents of the medium bowl into the large bowl</div>
-                            <div>mix the large bowl until just combined and there are no dry pockets</div>
-                            <div>fill the 12-cup muffin pan evenly</div>
-                            <div>clean the medium bowl</div>
-                            <div>using a hand mixer on medium speed, mix 4 ounce softened cream cheese, ~1 teaspoon vanilla extract, 1 teaspoon (all-purpose) flour, 2 tablespoon 2 teaspoon (granulated) sugar, and 1 tsp milk into the medium bowl until smooth</div>
-                            <div>preheat the oven to 350°f</div>
-                            <div>put mixture into piping bag/ziplock bag with one of its bottom corners cut off</div>
-                            <div>evenly fill the insides of each muffin with the cream (squeeze for ~1 second)</div>
-                            <div>evenly top each muffin with the cream</div>
-                            <div>bake for ~18 minutes or until a toothpick stabbed into the bread comes out mostly clean</div>
-                            <div>let them cool in the tin for 10+ minutes</div>
-                            <div>transfer to wire rack to cool completely (time varies)</div>
-                            <div>fit each muffin with a cupcake wrapper</div>
-                            <div>transfer to a cool-looking plate big enough to hold the pumpkin muffins</div>
-                        </div>
+                    <div class="mobilehide" id="equipment">
+                        <div class="h3">equipment</div>
+                        <ul>
+                            <li>2 small microwave-safe bowls</li>
+                            <li>large bowl</li>
+                            <li>medium bowl</li>
+                            <li>muffin tin</li>
+                            <li>piping bag/ziplock bag with one of its bottom corners cut off</li>
+                            <li>oven at 350°f</li>
+                            <li>wire rack</li>
+                            <li>cupcake wrappers</li>
+                            <li>big cool-looking plate</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="column-100">
-                        <br class="mobilehide">
-                        <div id="pictures">
-                            <div class="gallery">
-                                <div class="pictures">
-                                    <div class="picture"><img src="../images/bakyuri/pumpkin-muffins/01.jpg" alt="🎃🧁🖼️ pictures coming soon (maybe)"></div>
-                                    <!--div class="picture"><img src="" alt="🖼️"></div-->
-                                </div>
-                                <!--button class="previous">&#10094;</button>
-                                <button class="next">&#10095;</button-->
+                <div class="column-5"></div>
+
+                <div class="column-45">
+                    <div id="instructions">
+                        <div class="h3 mobilehide">instructions</div>
+
+                        <div>melt 1/4 cup butter in a small microwave-safe bowl</div>
+                        <div>lightly beat 1 large egg into another small bowl</div>
+                        <div>mix 1 1/2 cup (all-purpose) flour, 3/4 cup (granulated) sugar, 1 teaspoon baking powder, 1 teaspoon baking soda, 1/4 teaspoon salt, and 1 teaspoon pumpkin spice into a large bowl until combined</div>
+                        <div>mix 1 1/2 cup pumpkin purée, the butter, ~2 teaspoon vanilla extract, and the egg into a medium bowl</div>
+                        <div>make a crater in the middle of the large bowl and pour/spoon the contents of the medium bowl into the large bowl</div>
+                        <div>mix the large bowl until just combined and there are no dry pockets</div>
+                        <div>fill the 12-cup muffin pan evenly</div>
+                        <div>clean the medium bowl</div>
+                        <div>using a hand mixer on medium speed, mix 4 ounce softened cream cheese, ~1 teaspoon vanilla extract, 1 teaspoon (all-purpose) flour, 2 tablespoon 2 teaspoon (granulated) sugar, and 1 tsp milk into the medium bowl until smooth</div>
+                        <div>preheat the oven to 350°f</div>
+                        <div>put mixture into piping bag/ziplock bag with one of its bottom corners cut off</div>
+                        <div>evenly fill the insides of each muffin with the cream (squeeze for ~1 second)</div>
+                        <div>evenly top each muffin with the cream</div>
+                        <div>bake for ~18 minutes or until a toothpick stabbed into the bread comes out mostly clean</div>
+                        <div>let them cool in the tin for 10+ minutes</div>
+                        <div>transfer to wire rack to cool completely (time varies)</div>
+                        <div>fit each muffin with a cupcake wrapper</div>
+                        <div>transfer to a cool-looking plate big enough to hold the pumpkin muffins</div>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="column-10"></div>
+            </div>
+            
+            <div class="row recipe">
+                <div class="column-10"></div>
+
+                <div class="column-80">
+                    <br class="mobilehide">
+                    <br class="mobilehide">
+
+                    <div id="pictures">
+                        <div class="gallery">
+                            <div class="pictures">
+                                <div class="picture"><img src="../images/bakyuri/pumpkin-muffins/01.jpg" alt="🎃🧁🖼️ pictures coming soon (maybe)"></div>
+                                <!--div class="picture"><img src="" alt="🖼️"></div-->
                             </div>
-                            <!--div class="dots">
-                                <span class="dot" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div-->
+                            <!--button class="previous">&#10094;</button>
+                            <button class="next">&#10095;</button-->
                         </div>
+                        <!--div class="dots">
+                            <span class="dot" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div-->
+                    </div>
 
-                        <div class="mobilehide" id="commentary">
-                            <p>u can't miss out if ur baking it urself (coping)</p>
-                        </div>
+                    <div class="mobilehide" id="commentary">
+                        <p>u can't miss out if ur baking it urself (coping)</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="actions">
-                <a class="button" href="../index.html">return home</a>
+                <div class="column-10"></div>
             </div>
         </div>
+
+        <div id="tcfooter"></div>
     </main>
 
     <footer></footer>

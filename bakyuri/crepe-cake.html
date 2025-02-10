@@ -45,6 +45,8 @@
         $(document).ready(function () {
             header("recipe");
             footer();
+
+            tcFooter();
         });
     </script>
 </head>
@@ -54,145 +56,146 @@
 
     <header></header>
 
-    <main class="flex">
-        <div class="card">
-            <div class="header" style="justify-content: space-between;">
-                <b>recipe</b>
-                <div class="mobileshow" id="wakelocker">
-                    <label for="wakelock">keep the screen on</label>
-                    <input id="wlCheckbox" type="checkbox" name="wakelock">
+    <main> 
+        <div class="widescreen" style="flex-direction: column; min-height: calc(100vh - 60px); margin-top: 60px; background-color: var(--white);">
+            <div class="row recipe">
+                <div class="column-100">
+                    <div class="h1">crêpe cake</div>
+                    <hr style="border-color: var(--black);">
+                    <br>
                 </div>
             </div>
 
-            <div class="content">
-                <div class="row">
-                    <div class="column-100">
-                        <div class="h1">crêpe cake</div>
+            <div class="row recipe" style="align-items: flex-start;">
+                <div class="column-10"></div>
+
+                <div class="column-30">
+                    <hr class="mobileshow" style="border-color: var(--black);">
+                    <br class="mobileshow">
+
+                    <div class="mobilehide" id="ingredients">
+                        <div class="h3">ingredients</div>
+                        <ul>
+                            <li>water</li>
+                            <li>milk</li>
+                            <li>eggs</li>
+                            <li>
+                                <span>butter</span>
+                                <ul>
+                                    <li>butter can be salted or unsalted</li>
+                                    <li>to melt, cut into smaller pieces, put into a small microwave-safe bowl, cover the top with plastic wrap, microwave for 27 seconds, and then in 9-second intervals until it's all/mostly liquid</li>
+                                    <li>to soften, unwrap and let it sit at room temperature for ~30 minutes until it gets dented by lightly poking</li>
+                                </ul>
+                            </li>
+                            <li>(all-purpose) flour</li>
+                            <li>(granulated) sugar</li>
+                            <li>salt</li>
+                            <li>sweetened condensed milk</li>
+                            <li>
+                                <span>cream cheese</span>
+                                <ul>
+                                    <li>to soften, unwrap and let it sit at room temperature for ~30 minutes until it gets dented by lightly poking</li>
+                                </ul>
+                            </li>
+                            <li>vanilla extract</li>
+                            <li>strawberries</li>
+                            <li>blueberries</li>
+                            <li>powdered sugar</li>
+                        </ul>
+                    </div>
+
+                    <div class="mobilehide" id="equipment">
+                        <div class="h3">equipment</div>
+                        <ul>
+                            <li>blender</li>
+                            <li>9-inch non-stick pan</li>
+                            <li>stovetop at medium heat</li>
+                            <li>plate</li>
+                            <li>stand mixer</li>
+                            <li>big cool-looking plate</li>
+                        </ul>
                     </div>
                 </div>
-                <hr style="border-color: var(--black);">
-                <br>
 
-                <div class="row recipe">
-                    <div class="column-35">
-                        <hr class="mobileshow" style="border-color: var(--black);">
-                        <br class="mobileshow">
+                <div class="column-5"></div>
 
-                        <div class="mobilehide" id="ingredients">
-                            <div class="h3">ingredients</div>
+                <div class="column-45">
+                    <div id="instructions">
+                        <div class="h3 mobilehide">instructions</div>
+
+                        <div class="hinstructions">crêpe</div>
+                        <div>melt 6 tablespoon butter in a small microwave-safe bowl</div>
+                        <div>blend 3/4 cup warm water, 1 1/2 cup milk, 6 eggs, the butter, 1 1/2 cup flour, 3 tablespoon sugar, and 1/8 teaspoon salt using the blender until well-combined</div>
+                        <div>heat a 9-inch non-stick pan over medium heat</div>
+                        <div>lightly coat with butter</div>
+                        <div><span>for each crepe:</span>
                             <ul>
-                                <li>water</li>
-                                <li>milk</li>
-                                <li>eggs</li>
-                                <li>
-                                    <span>butter</span>
-                                    <ul>
-                                        <li>butter can be salted or unsalted</li>
-                                        <li>to melt, cut into smaller pieces, put into a small microwave-safe bowl, cover the top with plastic wrap, microwave for 27 seconds, and then in 9-second intervals until it's all/mostly liquid</li>
-                                        <li>to soften, unwrap and let it sit at room temperature for ~30 minutes until it gets dented by lightly poking</li>
-                                    </ul>
-                                </li>
-                                <li>(all-purpose) flour</li>
-                                <li>(granulated) sugar</li>
-                                <li>salt</li>
-                                <li>sweetened condensed milk</li>
-                                <li>
-                                    <span>cream cheese</span>
-                                    <ul>
-                                        <li>to soften, unwrap and let it sit at room temperature for ~30 minutes until it gets dented by lightly poking</li>
-                                    </ul>
-                                </li>
-                                <li>vanilla extract</li>
-                                <li>strawberries</li>
-                                <li>blueberries</li>
-                                <li>powdered sugar</li>
+                                <li>add enough batter to lightly coat the pan and spread evenly</li>
+                                <li>cook for ~30 seconds on each side</li>
                             </ul>
                         </div>
+                        <div>cool to room temperature</div>
 
-                        <div class="mobilehide" id="equipment">
-                            <div class="h3">equipment</div>
+                        <div class="hinstructions">frosting</div>
+                        <div>soften 1 cup butter</div>
+                        <div>beat the butter and 12 ounce sweetened condensed milk using the stand mixer with the wire whip attachment for ~7 minutes or until it looks whipped and light in color</div>
+                        <div>beat in 8 ounce softened cream cheese in 1 tablespoon increments for ~3 minutes or until it is no longer lumpy</div>
+                        <div>beat in ~2 tsp vanilla extract until well incorporated and smooth</div>
+
+                        <div class="hinstructions">assembling pt. 1</div>
+                        <div>spread 1 1/2 tablespoon frosting on base of a cool-looking plate big enough to hold the crêpe cake </div>
+                        <div>place first crêpe on top</div>
+                        <div><span>for each crêpe or until you reached the desired height:</span>
                             <ul>
-                                <li>blender</li>
-                                <li>9-inch non-stick pan</li>
-                                <li>stovetop at medium heat</li>
-                                <li>plate</li>
-                                <li>stand mixer</li>
-                                <li>big cool-looking plate</li>
+                                <li>spread 3 tablespoon of frosting on top of the previous crêpe</li>
+                                <li>place crêpe on top</li>
                             </ul>
                         </div>
+                        <div>spread 1 1/2 tablespoon frosting on top of the topmost crêpe</div>
+                        <div>refrigerate cake for ~6 hours or until frosting has become hard</div>
+
+                        <div class="hinstructions">assembling pt. 2</div>
+                        <div>decorate with strawberries and blueberries</div>
+                        <div>dust with powdered sugar</div>
                     </div>
-
-                    <div class="column-65">
-                        <div id="instructions">
-                            <div class="h3 mobilehide">instructions</div>
-
-                            <div class="hinstructions">crêpe</div>
-                            <div>melt 6 tablespoon butter in a small microwave-safe bowl</div>
-                            <div>blend 3/4 cup warm water, 1 1/2 cup milk, 6 eggs, the butter, 1 1/2 cup flour, 3 tablespoon sugar, and 1/8 teaspoon salt using the blender until well-combined</div>
-                            <div>heat a 9-inch non-stick pan over medium heat</div>
-                            <div>lightly coat with butter</div>
-                            <div><span>for each crepe:</span>
-                                <ul>
-                                    <li>add enough batter to lightly coat the pan and spread evenly</li>
-                                    <li>cook for ~30 seconds on each side</li>
-                                </ul>
-                            </div>
-                            <div>cool to room temperature</div>
-
-                            <div class="hinstructions">frosting</div>
-                            <div>soften 1 cup butter</div>
-                            <div>beat the butter and 12 ounce sweetened condensed milk using the stand mixer with the wire whip attachment for ~7 minutes or until it looks whipped and light in color</div>
-                            <div>beat in 8 ounce softened cream cheese in 1 tablespoon increments for ~3 minutes or until it is no longer lumpy</div>
-                            <div>beat in ~2 tsp vanilla extract until well incorporated and smooth</div>
-
-                            <div class="hinstructions">assembling pt. 1</div>
-                            <div>spread 1 1/2 tablespoon frosting on base of a cool-looking plate big enough to hold the crêpe cake </div>
-                            <div>place first crêpe on top</div>
-                            <div><span>for each crêpe or until you reached the desired height:</span>
-                                <ul>
-                                    <li>spread 3 tablespoon of frosting on top of the previous crêpe</li>
-                                    <li>place crêpe on top</li>
-                                </ul>
-                            </div>
-                            <div>spread 1 1/2 tablespoon frosting on top of the topmost crêpe</div>
-                            <div>refrigerate cake for ~6 hours or until frosting has become hard</div>
-
-                            <div class="hinstructions">assembling pt. 2</div>
-                            <div>decorate with strawberries and blueberries</div>
-                            <div>dust with powdered sugar</div>
-                        </div>
-                    </div>
+                    <br>
                 </div>
 
-                <div class="row">
-                    <div class="column-100">
-                        <br class="mobilehide">
-                        <div id="pictures">
-                            <div class="gallery">
-                                <div class="pictures">
-                                    <div class="picture"><img src="../images/bakyuri/crepe-cake/02.jpg" alt="🫐🥞🖼️ pictures coming soon (maybe)"></div>
-                                    <!--div class="picture"><img src="" alt="🖼️"></div-->
-                                </div>
-                                <!--button class="previous">&#10094;</button>
-                                <button class="next">&#10095;</button-->
-                            </div>
-                            <!--div class="dots">
-                                <span class="dot" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div-->
-                        </div>
-
-                        <div class="mobilehide" id="commentary">
-                            <p>u know what's better than 1 crêpe? 11 crêpes</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="column-10"></div>
             </div>
+            
+            <div class="row recipe">
+                <div class="column-10"></div>
 
-            <div class="actions">
-                <a class="button" href="../index.html">return home</a>
+                <div class="column-80">
+                    <br class="mobilehide">
+                    <br class="mobilehide">
+
+                    <div id="pictures">
+                        <div class="gallery">
+                            <div class="pictures">
+                                <div class="picture"><img src="../images/bakyuri/crepe-cake/02.jpg" alt="🫐🥞🖼️ pictures coming soon (maybe)"></div>
+                                <!--div class="picture"><img src="" alt="🖼️"></div-->
+                            </div>
+                            <!--button class="previous">&#10094;</button>
+                            <button class="next">&#10095;</button-->
+                        </div>
+                        <!--div class="dots">
+                            <span class="dot" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div-->
+                    </div>
+
+                    <div class="mobilehide" id="commentary">
+                        <p>u know what's better than 1 crêpe? 11 crêpes</p>
+                    </div>
+                </div>
+
+                <div class="column-10"></div>
             </div>
         </div>
+
+        <div id="tcfooter"></div>
     </main>
 
     <footer></footer>

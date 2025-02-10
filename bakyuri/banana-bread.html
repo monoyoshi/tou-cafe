@@ -45,6 +45,8 @@
         $(document).ready(function () {
             header("recipe");
             footer();
+
+            tcFooter();
         });
     </script>
 </head>
@@ -54,79 +56,74 @@
 
     <header></header>
 
-    <main class="flex">
-        <div class="card">
-            <div class="header" style="justify-content: space-between;">
-                <b>recipe</b>
-                <div class="mobileshow" id="wakelocker">
-                    <label for="wakelock">keep the screen on</label>
-                    <input id="wlCheckbox" type="checkbox" name="wakelock">
+    <main>
+        <div class="widescreen" style="flex-direction: column; min-height: calc(100vh - 60px); margin-top: 60px; background-color: var(--white);">
+            <div class="row recipe">
+                <div class="column-100">
+                    <div class="h1">banana bread</div>
+                    <hr style="border-color: var(--black);">
+                    <br>
                 </div>
             </div>
 
-            <div class="content">
-                <div class="row recipe">
-                    <div class="column-100">
-                        <div class="h1">banana bread</div>
+            <div class="row recipe" style="align-items: flex-start;">
+                <div class="column-10"></div>
+
+                <div class="column-30">
+                    <hr class="mobileshow" style="border-color: var(--black);">
+                    <br class="mobileshow">
+
+                    <div class="mobilehide" id="ingredients">
+                        <div class="h3">ingredients</div>
+                        <ul>
+                            <li>
+                                <span>bananas</span>
+                                <ul>
+                                    <li>the more bananas the better (3-4 is the sweet spot)</li>
+                                    <li>the riper the banana the better (75%+ brown is good)</li>
+                                    <li>the longer the banana the better (6+ inches works)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>butter</span>
+                                <ul>
+                                    <li>butter can be salted or unsalted</li>
+                                    <li>to melt, cut into smaller pieces, put into a small microwave-safe bowl, cover the top with plastic wrap, microwave for 27 seconds, and then in 9-second intervals until it's all/mostly liquid</li>
+                                </ul>
+                            </li>
+                            <li>baking soda</li>
+                            <li>salt</li>
+                            <li>(granulated) sugar</li>
+                            <li>large eggs</li>
+                            <li>vanilla extract</li>
+                            <li>(all-purpose) flour</li>
+                            <li>
+                                <span>chocolate chips (any kind)</span>
+                                <ul>
+                                    <li>optional</li>
+                                    <li>white or semi-sweet are the best kinds</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mobilehide" id="equipment">
+                        <div class="h3">equipment</div>
+                        <ul>
+                            <li>small microwave-safe bowl</li>
+                            <li>medium bowl</li>
+                            <li>large fork</li>
+                            <li>spatula</li>
+                            <li>9x5 inch loaf pan</li>
+                            <li>oven at 350°f</li>
+                            <li>big cool-looking plate</li>
+                        </ul>
                     </div>
                 </div>
-                <hr style="border-color: var(--black);">
-                <br>
 
-                <div class="row recipe">
-                    <div class="column-35">
-                        <hr class="mobileshow" style="border-color: var(--black);">
-                        <br class="mobileshow">
+                <div class="column-5"></div>
 
-                        <div class="mobilehide" id="ingredients">
-                            <div class="h3">ingredients</div>
-                            <ul>
-                                <li>
-                                    <span>bananas</span>
-                                    <ul>
-                                        <li>the more bananas the better (3-4 is the sweet spot)</li>
-                                        <li>the riper the banana the better (75%+ brown is good)</li>
-                                        <li>the longer the banana the better (6+ inches works)</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span>butter</span>
-                                    <ul>
-                                        <li>butter can be salted or unsalted</li>
-                                        <li>to melt, cut into smaller pieces, put into a small microwave-safe bowl, cover the top with plastic wrap, microwave for 27 seconds, and then in 9-second intervals until it's all/mostly liquid</li>
-                                    </ul>
-                                </li>
-                                <li>baking soda</li>
-                                <li>salt</li>
-                                <li>(granulated) sugar</li>
-                                <li>large eggs</li>
-                                <li>vanilla extract</li>
-                                <li>(all-purpose) flour</li>
-                                <li>
-                                    <span>chocolate chips (any kind)</span>
-                                    <ul>
-                                        <li>optional</li>
-                                        <li>white or semi-sweet are the best kinds</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="mobilehide" id="equipment">
-                            <div class="h3">equipment</div>
-                            <ul>
-                                <li>small microwave-safe bowl</li>
-                                <li>medium bowl</li>
-                                <li>large fork</li>
-                                <li>spatula</li>
-                                <li>9x5 inch loaf pan</li>
-                                <li>oven at 350°f</li>
-                                <li>big cool-looking plate</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="column-65">
+                <div class="column-45">
                         <div id="instructions">
                             <div class="h3 mobilehide">instructions</div>
 
@@ -146,38 +143,43 @@
                             <div>transfer to a cool-looking plate big enough to hold the banana bread</div>
                         </div>
                         <br>
-                    </div>
                 </div>
 
-                <div class="row recipe">
-                    <div class="column-100">
-                        <br class="mobilehide">
-                        <div id="pictures">
-                            <div class="gallery">
-                                <div class="pictures">
-                                    <div class="picture"><img src="../images/bakyuri/banana-bread/03.jpg" alt="🍌🍞🖼️ pictures coming soon (maybe)"></div>
-                                    <!--div class="picture"><img src="" alt="🖼️"></div-->
-                                </div>
-                                <!--button class="previous">&#10094;</button>
-                                <button class="next">&#10095;</button-->
-                            </div>
-                            <!--div class="dots">
-                                <span class="dot" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div-->
-                        </div>
-
-                        <div class="mobilehide" id="commentary">
-                            <p>this banana bread is very pog everyone likes it</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="column-10"></div>
             </div>
 
-            <div class="actions">
-                <a class="button" href="../index.html">return home</a>
+            <div class="row recipe">
+                <div class="column-10"></div>
+
+                <div class="column-80">
+                    <br class="mobilehide">
+                    <br class="mobilehide">
+
+                    <div id="pictures">
+                        <div class="gallery">
+                            <div class="pictures">
+                                <div class="picture"><img src="../images/bakyuri/banana-bread/03.jpg" alt="🍌🍞🖼️ pictures coming soon (maybe)"></div>
+                                <!--div class="picture"><img src="" alt="🖼️"></div-->
+                            </div>
+                            <!--button class="previous">&#10094;</button>
+                            <button class="next">&#10095;</button-->
+                        </div>
+                        <!--div class="dots">
+                            <span class="dot" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div-->
+                    </div>
+
+                    <div class="mobilehide" id="commentary">
+                        <p>this banana bread is very pog everyone likes it</p>
+                    </div>
+                </div>
+
+                <div class="column-10"></div>
             </div>
         </div>
+
+        <div id="tcfooter"></div>
     </main>
 
     <footer></footer>

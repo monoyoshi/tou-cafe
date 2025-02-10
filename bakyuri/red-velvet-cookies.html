@@ -45,6 +45,8 @@
         $(document).ready(function () {
             header("recipe");
             footer();
+
+            tcFooter();
         });
     </script>
 </head>
@@ -54,126 +56,126 @@
 
     <header></header>
 
-    <main class="flex">
-        <div class="card">
-            <div class="header" style="justify-content: space-between;">
-                <b>recipe</b>
-                <div class="mobileshow" id="wakelocker">
-                    <label for="wakelock">keep the screen on</label>
-                    <input id="wlCheckbox" type="checkbox" name="wakelock">
+    <main>
+        <div class="widescreen" style="flex-direction: column; min-height: calc(100vh - 60px); margin-top: 60px; background-color: var(--white);">
+            <div class="row recipe">
+                <div class="column-100">
+                    <div class="h1">red velvet cookies</div>
+                    <hr style="border-color: var(--black);">
+                    <br>
                 </div>
             </div>
 
-            <div class="content">
-                <div class="row">
-                    <div class="column-100">
-                        <div class="h1">red velvet cookies</div>
-                    </div>
-                </div>
-                <hr style="border-color: var(--black);">
-                <br>
+            <div class="row recipe" style="align-items: flex-start;">
+                <div class="column-10"></div>
 
-                <div class="row recipe">
-                    <div class="column-35">
-                        <hr class="mobileshow" style="border-color: var(--black);">
-                        <br class="mobileshow">
+                <div class="column-30">
+                    <hr class="mobileshow" style="border-color: var(--black);">
+                    <br class="mobileshow">
 
-                        <div class="mobilehide" id="ingredients">
-                            <div class="h3">ingredients</div>
-                            <ul>
-                                <li>
-                                    <span>butter</span>
-                                    <ul>
-                                        <li>butter can be salted or unsalted</li>
-                                        <li>to soften, unwrap and let it sit at room temperature for ~30 minutes until it gets dented by lightly poking</li>
-                                    </ul>
-                                </li>
-                                <li>(granulated) sugar</li>
-                                <li>(dark) brown sugar</li>
-                                <li>large eggs</li>
-                                <li>vanilla extract</li>
-                                <li>vinegar</li>
-                                <li>
-                                    <span>red (or blue?) food coloring</span>
-                                    <ul>
-                                        <li>I suppose any color could work, but I've never tried adding blue food coloring (people don't want me to)</li>                                    </ul>
-                                </li>
-                                <li>(all-purpose) flour</li>
-                                <li>cocoa powder</li>
-                                <li>cornstarch</li>
-                                <li>baking soda</li>
-                                <li>salt</li>
-                                <li>white chocolate chips</li>
-                            </ul>
-                        </div>
-
-                        <div class="mobilehide" id="equipment">
-                            <ul>
-                                <li>stand mixer with flat beater attachment</li>
-                                <li>cookie scoop</li>
-                                <li>2 baking sheets</li>
-                                <li>parchment paper</li>
-                                <li>oven at 350°f</li>
-                                <li>big cool-looking plate</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="column-65">
-                        <div id="instructions">
-                            <div class="h3 mobilehide">instructions</div>
-
-                            <div>soften 1 cup butter</div>
-                            <div>beat the butter, 1 cup (granulated) sugar, and 2/3 cup (dark) brown sugar using the stand mixer with the flat beater attachment</div>
-                            <div>beat in 2 large eggs, ~6 teaspoon vanilla extract, 2 teaspoon vinegar, and 2 teaspoon red food coloring</div>
-                            <div>beat in 3 1/3 cup (all-purpose) flour, 3 tablespoon cocoa powder, 4 teaspoon cornstarch, 1 1/2 teaspoon baking soda, and 1/2 teaspoon salt</div>
-                            <div>beat in 1 cup white chocolate chips until thick and sticky</div>
-                            <div>preheat the oven to 350°f</div>
-                            <div>line 2 baking sheets with parchment paper</div>
-                            <div>
-                                form the cookie dough into loosely packed balls about 1 1/4 tbsp in size and place 2 inches apart on the baking sheets
+                    <div class="mobilehide" id="ingredients">
+                        <div class="h3">ingredients</div>
+                        <ul>
+                            <li>
+                                <span>butter</span>
                                 <ul>
-                                    <li>use a cookie scoop to help</li>
-                                    <li>at the very least, be able to place cookies in a 5x3 grid</li>
+                                    <li>butter can be salted or unsalted</li>
+                                    <li>to soften, unwrap and let it sit at room temperature for ~30 minutes until it gets dented by lightly poking</li>
                                 </ul>
-                            </div>
-                            <div>bake for 9 minutes or until the tops are just set</div>
-                            <div>let them chill at room temperature for 5+ minutes</div>
-                            <div>transfer to a cool-looking plate big enough to stack the red velvet cookies on nicely</div>
-                        </div>
-                        <br>
+                            </li>
+                            <li>(granulated) sugar</li>
+                            <li>(dark) brown sugar</li>
+                            <li>large eggs</li>
+                            <li>vanilla extract</li>
+                            <li>vinegar</li>
+                            <li>
+                                <span>red (or blue?) food coloring</span>
+                                <ul>
+                                    <li>I suppose any color could work, but I've never tried adding blue food coloring (people don't want me to)</li>                                    </ul>
+                            </li>
+                            <li>(all-purpose) flour</li>
+                            <li>cocoa powder</li>
+                            <li>cornstarch</li>
+                            <li>baking soda</li>
+                            <li>salt</li>
+                            <li>white chocolate chips</li>
+                        </ul>
+                    </div>
+
+                    <div class="mobilehide" id="equipment">
+                        <ul>
+                            <li>stand mixer with flat beater attachment</li>
+                            <li>cookie scoop</li>
+                            <li>2 baking sheets</li>
+                            <li>parchment paper</li>
+                            <li>oven at 350°f</li>
+                            <li>big cool-looking plate</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="column-100">
-                        <br class="mobilehide">
-                        <div id="pictures">
-                            <div class="gallery">
-                                <div class="pictures">
-                                    <div class="picture"><img src="../images/bakyuri/red-velvet-cookies/01.jpg" alt="❤️🍰🍪🖼️ pictures coming soon (maybe)"></div>
-                                    <!--div class="picture"><img src="" alt="🖼️"></div-->
-                                </div>
-                                <!--button class="previous">&#10094;</button>
-                                <button class="next">&#10095;</button-->
-                            </div>
-                            <!--div class="dots">
-                                <span class="dot" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div-->
-                        </div>
+                <div class="column-5"></div>
 
-                        <div class="mobilehide" id="commentary">
-                            <p>but what if it was blue</p>
+                <div class="column-45">
+                    <div id="instructions">
+                        <div class="h3 mobilehide">instructions</div>
+
+                        <div>soften 1 cup butter</div>
+                        <div>beat the butter, 1 cup (granulated) sugar, and 2/3 cup (dark) brown sugar using the stand mixer with the flat beater attachment</div>
+                        <div>beat in 2 large eggs, ~6 teaspoon vanilla extract, 2 teaspoon vinegar, and 2 teaspoon red food coloring</div>
+                        <div>beat in 3 1/3 cup (all-purpose) flour, 3 tablespoon cocoa powder, 4 teaspoon cornstarch, 1 1/2 teaspoon baking soda, and 1/2 teaspoon salt</div>
+                        <div>beat in 1 cup white chocolate chips until thick and sticky</div>
+                        <div>preheat the oven to 350°f</div>
+                        <div>line 2 baking sheets with parchment paper</div>
+                        <div>
+                            form the cookie dough into loosely packed balls about 1 1/4 tbsp in size and place 2 inches apart on the baking sheets
+                            <ul>
+                                <li>use a cookie scoop to help</li>
+                                <li>at the very least, be able to place cookies in a 5x3 grid</li>
+                            </ul>
                         </div>
+                        <div>bake for 9 minutes or until the tops are just set</div>
+                        <div>let them chill at room temperature for 5+ minutes</div>
+                        <div>transfer to a cool-looking plate big enough to stack the red velvet cookies on nicely</div>
                     </div>
+                    <br>
                 </div>
+
+                <div class="column-10"></div>
             </div>
+            
+            <div class="row recipe">
+                <div class="column-10"></div>
 
-            <div class="actions">
-                <a class="button" href="../index.html">return home</a>
+                <div class="column-80">
+                    <br class="mobilehide">
+                    <br class="mobilehide">
+
+                    <div id="pictures">
+                        <div class="gallery">
+                            <div class="pictures">
+                                <div class="picture"><img src="../images/bakyuri/red-velvet-cookies/01.jpg" alt="❤️🍰🍪🖼️ pictures coming soon (maybe)"></div>
+                                <!--div class="picture"><img src="" alt="🖼️"></div-->
+                            </div>
+                            <!--button class="previous">&#10094;</button>
+                            <button class="next">&#10095;</button-->
+                        </div>
+                        <!--div class="dots">
+                            <span class="dot" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div-->
+                    </div>
+
+                    <div class="mobilehide" id="commentary">
+                        <p>but what if it was blue</p>
+                    </div>
+                </div>
+
+                <div class="column-10"></div>
             </div>
         </div>
+
+        <div id="tcfooter"></div>
     </main>
 
     <footer></footer>
