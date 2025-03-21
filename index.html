@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="https://cdn.bladewyrm.dev/global/images/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <title>tou café | bladewyrm.dev</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,12 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/colors.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/fonts.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/style.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/mobile.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/colors.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/style.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/mobile.css">
     
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/cursor.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/cursor.css">
 
     <!-- local -->
     <link rel="stylesheet" href="css/style.css">
@@ -28,9 +28,9 @@
     <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="https://cdn.bladewyrm.dev/global/javascript/boilerplate.js"></script>
+    <script src="https://cdn.bladewyrm.dev/javascript/boilerplate.js"></script>
     
-    <script src="https://cdn.bladewyrm.dev/global/javascript/cursor.js"></script>
+    <script src="https://cdn.bladewyrm.dev/javascript/cursor.js"></script>
 
     <!-- local -->
     <script src="javascript/boilerplate.js"></script>
@@ -41,7 +41,7 @@
             header("index");
             footer();
 
-            tcFooter();
+            sFooter();
         });
     </script>
 </head>
@@ -52,96 +52,78 @@
     <header></header>
 
     <main>
-        <div class="bgimage widescreen left shadow" style="height: calc(100vh - 60px); margin-top: 60px; background-image: url(images/stock/01.png);">
+        <div class="widescreen center bgimage" style="height: calc(100vh - 60px); margin-top: 60px; background-image: url(images/stock/01.png);">
             <!-- image used and altered from lina kivaka from pexels: https://www.pexels.com/photo/black-and-white-ceramic-mug-1813466 -->
-            <div class="column-40">
-                <div class="row">
-                    <div class="column-100 h1">
-                        "Swords? In <i>my</i> café?"
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column-100 h3">
-                        It's more likely than you think.
-                    </div>
-                </div>
-                <div class="row">
+             <div class="row">
+                <div class="column-5"></div>
+                <div class="column-40 bgfloat shadow" style="padding: 10px 20px 20px;">
+                    <div class="h1">"Swords? In <i>my</i> café?"</div>
+                    <div class="h3">It's more likely than you think.</div>
+                    <br>
                     <div class="column-80">
-                        <br>
-                        Conceptualized in 2018 and maintained by a blade-loving dragon and their partner, TOU Café is a passion project whose goal is to store recipes in an efficient and seamless manner.<br>
-                        <br>
-                        <a class="button" href="menu.html" style="margin: 5px 0 10px;">FREE RECIPE CHECK!</a>
+                        Conceptualized in 2018 and maintained by a blade-loving dragon and their partner, TOU Café is a passion project whose goal is to store recipes in an efficient and seamless manner.<br><br>
                     </div>
-                    <div class="column-20"></div>
+                    <a class="button" href="menu.html">FREE RECIPE CHECK!</a>
                 </div>
-            </div>
+             </div>
         </div>
+
         <div class="widescreen" style="min-height: calc(90vh - 60px); padding: 60px 0; background-color: var(--white);">
-            <div class="column-90">
-                <div class="row">
-                    <div class="column-100 h1" style="text-align: center; margin-bottom: 10px;">recipes</div>
-                </div>
-                <div class="row">
-                    <div class="column-100" style="text-align: center; margin-bottom: 20px;">
+            <div class="row">
+                <div class="column-100" style="text-align: center;">
+                    <div class="h1">recipes</div>
+                    <div style="margin: 0 10px;">
                         The journey to perfecting the look of this website will be a long but very fun one.<br>
-                        For now, here's a bunch of dessert recipes:</div>
-                </div>
-                <div class="row grid">
-                    <div class="column-75">
-                        <div class="rtc" style="display: flex; justify-content: center; align-items: center;">
-                            <a class="column-30 button lightmode" href="bakyuri/banana-bread.html">
-                                <img src="images/bakyuri/banana-bread/05.jpg">
+                        For now, here's a bunch of dessert recipes:<br><br>
+                    </div>
+                    <div class="grid">
+                        <div class="rtc">
+                            <a class="button lightmode" href="bakyuri/banana-bread.html">
+                                <img src="images/bakyuri/banana-bread/05.jpg" style="width: 256px;">
                                 <div>banana bread</div>
                             </a>
-                            <a class="column-30 button lightmode" href="bakyuri/red-velvet-cookies.html">
-                                <img src="images/bakyuri/red-velvet-cookies/03.jpg">
+                            <a class="button lightmode" href="bakyuri/red-velvet-cookies.html">
+                                <img src="images/bakyuri/red-velvet-cookies/03.jpg" style="width: 256px;">
                                 <div>red velvet cookies</div>
                             </a>
-                            <a class="column-30 button lightmode" href="bakyuri/sachertorte.html">
-                                <img src="images/bakyuri/sachertorte/02.jpg">
+                            <a class="button lightmode" href="bakyuri/sachertorte.html">
+                                <img src="images/bakyuri/sachertorte/02.jpg" style="width: 256px;">
                                 <div>sachertorte</div>
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="row grid">
-                    <div class="column-75">
-                        <div class="rtc" style="display: flex; justify-content: center; align-items: center;">
-                            <div class="column-60"></div>
-                            <a class="column-30 button lightmode" href="bakyuri/pumpkin-muffins.html">
-                                <img src="images/bakyuri/pumpkin-muffins/01.jpg">
+                    <div class="grid">
+                        <div class="rtc">
+                            <a class="button lightmode" href="bakyuri/pumpkin-muffins.html">
+                                <img src="images/bakyuri/pumpkin-muffins/01.jpg" style="width: 256px;">
                                 <div>pumpkin muffin</div>
                             </a>
-                            <a class="column-30 button lightmode" href="bakyuri/crepe-cake.html">
-                                <img src="images/bakyuri/crepe-cake/01.jpg">
+                            <a class="button lightmode" href="bakyuri/crepe-cake.html">
+                                <img src="images/bakyuri/crepe-cake/01.jpg" style="width: 256px;">
                                 <div>crêpe cake</div>
                             </a>
-                            <div class="column-60"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bgimage widescreen left shadow" style="height: calc(100vh - 60px); background-image: url(images/stock/02.png);">
+
+        <div class="widescreen center bgimage" style="height: calc(100vh - 60px); background-image: url(images/stock/02.png);">
             <!-- image used and altered from from unsplash: https://unsplash.com/photos/shallow-focus-photography-of-coffee-late-in-mug-on-table-zUNs99PGDg0 -->
-            <div class="column-40">
-                <div class="row">
-                    <div class="column-100 h1">
-                        they call me a shef (also my gf)
-                    </div>
-                </div>
-                <div class="row">
+            <div class="row">
+                <div class="column-5"></div>
+                <div class="column-40 bgfloat shadow" style="padding: 10px 20px 20px;">
+                    <div class="h1">they call me a shef (also my gf)</div>
                     <div class="column-80">
                         from the depths of the endless void, rises another silly project... *evil chuc— I mean woahhh doesn't this website look cool? please say it looks cool i worked really hard on it 🥺
                         <br class="mobileshow"><br class="mobileshow">
                         <span class="mobileshow">ps I am very aware the navbar is very scuffed on mobile (if u see this message, u are on ur phone (don't ask how i know I am very smart and i am in ur walls)). however let me celebrate my first victory ok thank u much love cheers yippee 💙</span>
                     </div>
-                    <div class="column-20"></div>
                 </div>
             </div>
         </div>
 
-        <div id="tcfooter"></div>
+        <div id="sfooter"></div>
     </main>
 
     <footer></footer>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="https://cdn.bladewyrm.dev/global/images/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="https://cdn.bladewyrm.dev/images/favicon.svg">
     <title>blue velvet cookies but if they were red | bakyuri | tou café | bladewyrm.dev</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,13 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/colors.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/fonts.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/style.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/mobile.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/colors.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/style.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/mobile.css">
 
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/cursor.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/wakelock.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/cursor.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/wakelock.css">
     <!-- disabling these while I figure everything else out (this is a low priority) link rel="stylesheet" href="../cdn/global/css/gallery.css"-->
 
     <!-- local -->
@@ -30,10 +30,10 @@
     <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="https://cdn.bladewyrm.dev/global/javascript/boilerplate.js"></script>
+    <script src="https://cdn.bladewyrm.dev/javascript/boilerplate.js"></script>
 
-    <script src="https://cdn.bladewyrm.dev/global/javascript/cursor.js"></script>
-    <script src="https://cdn.bladewyrm.dev/global/javascript/wakelock.js"></script>
+    <script src="https://cdn.bladewyrm.dev/javascript/cursor.js"></script>
+    <script src="https://cdn.bladewyrm.dev/javascript/wakelock.js"></script>
     <!--script src="../cdn/global/javascript/gallery.js"></script-->
 
     <!-- local -->
@@ -46,7 +46,7 @@
             header("recipe");
             footer();
 
-            tcFooter();
+            sFooter();
         });
     </script>
 </head>
@@ -57,15 +57,15 @@
     <header></header>
 
     <main>
-        <div class="widescreen" style="flex-direction: column; min-height: calc(100vh - 60px); margin-top: 60px; background-color: var(--white);">
-            <div class="row recipe">
-                <div class="column-100">
-                    <div class="h1">red velvet cookies</div>
-                    <hr style="border-color: var(--black);">
-                    <br>
+        <div class="bgimage widescreen shadow" style="height: calc(25vh - 60px); margin-top: 60px; background-image: url(../images/bakyuri/red-velvet-cookies/01.jpg);">
+            <div class="column-40">
+                <div class="row">
+                    <div class="column-100 h1" style="text-align: center;">red velvet cookies</div>
                 </div>
             </div>
+        </div>
 
+        <div class="widescreen" style="flex-direction: column; min-height: calc(100vh - 60px); background-color: var(--white);">
             <div class="row recipe" style="align-items: flex-start;">
                 <div class="column-10"></div>
 
@@ -175,7 +175,7 @@
             </div>
         </div>
 
-        <div id="tcfooter"></div>
+        <div id="sfooter"></div>
     </main>
 
     <footer></footer>

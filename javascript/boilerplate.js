@@ -10,7 +10,7 @@ function preheader(active) {
         menu: ["", `https://tou-cafe.bladewyrm.dev/menu.html`],
         about: ["", `https://tou-cafe.bladewyrm.dev/about.html`],
         shop: ["", `https://tou-cafe.bladewyrm.dev/shop.html`],
-        contact: ["", `https://tou-cafe.bladewyrm.dev/contact.html`],
+        contact: ["", `https://tou-cafe.bladewyrm.dev/contact.html`]
     };
 
     switch (active) {
@@ -61,6 +61,7 @@ function header(active) {
                 })
                 .append($("<img>", {
                     src: "https://tou-cafe.bladewyrm.dev/images/logo.png",
+                    alt: "tou café logo",
                     height: 45,
                     "css": {
                         "max-width": "none"
@@ -164,76 +165,72 @@ function hamburger(active, close) {
             );
         $(".hbmenu").animate({right: "0"}, 150);
     };
-
 }
 
-function tcFooter() {
-    $("#tcfooter")
-        .addClass("widescreen")
+function sFooter() {
+    $("#sfooter")
+        .addClass("widescreen center")
         .css({
             "height": "300px",
             "background-color": "var(--white)",
             "box-shadow": "0px -2px var(--shadow)"
         })
         .append($("<div>", {
-            class: "column-10"
-        }))
-        .append($("<div>", {
-            class: "column-80"
+            class: "row"
         })
             .append($("<div>", {
-                class: "row"
+                class: "column-10"
+            }))
+            .append($("<div>", {
+                class: "column-80"
             })
                 .append($("<div>", {
-                    class: "column-100",
-                    css: {
-                        "text-align": "right"
-                    }
-                })
-                    .append($("<img>", {
-                        src: "https://tou-cafe.bladewyrm.dev/images/logo.png",
-                        height: "90px",
                         css: {
-                            "max-width": "none"
-                        }
-                    }))
-                    .append($("<br>"))
-                    .append($("<div>", {
-                        css: {
-                            "display": "flex",
-                            "justify-content": "flex-end",
-                            "width": "100%"
+                            "text-align": "right"
                         }
                     })
                         .append($("<a>", {
                             "href": "https://bladewyrm.dev",
                             "target": "_blank",
-                            "rel": "noopener noreferrer",
-                            "css": {
-                                "margin-right": "10px"
-                            }
-                        })
-                            .html("main site")
-                        )
-                        .append($("<div>", {
-                            "css": {
-                                "margin-right": "10px"
-                            }
-                        })
-                            .html(">")
-                        )
-                        .append($("<a>", {
-                            "href": "https://bladewyrm.dev/projects.html",
-                            "target": "_blank",
                             "rel": "noopener noreferrer"
                         })
-                            .html("projects")
+                            .append($("<img>", {
+                                src: "https://cdn.bladewyrm.dev/images/logo.svg",
+                                height: "90px",
+                                alt: "bladewyrm logo"
+                            }))
                         )
-                    )
+                        .append($("<br>"))
+                        .append($("<div>")
+                            .append($("<a>", {
+                                "href": "https://bladewyrm.dev",
+                                "target": "_blank",
+                                "rel": "noopener noreferrer"
+                            })
+                                .text("main site")
+                            )
+                            .append($("<span>")
+                                .text(" > ")
+                            )
+                            .append($("<a>", {
+                                "href": "https://bladewyrm.dev/projects.html",
+                                "target": "_blank",
+                                "rel": "noopener noreferrer"
+                            })
+                                .text("projects")
+                            )
+                            .append($("<span>")
+                                .text(" > ")
+                            )
+                            .append($("<a>", {
+                                "href": "https://tou-cafe.bladewyrm.dev/",
+                                "target": "_blank",
+                                "rel": "noopener noreferrer"
+                            })
+                                .text("tou café")
+                            )
+                        )
                 )
             )
-        )
-        .append($("<div>", {
-            class: "column-10"
-        }))
+        );
 }

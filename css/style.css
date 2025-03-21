@@ -31,7 +31,6 @@ footer {
     overflow: hidden;
     z-index: 81;
     box-shadow: 0px 2px var(--shadow);
-    user-select: none;
 }
 
 .navbar > div,
@@ -106,6 +105,12 @@ footer {
 
 .grid a.button:hover:active {
     background-color: var(--a_lightblue);
+}
+
+.grid .rtc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* - - - - - - - - - */
