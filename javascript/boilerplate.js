@@ -172,7 +172,7 @@ function sFooter() {
         .append($("<div>", {
             class: "row center",
             css: {
-                "height": "5px",
+                "height": "90px",
                 "background-color": "var(--white)"
             }
         })
@@ -193,7 +193,7 @@ function sFooter() {
         .append($("<div>", {
             class: "row",
             css: {
-                "height": "175px",
+                "height": "180px",
                 "background-color": "var(--white)"
             }
         })
