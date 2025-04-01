@@ -51,14 +51,16 @@ footer {
     padding: 0 10px;
 }
 
-.navbar > div > a:hover {
+.navbar > div > a:hover,
+.menuitem:hover {
     background: linear-gradient(to right, var(--a_lighterblue) 30%, var(--lightgray) 30%, var(--lightgray) 70%, rgba(0,0,0,0) 70%) right;
     background-size: 400%;
-    animation: wave 550ms forwards;
+    animation: wave 550ms linear forwards;
 }
 
 .navbar > div > a:hover:active,
-.navbar > div#active > a {
+.navbar > div#active > a,
+.menuitem:hover:active {
     background: var(--a_lightblue);
     color: var(--white);
 }
@@ -126,6 +128,37 @@ footer {
 .donestep {
     opacity: 0.5;
     text-decoration: line-through;
+}
+
+.menuheader {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.mhtext {
+    min-width: fit-content;
+}
+
+.menuheader>hr {
+    width: 100%;
+}
+
+.menuheader>hr.hrright {
+    margin-left: 1rem;
+}
+
+.menuheader>hr.hrleft {
+    margin-right: 1rem;
+}
+
+.menuitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--black);
+    padding: 1rem;
+    user-select: none;
 }
 
 @keyframes wave {

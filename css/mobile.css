@@ -75,6 +75,14 @@
         transform: translate(0, -4px) rotate(-45deg);
     }
 
+    .menuheader {
+        padding: 1rem;
+    }
+
+    .menuitem {
+        margin: 0 1rem;
+    }
+
     footer {
         top: auto;
         bottom: 0;

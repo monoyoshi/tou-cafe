@@ -170,24 +170,38 @@ function hamburger(active, close) {
 function sFooter() {
     $("#sfooter")
         .append($("<div>", {
-            class: "row",
-            css: {
-                "height": "45px",
-                "background-color": "var(--a_lightblue)"
-            }
-        }))
-        .append($("<div>", {
             class: "row center",
             css: {
-                "height": "225px",
+                "height": "5px",
                 "background-color": "var(--white)"
             }
         })
             .append($("<div>", {
-                class: "column-10"
+                class: "column-100"
+            })
+                .append($("<div>", {
+                    css: {
+                        "display": "flex",
+                        "justify-content": "center",
+                        "align-items": "flex-end"
+                    }
+                })
+                    .html(`<hr style="width: 5vw;">`)
+                )
+            )
+        )
+        .append($("<div>", {
+            class: "row",
+            css: {
+                "height": "175px",
+                "background-color": "var(--white)"
+            }
+        })
+            .append($("<div>", {
+                class: "column-5"
             }))
             .append($("<div>", {
-                class: "column-80"
+                class: "column-90"
             })
                 .append($("<div>", {
                         id: "sfmap"
