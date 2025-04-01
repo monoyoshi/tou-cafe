@@ -57,27 +57,34 @@
     <header></header>
 
     <main>
-        <div class="bgimage widescreen shadow" style="height: calc(25vh - 60px); margin-top: 60px; background-image: url(../images/bakyuri/banana-bread/01.jpg);">
-            <div class="column-40">
-                <div class="row">
-                    <div class="column-100 h1" style="text-align: center;">banana bread</div>
+        <div class="widescreen center bgimage" style="height: calc(25vh - 60px); margin-top: 60px; background-image: url(../images/bakyuri/banana-bread/01.jpg);">
+            <div class="row center">
+                <div class="column-20 bgfloat shadow" style="text-align: center;">
+                    <div class="h1">banana bread</div>
                 </div>
             </div>
         </div>
 
-        <div class="widescreen" style="flex-direction: column; min-height: calc(100vh - 60px); background-color: var(--white);">
-            <div class="row recipe" style="align-items: flex-start;">
+        <div class="widescreen" style="min-height: calc(100vh - 60px); background-color: var(--white);">
+            <div class="row center">
+                <div class="column-20" style="text-align: center;">
+                    <div class="mobileshow" id="wakelocker">
+                        <label for="wakelock">keep the screen on</label>
+                        <input id="wlCheckbox" type="checkbox" name="wakelock">
+                    </div>
+                </div>
+            </div>
+            <div class="row recipe">
                 <div class="column-10"></div>
 
                 <div class="column-30">
                     <hr class="mobileshow" style="border-color: var(--black);">
-                    <br class="mobileshow">
-
+                    <br>
                     <div class="mobilehide" id="ingredients">
                         <div class="h3">ingredients</div>
                         <ul>
                             <li>
-                                <span>bananas</span>
+                                bananas<br>
                                 <ul>
                                     <li>the more bananas the better (3-4 is the sweet spot)</li>
                                     <li>the riper the banana the better (75%+ brown is good)</li>
@@ -85,7 +92,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <span>butter</span>
+                                butter<br>
                                 <ul>
                                     <li>butter can be salted or unsalted</li>
                                     <li>to melt, cut into smaller pieces, put into a small microwave-safe bowl, cover the top with plastic wrap, microwave for 27 seconds, and then in 9-second intervals until it's all/mostly liquid</li>
@@ -98,7 +105,7 @@
                             <li>vanilla extract</li>
                             <li>(all-purpose) flour</li>
                             <li>
-                                <span>chocolate chips (any kind)</span>
+                                chocolate chips (any kind)<br>
                                 <ul>
                                     <li>optional</li>
                                     <li>white or semi-sweet are the best kinds</li>
@@ -106,7 +113,7 @@
                             </li>
                         </ul>
                     </div>
-
+                    <br>
                     <div class="mobilehide" id="equipment">
                         <div class="h3">equipment</div>
                         <ul>
@@ -124,25 +131,26 @@
                 <div class="column-5"></div>
 
                 <div class="column-45">
-                        <div id="instructions">
-                            <div class="h3 mobilehide">instructions</div>
+                    <br>
+                    <div id="instructions">
+                        <div class="h3 mobilehide">instructions</div>
 
-                            <div>melt 1/3 cup butter in a small microwave-safe bowl</div>
-                            <div>using a huge fork, mash 2+ ripe bananas into a medium-sized bowl</div>
-                            <div>mix the butter into the bananas</div>
-                            <div>mix in 1/2 teaspoon baking soda and 1 pinch (1/16 teaspoon) salt</div>
-                            <div>beat 1 large egg in the bowl used for the butter</div>
-                            <div>mix in 3/4 cup (granulated) sugar, the beaten egg, and ~2 teaspoon vanilla extract</div>
-                            <div>mix in 1 1/2 cup (all-purpose) flour until everything's just been mixed in</div>
-                            <div>mix in ~1/3 cup chocolate chips</div>
-                            <div>preheat the oven to 350°f</div>
-                            <div>butter all sides of a 9x5 inch loaf pan (with butter or cooking spray)</div>
-                            <div>transfer banana bread mixture to the loaf pan</div>
-                            <div>add ~1/4 cup chocolate chips on the top and spread them around</div>
-                            <div>bake for ~55 minutes or until a toothpick stabbed into the bread comes out clean</div>
-                            <div>transfer to a cool-looking plate big enough to hold the banana bread</div>
-                        </div>
-                        <br>
+                        <div>melt 1/3 cup butter in a small microwave-safe bowl</div>
+                        <div>using a huge fork, mash 2+ ripe bananas into a medium-sized bowl</div>
+                        <div>mix the butter into the bananas</div>
+                        <div>mix in 1/2 teaspoon baking soda and 1 pinch (1/16 teaspoon) salt</div>
+                        <div>beat 1 large egg in the bowl used for the butter</div>
+                        <div>mix in 2/3 cup (granulated) sugar, the beaten egg, and ~2 teaspoon vanilla extract</div>
+                        <div>mix in 1 1/2 cup (all-purpose) flour until everything's just been mixed in</div>
+                        <div>mix in ~1/3 cup chocolate chips</div>
+                        <div>preheat the oven to 350°f</div>
+                        <div>butter all sides of a 9x5 inch loaf pan (with butter or cooking spray)</div>
+                        <div>transfer banana bread mixture to the loaf pan</div>
+                        <div>add ~1/4 cup chocolate chips on the top and spread them around</div>
+                        <div>bake for ~55 minutes or until a toothpick stabbed into the bread comes out clean</div>
+                        <div>transfer to a cool-looking plate big enough to hold the banana bread</div>
+                    </div>
+                    <br>
                 </div>
 
                 <div class="column-10"></div>
@@ -151,14 +159,14 @@
             <div class="row recipe">
                 <div class="column-10"></div>
 
-                <div class="column-80">
+                <div class="column-80" style="text-align: center;">
                     <br class="mobilehide">
                     <br class="mobilehide">
 
                     <div id="pictures">
                         <div class="gallery">
                             <div class="pictures">
-                                <div class="picture"><img src="../images/bakyuri/banana-bread/03.jpg" alt="🍌🍞🖼️ pictures coming soon (maybe)"></div>
+                                <div class="picture"><img src="../images/bakyuri/banana-bread/03.jpg" alt="🍌🍞🖼️ pictures coming soon (maybe)" style="width: 256px;"></div>
                                 <!--div class="picture"><img src="" alt="🖼️"></div-->
                             </div>
                             <!--button class="previous">&#10094;</button>
@@ -170,8 +178,9 @@
                         </div-->
                     </div>
 
-                    <div class="mobilehide" id="commentary">
+                    <div id="commentary">
                         <p>this banana bread is very pog everyone likes it</p>
+                        <br>
                     </div>
                 </div>
 

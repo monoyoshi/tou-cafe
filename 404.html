@@ -30,9 +30,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="https://cdn.bladewyrm.dev/javascript/boilerplate.js"></script>
-
     <script src="https://cdn.bladewyrm.dev/javascript/cursor.js"></script>
     <script src="https://cdn.bladewyrm.dev/javascript/dust.js"></script>
+
+    <script src="https://cdn.bladewyrm.dev/javascript/404.js"></script>
 
     <!-- local -->
     <script src="javascript/boilerplate.js"></script>
@@ -41,7 +42,10 @@
         // insert header and footer and 404
         $(document).ready(function () {
             header();
+            main404();
             footer();
+
+            sFooter();
         });
     </script>
 </head>
@@ -51,35 +55,12 @@
 
     <header></header>
 
-    <main class="flex">
-        <div class="card">
-            <div class="header">notification</div>
-            <div class="content">
-                <div class="row">
-                    <div class="column-60">
-                        <div class="h1">error 404</div>
-                        <div class="quote">...and where do <b>you</b> think you're going?</div>
-                        <p>
-                            okay so, the page you're trying to go to doesn't exist. honestly, I probably just messed up a link
-                            again. don't worry though, it'll fix itself in time. probably. you know, like, when I get the
-                            chance.
-                        </p>
-                    </div>
-                    <div class="column-40">
-                        <img src="https://cdn.bladewyrm.dev/images/404.gif" alt="get 404'd idiot (if the image doesn't load then maybe I'm the idiot here)">
-                    </div>
-                </div>
-            </div>
+    <main></main>
 
-            <div class="actions">
-                <a class="button" href="index.html">return home</a>
-            </div>
-        </div>
+    <div id="asset_dust"></div>
+    <div id="viewport"></div>
 
-        <div id="asset_dust"></div>
-    </main>
-
-    <footer></footer>
+    <footer style="color: var(--white);"></footer>
 </body>
 
 </html>

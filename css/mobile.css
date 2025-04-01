@@ -90,6 +90,10 @@
         flex-direction: column-reverse;
     }
 
+    #sfmap {
+        text-align: center;
+    }
+
     @keyframes wipe {
         0% {
             background-position: left;

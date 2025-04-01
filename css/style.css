@@ -1,5 +1,5 @@
 footer {
-    z-index: 90;
+    color: var(--black);
 }
 
 /* - - - - - - - - - */
@@ -30,7 +30,7 @@ footer {
     background-color: var(--white);
     overflow: hidden;
     z-index: 81;
-    box-shadow: 0px 2px var(--shadow);
+    box-shadow: 0px 5px 10px var(--shadow);
 }
 
 .navbar > div,
@@ -52,11 +52,9 @@ footer {
 }
 
 .navbar > div > a:hover {
-    background: linear-gradient(to right, var(--lightbuttonhover) 30%, var(--a_lightgray) 30%, var(--a_lightgray) 70%, rgba(0,0,0,0) 70%) right;
+    background: linear-gradient(to right, var(--a_lighterblue) 30%, var(--lightgray) 30%, var(--lightgray) 70%, rgba(0,0,0,0) 70%) right;
     background-size: 400%;
-    animation-name: wave;
-    animation-duration: 550ms;
-    animation-fill-mode: forwards;
+    animation: wave 550ms forwards;
 }
 
 .navbar > div > a:hover:active,
@@ -88,9 +86,6 @@ footer {
 
 .grid a.button {
     margin: 10px;
-    border-radius: 15px;
-    box-shadow: 0px 2px var(--shadow);
-    color: var(--black);
 }
 
 .grid a.button > * {
@@ -99,18 +94,16 @@ footer {
     margin: 5px 0;
 }
 
-.grid a.button:hover {
-    background-color: var(--lightbuttonhover);
-}
-
-.grid a.button:hover:active {
-    background-color: var(--a_lightblue);
-}
-
 .grid .rtc {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* - - - - - - - - - */
+
+#sfmap {
+    text-align: right;
 }
 
 /* - - - - - - - - - */

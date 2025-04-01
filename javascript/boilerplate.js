@@ -169,14 +169,19 @@ function hamburger(active, close) {
 
 function sFooter() {
     $("#sfooter")
-        .addClass("widescreen center")
-        .css({
-            "height": "300px",
-            "background-color": "var(--white)",
-            "box-shadow": "0px -2px var(--shadow)"
-        })
         .append($("<div>", {
-            class: "row"
+            class: "row",
+            css: {
+                "height": "45px",
+                "background-color": "var(--a_lightblue)"
+            }
+        }))
+        .append($("<div>", {
+            class: "row center",
+            css: {
+                "height": "225px",
+                "background-color": "var(--white)"
+            }
         })
             .append($("<div>", {
                 class: "column-10"
@@ -185,9 +190,7 @@ function sFooter() {
                 class: "column-80"
             })
                 .append($("<div>", {
-                        css: {
-                            "text-align": "right"
-                        }
+                        id: "sfmap"
                     })
                         .append($("<a>", {
                             "href": "https://bladewyrm.dev",
