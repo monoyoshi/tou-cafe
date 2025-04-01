@@ -22,6 +22,7 @@ function preheader(active) {
         case "menu": {
             current.menu[1] = undefined;
         }
+        case "submenu":
         case "recipe": {
             current.menu[0] = "active";
             break;
