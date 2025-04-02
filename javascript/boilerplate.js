@@ -173,8 +173,7 @@ function sFooter() {
         .append($("<div>", {
             class: "row center",
             css: {
-                "height": "90px",
-                "background-color": "var(--white)"
+                "height": "30px"
             }
         })
             .append($("<div>", {
@@ -187,20 +186,16 @@ function sFooter() {
                         "align-items": "flex-end"
                     }
                 })
-                    .html(`<hr style="width: 5vw;">`)
+                    .html(`<hr style="width: 5vw; color: var(--black);">`)
                 )
             )
         )
         .append($("<div>", {
-            class: "row",
+            class: "row center",
             css: {
-                "height": "180px",
-                "background-color": "var(--white)"
+                "height": "270px"
             }
         })
-            .append($("<div>", {
-                class: "column-5"
-            }))
             .append($("<div>", {
                 class: "column-90"
             })

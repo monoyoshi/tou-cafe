@@ -46,23 +46,45 @@ footer {
     margin: 5px 25px;
 }
 
-.navbar > div > a {
+a.button,
+.navbar > div > a,
+.menuitem {
+    background-color: var(--white);
     color: var(--black);
-    padding: 0 10px;
+    border-radius: 99px;
+    box-shadow: none;
+    transition-duration: 0ms;
+    user-select: none;
 }
 
+.navbar > div > a {
+    background-color: var(--white);
+    padding: 0.25rem 0.75rem;
+}
+
+a.button:hover,
 .navbar > div > a:hover,
 .menuitem:hover {
-    background: linear-gradient(to right, var(--a_lighterblue) 30%, var(--lightgray) 30%, var(--lightgray) 70%, rgba(0,0,0,0) 70%) right;
+    background: linear-gradient(to right, var(--a_lighterblue) 30%, var(--lightgray) 30%, var(--lightgray) 70%, var(--white) 70%) right;
     background-size: 400%;
     animation: wave 550ms linear forwards;
+}
+
+a.button:hover:active,
+.navbar > div > a:hover:active,
+.navbar > div#active > a,
+.menuitem:hover:active {
+    background: var(--a_lightblue);
+    color: var(--black);
+    box-shadow: none;
+    transform: none;
 }
 
 .navbar > div > a:hover:active,
 .navbar > div#active > a,
 .menuitem:hover:active {
-    background: var(--a_lightblue);
-    color: var(--white);
+    background: var(--white);
+    border: 3px solid var(--a_lightblue);
 }
 
 .hamburger {
@@ -103,6 +125,13 @@ footer {
 }
 
 /* - - - - - - - - - */
+
+#sfooter {
+    background-color: var(--white);
+    color: var(--a_gray);
+    box-shadow: 0px -5px 10px var(--shadow);
+    z-index: 99;
+}
 
 #sfmap {
     text-align: right;
@@ -156,9 +185,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--black);
+    border: 3px solid var(--white);
+    border-radius: 1rem;
     padding: 1rem;
-    user-select: none;
+}
+
+.menuitem:hover:active {
+    border: 3px solid var(--a_lightblue);
 }
 
 @keyframes wave {
