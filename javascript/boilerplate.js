@@ -205,49 +205,45 @@ function sFooter() {
                 class: "column-90"
             })
                 .append($("<div>", {
-                        id: "sfmap"
+                    id: "sfmap"
+                })
+                    .append($("<a>", {
+                        "href": "https://bladewyrm.dev",
+                        "target": "_blank",
+                        "rel": "noopener noreferrer"
                     })
+                        .append($("<img>", {
+                            src: "https://cdn.bladewyrm.dev/images/logo.svg",
+                            height: "90px",
+                            alt: "bladewyrm logo"
+                        }))
+                    )
+                    .append($("<br>"))
+                    .append($("<div>")
                         .append($("<a>", {
                             "href": "https://bladewyrm.dev",
                             "target": "_blank",
                             "rel": "noopener noreferrer"
                         })
-                            .append($("<img>", {
-                                src: "https://cdn.bladewyrm.dev/images/logo.svg",
-                                height: "90px",
-                                alt: "bladewyrm logo"
-                            }))
+                            .text("main site")
                         )
-                        .append($("<br>"))
-                        .append($("<div>")
-                            .append($("<a>", {
-                                "href": "https://bladewyrm.dev",
-                                "target": "_blank",
-                                "rel": "noopener noreferrer"
-                            })
-                                .text("main site")
-                            )
-                            .append($("<span>")
-                                .text(" > ")
-                            )
-                            .append($("<a>", {
-                                "href": "https://bladewyrm.dev/projects.html",
-                                "target": "_blank",
-                                "rel": "noopener noreferrer"
-                            })
-                                .text("projects")
-                            )
-                            .append($("<span>")
-                                .text(" > ")
-                            )
-                            .append($("<a>", {
-                                "href": "https://tou-cafe.bladewyrm.dev/",
-                                "target": "_blank",
-                                "rel": "noopener noreferrer"
-                            })
-                                .text("tou café")
-                            )
+                        .append($("<span>")
+                            .text(" > ")
                         )
+                        .append($("<a>", {
+                            "href": "https://bladewyrm.dev/projects.html",
+                            "target": "_blank",
+                            "rel": "noopener noreferrer"
+                        })
+                            .text("projects")
+                        )
+                        .append($("<span>")
+                            .text(" > ")
+                        )
+                        .append($("<a>")
+                            .text("tou café")
+                        )
+                    )
                 )
             )
         );
