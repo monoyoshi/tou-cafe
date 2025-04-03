@@ -2,22 +2,6 @@ footer {
     color: var(--black);
 }
 
-/* - - - - - - - - - */
-/* classes */
-/* - - - - - - - - - */
-
-/* grid-view */
-.row {
-    display: flex;
-}
-
-.widescreen > [class*="column-"] {
-    padding: 15px 20px; 
-}
-
-/* - - - - - - - - - */
-
-/* navbar */
 .navbar {
     display: flex;
     justify-content: center;
@@ -27,64 +11,112 @@ footer {
     left: 0;
     width: 100vw;
     height: 60px;
-    background-color: var(--white);
+    background-color: var(--a_cream);
+    box-shadow: 0px 5px 10px var(--shadow);
     overflow: hidden;
     z-index: 81;
-    box-shadow: 0px 5px 10px var(--shadow);
 }
 
-.navbar > div,
-.navbar > a.logo {
+.navbar > div {
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 45px;
+    width: 200px;
     text-decoration: none;
     color: var(--black);
-    margin: 5px 25px;
 }
 
 a.button,
 .navbar > div > a,
 .menuitem {
-    background-color: var(--white);
     color: var(--black);
-    border-radius: 99px;
     box-shadow: none;
     transition-duration: 0ms;
     user-select: none;
 }
 
-.navbar > div > a {
+a.button,
+.navbar > div:not(.logo) > a,
+.menuitem {
+    border-radius: 99px;
+}
+
+.navbar > div:not(.logo) > a,
+.menuitem {
+    background-color: var(--a_cream);
+}
+
+a.button {
     background-color: var(--white);
-    padding: 0.25rem 0.75rem;
+    border: 3px solid var(--black);
+    box-shadow: 0 5px 0 var(--shadow);
+}
+
+.navbar > div > a {
+    padding: 0.25rem 1rem;
+    text-align: center;
+}
+
+.menuitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--black) !important;
+    padding: 1rem;
+    border: 3px solid var(--white);
+    border-radius: 1rem;
+    user-select: auto;
 }
 
 a.button:hover,
-.navbar > div > a:hover,
 .menuitem:hover {
-    background: linear-gradient(to right, var(--a_lighterblue) 30%, var(--lightgray) 30%, var(--lightgray) 70%, var(--white) 70%) right;
+    background: linear-gradient(to right, var(--a_cream) 0%, var(--a_cream) 50%, var(--white) 50%) right;
     background-size: 400%;
-    animation: wave 550ms linear forwards;
+    animation: wipe 180ms linear forwards;
+}
+
+.navbar > div:not(.logo) > a:hover {
+    background: linear-gradient(to right, var(--white) 0%, var(--white) 50%, var(--a_cream) 50%) right;
+    background-size: 400%;
+    animation: wipe 180ms linear forwards;
+}
+
+.menuitem:hover {
+    background: linear-gradient(to right, var(--a_lightcream) 0%, var(--a_lightcream) 50%, var(--white) 50%) right;
+    background-size: 400%;
+    border: 3px solid var(--a_cream);
+    animation: wipe 360ms linear forwards;
 }
 
 a.button:hover:active,
-.navbar > div > a:hover:active,
-.navbar > div#active > a,
+.navbar > div:not(.logo) > a:hover:active,
+.navbar > div#active:not(.logo) > a:hover:active,
 .menuitem:hover:active {
-    background: var(--a_lightblue);
-    color: var(--black);
+    background: var(--a_yellow);
+    color: var(--white);
+}
+
+.navbar > div > a:hover:active,
+.menuitem:hover:active {
     box-shadow: none;
     transform: none;
 }
 
-.navbar > div > a:hover:active,
-.navbar > div#active > a,
 .menuitem:hover:active {
+    border-color: var(--a_yellow);
+    color: var(--white) !important;
+}
+
+.navbar > div#active:not(.logo) > a {
     background: var(--white);
-    border: 3px solid var(--a_lightblue);
+    color: var(--black);
+}
+
+a.button:hover:active {
+    box-shadow: 0 1px 0 var(--shadow);
+    transform: translateY(4px);
 }
 
 .hamburger {
@@ -127,8 +159,7 @@ a.button:hover:active,
 /* - - - - - - - - - */
 
 #sfooter {
-    background-color: var(--white);
-    color: var(--a_gray);
+    background-color: var(--a_cream);
     box-shadow: 0px -5px 10px var(--shadow);
     z-index: 99;
 }
@@ -138,26 +169,6 @@ a.button:hover:active,
 }
 
 /* - - - - - - - - - */
-
-#instructions > *,
-#notes > * {
-    margin: 10px;
-    transition-duration: 250ms;
-}
-
-#instructions > *:first-of-type,
-#notes > *:first-of-type {
-    margin-top: 0;
-}
-
-.hinstructions {
-    font-weight: bold;
-}
-
-.donestep {
-    opacity: 0.5;
-    text-decoration: line-through;
-}
 
 .menuheader {
     display: flex;
@@ -181,28 +192,33 @@ a.button:hover:active,
     margin-right: 1rem;
 }
 
-.menuitem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 3px solid var(--white);
-    border-radius: 1rem;
-    padding: 1rem;
+/* - - - - - - - - - */
+
+#instructions > *,
+#notes > * {
+    margin: 10px;
+    transition-duration: 250ms;
 }
 
-.menuitem:hover:active {
-    border: 3px solid var(--a_lightblue);
+#instructions:first-child,
+#notes:first-child {
+    margin-top: 0;
 }
 
-@keyframes wave {
+.hinstructions {
+    font-weight: bold;
+}
+
+.donestep {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+/* - - - - - - - - - */
+
+@keyframes wipe {
     0% {
         background-position: 100%;
-    }
-    25% {
-        background-position: 50%;
-    }
-    75% {
-        background-position: 50%;
     }
     100% {
         background-position: 0;

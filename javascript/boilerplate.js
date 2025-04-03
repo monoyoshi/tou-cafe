@@ -55,19 +55,24 @@ function header(active) {
             class: "navbar"
         })
             
-            .append($("<a>", {
-                    class: "logo",
-                    id: current.index[0],
-                    href: current.index[1]
-                })
-                .append($("<img>", {
-                    src: "https://tou-cafe.bladewyrm.dev/images/logo.png",
-                    alt: "tou café logo",
-                    height: 45,
-                    "css": {
-                        "max-width": "none"
+            .append($("<div>", {
+                class: "logo",
+                id: current.index[0]
+            })
+                .append($("<a>", {
+                    href: current.index[1],
+                    css: {
+                        "height": "56px"
                     }
-                }))
+                })
+                    .append($("<img>", {
+                        src: "https://tou-cafe.bladewyrm.dev/images/logo.png",
+                        alt: "tou café logo",
+                        "css": {
+                            "height": "100%"
+                        }
+                    }))
+                )
             )
             .append($("<div>", {
                 id: current.menu[0]

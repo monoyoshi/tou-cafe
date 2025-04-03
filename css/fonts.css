@@ -1,0 +1,38 @@
+* {
+    font-family: "RocknRoll One", sans-serif;
+}
+
+html {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--black);
+    line-height: 1.6;
+}
+
+.darkmode {
+    color: var(--white);
+}
+
+::selection {
+    background-color: var(--a_lightorange);
+    color: var(--white);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:not(.button, .camo) {
+    color: var(--strongblue);
+}
+
+a:hover:active {
+    color: inherit;
+}
+
+a:hover:active:not(.camo) {
+    color: var(--yellow);
+}
