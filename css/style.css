@@ -10,7 +10,7 @@ footer {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 60px;
+    height: 64px;
     background-color: var(--a_cream);
     box-shadow: 0px 5px 10px var(--shadow);
     overflow: hidden;
@@ -37,12 +37,12 @@ a.button,
 }
 
 a.button,
-.navbar > div:not(.logo) > a,
+.navbar > div:not(.logo, #burgerbox) > a,
 .menuitem {
     border-radius: 99px;
 }
 
-.navbar > div:not(.logo) > a,
+.navbar > div:not(.logo, #burgerbox) > a,
 .menuitem {
     background-color: var(--a_cream);
 }
@@ -53,7 +53,7 @@ a.button {
     box-shadow: 0 5px 0 var(--shadow);
 }
 
-.navbar > div > a {
+.navbar > div:not(#burgerbox) > a {
     padding: 0.25rem 1rem;
     text-align: center;
 }
@@ -77,7 +77,7 @@ a.button:hover,
     animation: wipe 180ms linear forwards;
 }
 
-.navbar > div:not(.logo) > a:hover {
+.navbar > div:not(.logo, #burgerbox) > a:hover {
     background: linear-gradient(to right, var(--white) 0%, var(--white) 50%, var(--a_cream) 50%) right;
     background-size: 400%;
     animation: wipe 180ms linear forwards;
@@ -91,8 +91,8 @@ a.button:hover,
 }
 
 a.button:hover:active,
-.navbar > div:not(.logo) > a:hover:active,
-.navbar > div#active:not(.logo) > a:hover:active,
+.navbar > div:not(.logo, #burgerbox) > a:hover:active,
+.navbar > div#active:not(.logo, #burgerbox) > a:hover:active,
 .menuitem:hover:active {
     background: var(--a_yellow);
     color: var(--white);
@@ -117,18 +117,6 @@ a.button:hover:active,
 a.button:hover:active {
     box-shadow: 0 1px 0 var(--shadow);
     transform: translateY(4px);
-}
-
-.hamburger {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.hamburger > div {
-    width: 25px;
-    height: 3px;
-    background-color: var(--black);
-    margin: 5px 0;
 }
 
 /* - - - - - - - - - */

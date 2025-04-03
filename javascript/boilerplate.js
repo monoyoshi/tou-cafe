@@ -54,7 +54,6 @@ function header(active) {
         .append($("<div>", {
             class: "navbar"
         })
-            
             .append($("<div>", {
                 class: "logo",
                 id: current.index[0]
@@ -111,39 +110,50 @@ function header(active) {
                 )
             )
             .append($("<a>", {
-                class: "hamburger",
+                id: "burgerbox",
                 onclick: `hamburger("${active}")`
             })
-                .append($("<div>"))
-                .append($("<div>"))
-                .append($("<div>"))
+                .append($("<div>", {
+                    class: "yesburger"
+                }))
             )
         )
     );
+
+    $("main").prepend($("<div>", {
+        class: "hbmshadow",
+        css: {
+            "display": "none"
+        }
+    }));
 };
 
-function hamburger(active, close) {
+function hamburger(active, close = false) {
     let current = preheader(active);
 
     if (close) {
-        $(".hbmenu").animate({right: "-100vw"}, 150, function () {
-            $(this).remove()
-        });
+        $("main").css("overflow", "visible");
+        $("#burgerbox").css("pointer-events", "none");
+        $(".hbmshadow").fadeOut(270);
+        $(".hbmenu")
+            .animate({
+                right: "-100vw"
+            }, 270, function () {
+                $(this).remove()
+                
+                $("#burgerbox")
+                    .attr("onclick", `hamburger("${active}")`)
+                    .css("pointer-events", "auto");
+                $(".noburger").toggleClass("noburger yesburger");
+            });
     }
     else {
+        $("#burgerbox").css("pointer-events", "none");
+        $(".hbmshadow").fadeIn(270);
         $("header")
             .append($("<div>", {
                 class: "hbmenu"
             })
-                .append($("<div>")
-                    .append($("<a>", {
-                        class: "hamburger",
-                        onclick: `hamburger("${active}", true)`
-                    })
-                        .append($("<div>"))
-                        .append($("<div>"))
-                    )
-                )
                 .append($("<a>", {
                     id: current.menu[0],
                     href: current.menu[1]
@@ -169,7 +179,13 @@ function hamburger(active, close) {
                     .text("contact")
                 )
             );
-        $(".hbmenu").animate({right: "0"}, 150);
+        $(".hbmenu").animate({right: "0"}, 270, function () {
+            $("main").css("overflow", "hidden");
+            $("#burgerbox")
+                .attr("onclick", `hamburger("${active}", true)`)
+                .css("pointer-events", "auto");
+            $(".yesburger").toggleClass("noburger yesburger");
+        });
     };
 }
 
@@ -178,27 +194,7 @@ function sFooter() {
         .append($("<div>", {
             class: "row center",
             css: {
-                "height": "30px"
-            }
-        })
-            .append($("<div>", {
-                class: "column-100"
-            })
-                .append($("<div>", {
-                    css: {
-                        "display": "flex",
-                        "justify-content": "center",
-                        "align-items": "flex-end"
-                    }
-                })
-                    .html(`<hr style="width: 5vw; color: var(--black);">`)
-                )
-            )
-        )
-        .append($("<div>", {
-            class: "row center",
-            css: {
-                "height": "270px"
+                "height": "300px"
             }
         })
             .append($("<div>", {
