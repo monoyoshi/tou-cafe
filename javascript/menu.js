@@ -25,24 +25,6 @@ const menus = [
                 ],
                 "muffins": [
                     {
-                        "title": "lemon blueberry muffins",
-                        "id": "lemon-blueberry-muffins",
-                        "attributes": {
-                            "hot": false,
-                            "new": true
-                        },
-                        "description": undefined
-                    },
-                    {
-                        "title": "pumpkin banana dog muffins",
-                        "id": "pumpkin-banana-dog-muffins",
-                        "attributes": {
-                            "hot": false,
-                            "new": true
-                        },
-                        "description": undefined
-                    },
-                    {
                         "title": "impostor pumpkin muffins",
                         "id": "impostor-pumpkin-muffins",
                         "attributes": {
