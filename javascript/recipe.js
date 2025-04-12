@@ -101,6 +101,9 @@ $(document).ready(function () {
             $equipment
                 .append($("<li>")
                     .text("address bar")
+                )
+                .append($("<li>")
+                    .text("keyboard")
                 );
             $instructions
                 .append($("<div>")

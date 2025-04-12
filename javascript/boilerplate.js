@@ -10,7 +10,7 @@ function preheader(active) {
         menu: ["", `https://tou-cafe.bladewyrm.dev/menu.html`],
         about: ["", `https://tou-cafe.bladewyrm.dev/about.html`],
         shop: ["", `https://tou-cafe.bladewyrm.dev/shop.html`],
-        contact: ["", `https://tou-cafe.bladewyrm.dev/contact.html`]
+        contact: ["", `https://bsky.app/profile/bladewyrm.dev`]
     };
 
     switch (active) {
@@ -103,7 +103,9 @@ function header(active) {
                 id: current.contact[0]
             })
                 .append($("<a>", {
-                    href: current.contact[1]
+                    href: current.contact[1],
+                    target: "_blank",
+                    rel: "noopener noreferrer"
                 })
                     .text("contact")
                 )
@@ -203,9 +205,9 @@ function sFooter() {
                     id: "sfmap"
                 })
                     .append($("<a>", {
-                        "href": "https://bladewyrm.dev",
-                        "target": "_blank",
-                        "rel": "noopener noreferrer"
+                        href: "https://bladewyrm.dev",
+                        target: "_blank",
+                        rel: "noopener noreferrer"
                     })
                         .append($("<img>", {
                             src: "https://cdn.bladewyrm.dev/images/logo.svg",
@@ -216,9 +218,7 @@ function sFooter() {
                     .append($("<br>"))
                     .append($("<div>")
                         .append($("<a>", {
-                            "href": "https://bladewyrm.dev",
-                            "target": "_blank",
-                            "rel": "noopener noreferrer"
+                            href: "https://bladewyrm.dev"
                         })
                             .text("main site")
                         )
@@ -226,9 +226,7 @@ function sFooter() {
                             .text(" > ")
                         )
                         .append($("<a>", {
-                            "href": "https://bladewyrm.dev/projects.html",
-                            "target": "_blank",
-                            "rel": "noopener noreferrer"
+                            href: "https://bladewyrm.dev/projects.html"
                         })
                             .text("projects")
                         )
