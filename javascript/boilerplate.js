@@ -22,7 +22,6 @@ function preheader(active) {
         case "menu": {
             current.menu[1] = undefined;
         }
-        case "submenu":
         case "recipe": {
             current.menu[0] = "active";
             break;
@@ -45,7 +44,7 @@ function preheader(active) {
     };
 
     return current;
-}
+};
 
 function header(active) {
     let current = preheader(active);
@@ -65,7 +64,7 @@ function header(active) {
                     }
                 })
                     .append($("<img>", {
-                        src: "https://tou-cafe.bladewyrm.dev/images/logo.png",
+                        src: "https://tou-cafe.bladewyrm.dev/images/logo.svg",
                         alt: "tou café logo",
                         "css": {
                             "height": "100%"
@@ -194,7 +193,7 @@ function sFooter() {
         .append($("<div>", {
             class: "row center",
             css: {
-                "height": "300px"
+                "height": "208px"
             }
         })
             .append($("<div>", {

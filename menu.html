@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="https://tou-cafe.bladewyrm.dev/images/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="https://tou-cafe.bladewyrm.dev/images/icon.svg">
     <title>menu | tou café | bladewyrm.dev</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,6 +35,8 @@
     <!-- local -->
     <script src="javascript/boilerplate.js"></script>
 
+    <script src="javascript/menu.js"></script>
+
     <script>
         // insert header and footer
         $(document).ready(function () {
@@ -52,94 +54,31 @@
     <header></header>
 
     <main>
-        <div class="widescreen center" style="margin-top: 60px; padding: 60px 0; background-color: var(--white);">
+        <div class="widescreen center" style="margin-top: 64px; padding: 64px 0 32px; background-color: var(--white);">
             <div class="row center">
-                <div class="column-60" style="text-align: center;">
-                    <br>
-                    <div class="menuheader">
-                        <hr class="hrleft">
-                        <a class="h1 mhtext camo" href="shef-kyuri.html">shef kyuri</a>
-                        <hr class="hrright">
-                    </div>
-                    <br class="medium">
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="column-20"></div>
-                <div class="column-60">
-                    <p style="text-align: center;">nothing here yet!</p>
+                <div class="column-50">
+                    <div class="menulist"></div>
                 </div>
             </div>
         </div>
 
-        <div class="widescreen center" style="height: 30px; background-color: var(--white);">
+        <div class="widescreen" style="min-height: calc(100vh - 208px); padding: 32px 0 64px; background-color: var(--white);">
             <div class="row center">
-                <div class="column-100">
-                    <div style="display: flex; justify-content: center; align-items: center; padding: 1.5rem 0;">
-                        <hr class="mobilehide" style="width: 5vw;">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="widescreen center" style="padding: 60px 0; background-color: var(--white);">
-            <div class="row center">
-                <div class="column-60" style="text-align: center;">
-                    <br>
+                <div class="column-80" style="text-align: center;">
                     <div class="menuheader">
                         <hr class="hrleft">
-                        <a class="h1 mhtext camo" href="bakyuri.html">bakyuri</a>
+                        <a class="h1 mhtext camo" id="menutitle"></a>
                         <hr class="hrright">
                     </div>
                     <br class="medium">
                 </div>
             </div>
 
-            <div class="row">
-                <div class="column-20"></div>
-                <div class="column-25">
-                    <div class="menuheader">
-                        <div class="h2 mhtext">cookies</div>
-                        <hr class="hrright">
-                    </div>
-                    <a class="menuitem" href="bakyuri/red-velvet-cookies.html">
-                        <div class="h3">red velvet cookies</div>
-                        <p>
-                            but what if it was <i>blue</i>?<br>
-                        </p>
-                    </a>
-                    <br>
-
-                    <div class="menuheader">
-                        <div class="h2 mhtext">muffins</div>
-                        <hr class="hrright">
-                    </div>
-                    <a class="menuitem" href="bakyuri/pumpkin-muffins.html">
-                        <div class="h3">pumpkin muffins</div>
-                    </a>
-                    <br>
-                </div>
+            <div class="row" id="menucontent">
                 <div class="column-10"></div>
-                <div class="column-25">
-                    <div class="menuheader">
-                        <div class="h2 mhtext">cakes</div>
-                        <hr class="hrright">
-                    </div>
-                    <a class="menuitem" href="bakyuri/banana-bread.html">
-                        <div class="h3">banana bread</div>
-                        <p>
-                            it's funny. it's stupid. it's tall (sometimes).<br>
-                        </p>
-                    </a>
-                    <a class="menuitem" href="bakyuri/sachertorte.html">
-                        <div class="h3">sachertorte</div>
-                    </a>
-                    <a class="menuitem" href="bakyuri/crepe-cake.html">
-                        <div class="h3">crêpe cake</div>
-                    </a>
-                    <br>
-                </div>
+                <div class="column-35" id="mcleft"></div>
+                <div class="column-10"></div>
+                <div class="column-35" id="mcright"></div>
             </div>
         </div>
 

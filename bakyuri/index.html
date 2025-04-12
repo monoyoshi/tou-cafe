@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="https://tou-cafe.bladewyrm.dev/images/icon.svg">
+    <title id="tabtitle"> | bakyuri | tou café | bladewyrm.dev</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- stylesheets -->
+    <!-- global -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=RocknRoll+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/style.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/mobile.css">
+
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/cursor.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/wakelock.css">
+
+    <!-- local -->
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+
+    <!-- scripts -->
+    <!-- global -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.bladewyrm.dev/javascript/boilerplate.js"></script>
+
+    <script src="https://cdn.bladewyrm.dev/javascript/cursor.js"></script>
+    <script src="https://cdn.bladewyrm.dev/javascript/wakelock.js"></script>
+
+    <!-- local -->
+    <script src="../javascript/boilerplate.js"></script>
+    <script src="../javascript/recipe.js"></script>
+
+    <script src="../javascript/bakyuri.js"></script>
+
+    <script>
+        // insert header and footer
+        $(document).ready(function () {
+            header("recipe");
+            footer();
+
+            sFooter();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="asset_cursor"></div>
+
+    <header></header>
+
+    <main>
+        <div class="widescreen" style="margin-top: 64px; padding: 64px 0 32px; background-color: var(--white);">
+            <div class="row center">
+                <div class="column-80" style="text-align: center;">
+                    <div class="menuheader">
+                        <hr class="hrleft">
+                        <div class="h1 mhtext" id="title"></div>
+                        <hr class="hrright">
+                    </div>
+                </div>
+            </div>
+            <div class="row center mobileshow">
+                <div class="column-100" style="text-align: center;">
+                    <br>
+                    <div id="wakelocker">
+                        <label for="wakelock">keep the screen on</label>
+                        <input id="wlCheckbox" type="checkbox" name="wakelock">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="widescreen" style="padding: 32px 0 64px; background-color: var(--white);">
+            <div class="row recipe">
+                <div class="column-10"></div>
+                <div class="column-30">
+                    <div class="mobileshow">
+                        <br>
+                        <div style="display: flex; justify-content: center; align-items: center; padding: 1.5rem 0;">
+                            <hr style="width: 5vw;">
+                        </div>
+                    </div>
+                    <div class="mobilehide">
+                        <div class="menuheader">
+                            <div class="h2 mhtext">ingredients</div>
+                            <hr class="hrright">
+                        </div>
+                        <ul id="ingredients"></ul>
+                        <br>
+                    </div>
+                    <br>
+                    <div class="mobilehide">
+                        <div class="menuheader">
+                            <div class="h2 mhtext">equipment</div>
+                            <hr class="hrright">
+                        </div>
+                        <ul id="equipment"></ul>
+                        <br>
+                    </div>
+                </div>
+                <div class="column-5"></div>
+                <div class="column-45" id="instructions">
+                    <div class="menuheader riheader">
+                        <div class="h2 mhtext">instructions</div>
+                        <hr class="hrright">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row recipe">
+                <div class="column-10"></div>
+
+                <div class="column-80" style="text-align: center;">
+                    <br class="big mobilehide">
+                    <div id="images"></div>
+
+                    <div id="flavortext"></div>
+                </div>
+
+                <div class="column-10"></div>
+            </div>
+        </div>
+
+        <div id="sfooter"></div>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

@@ -43,6 +43,6 @@ a:hover:active:not(.camo) {
 }
 
 ::selection {
-    background-color: var(--a_lightorange);
+    background-color: var(--a_strongpink);
     color: var(--white);
 }

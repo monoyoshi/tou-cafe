@@ -65,13 +65,13 @@
     }
     
     .hbmenu > a:hover {
-        background: linear-gradient(to right, var(--white) 0%, var(--white) 50%, var(--a_lightcream) 50%) right;
+        background: linear-gradient(to right, var(--white) 0%, var(--white) 50%, var(--a_lightbrown) 50%) right;
         background-size: 400%;
         animation: hbmwipe 360ms linear forwards;
     }
     
     .hbmenu > a:hover:active {
-        background: var(--a_yellow);
+        background: var(--a_strongpink);
         color: var(--white);
     }
 

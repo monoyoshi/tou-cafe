@@ -1,25 +1,27 @@
 :root {
+    /* inherited */
+    --strongblue: #51a2fc;
+    --yellow: rgb(234, 207, 72);
+
     --black: #3f2409;
-        --shadow: rgba(63, 36, 9, 0.3);
+        --shadow: rgba(0, 9, 18, 0.3);
         --strongshadow: rgba(0, 9, 18, 0.6);
 
     --white: #fcf3fc;
         --glow: rgba(252, 243, 252, 0.3);
 
-    --gray: #767f88;
-        --lightgray: #b2bdc6;
-        --darkgray: #363f48;
-
-    /* inherited */
-    --strongblue: #51a2fc;
-    --lightblue: #b4d8f3;
-    --yellow: rgb(234, 207, 72);
+    --gray: #88767f;
+        --lightgray: #c6b4bd;
+        --darkgray: #48363f;
 
     /* accent */
-    --a_cream: #eacfab;
-        --a_lightcream: #f3e1cf;
-    --a_yellow: rgb(243, 194, 80);
-    --a_orange: rgb(225, 126, 27);
-        --a_lightorange: rgb(252, 162, 81);
-    --a_brown: 
+    --a_red: #ea3f12;
+    --a_pink: #b93773;
+        --a_strongpink: #fc75a2;
+        --a_lightpink: #fcb4c6;
+    --a_brown: #eacfab;
+        --a_darkbrown: #b4875a;
+        --a_lightbrown: #f3e1cf;
+    --a_orange: #e17e1b;
+    --a_yellow: #f3c651;
 }
