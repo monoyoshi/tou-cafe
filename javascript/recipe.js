@@ -10,7 +10,7 @@ $(document).ready(function () {
     let i = 0, ilen = 0;
     let j = 0, jlen = 0;
 
-    function displayRecipe(selected = "") {
+    function displayRecipe(selected) {
         // recipe selection
         let recipe = recipes[selected];
         recipes = null; // it'd be weird to be able to access all recipes from one instance of the webpage, so...
@@ -23,15 +23,33 @@ $(document).ready(function () {
             i = 0;
             ilen = recipe.ingredients.length;
             while (i < ilen) {
-                $ingredients
-                    .append($("<li>")
-                        .text(recipe.ingredients[i].name)
-                    );
-                if (recipe.ingredients[i].notes.length > 0) {
-                    $("#ingredients>li:last-child")                
-                        .append($("<ul>")
-                            .html(`<li>${recipe.ingredients[i].notes.join("</li><li>")}</li>`)
+                if (recipe.ingredients[i].header.length > 0) {
+                    $ingredients
+                        .append($("<div>", {
+                            class: "h3 riheader"
+                        })
+                            .text(recipe.ingredients[i].header)
                         );
+                };
+    
+                j = 0;
+                jlen = recipe.ingredients[i].list.length;
+                $ingredients.append($("<ul>"));
+                while (j < jlen) {
+                    $("#ingredients>ul:last-child")
+                        .append($("<li>")
+                            .text(recipe.ingredients[i].list[j].name)
+                        );
+                    if (recipe.ingredients[i].list[j].notes.length > 0) {
+                        $("#ingredients>ul:last-child>li:last-child")
+                            .append($("<ul>")
+                                .html(`<li>${recipe.ingredients[i].list[j].notes.join("</li><li>")}</li>`)
+                            );
+                    };
+
+                    if (j == jlen - 1) $ingredients.append($("<br>"));
+    
+                    ++j;
                 };
 
                 ++i;
@@ -81,6 +99,8 @@ $(document).ready(function () {
                                 .html(`<li>${recipe.instructions[i].list[j].notes.join("</li><li>")}</li>`)
                             );
                     };
+
+                    if (j == jlen - 1) $instructions.append($("<br>"));
     
                     ++j;
                 };
@@ -91,26 +111,7 @@ $(document).ready(function () {
             // flavortext
             $flavortext.html(recipe.flavortext);
         }
-        else {
-            $tabtitle.prepend("non-existent item");
-            $title.text("non-existent item");
-            $ingredients
-                .append($("<li>")
-                    .text("curiosity")
-                );
-            $equipment
-                .append($("<li>")
-                    .text("address bar")
-                )
-                .append($("<li>")
-                    .text("keyboard")
-                );
-            $instructions
-                .append($("<div>")
-                    .text("be lost and confused")
-                );
-            $flavortext.html(`there's nothing here...<br>(go back to the homepage with <a href="https://tou-cafe.bladewyrm.dev">this link</a>)`);
-        };
+        else window.location.href = "404.html";
     };
 
     // get selected recipe

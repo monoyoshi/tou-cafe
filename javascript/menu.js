@@ -33,6 +33,15 @@ const menus = [
                         },
                         "description": undefined
                     },
+                    {
+                        "title": "lemon blueberry muffins",
+                        "id": "lemon-blueberry-muffins",
+                        "attributes": {
+                            "hot": false,
+                            "new": true
+                        },
+                        "description": undefined
+                    }
                 ]
             },
             {

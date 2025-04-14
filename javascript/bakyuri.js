@@ -3,48 +3,50 @@ let recipes = {
         "title": "banana bread",
         "ingredients": [
             {
-                "name": "banana",
-                "notes": [
-                    "the larger the banana the better (recommended: 6+ inches lengthwise)",
-                    "the riper the banana the better (recommended: 75%+ brown)"
-                ]
-            },
-            {
-                "name": "butter (melted)",
-                "notes": [
-                    "butter can be salted or unsalted (recommended: salted)",
-                    "to melt, cut into smaller pieces, put into a small microwave-safe bowl, cover top with plastic wrap, microwave for 27 seconds, and then in 9 second intervals until it's all/mostly liquid"
-                ]
-            },
-            {
-                "name": "baking soda",
-                "notes": []
-            },
-            {
-                "name": "salt",
-                "notes": []
-            },
-            {
-                "name": "granulated sugar",
-                "notes": ["adjust based on the desired sweetness (recommended: 2/3 cup)"]
-            },
-            {
-                "name": "large egg (beaten)",
-                "notes": ["to beat, crack egg into a small bowl and whisk with a fork"]
-            },
-            {
-                "name": "vanilla extract",
-                "notes": ["adjust based on desired vanilla-ness (recommended: 2 teaspoon)"]
-            },
-            {
-                "name": "flour",
-                "notes": ["other kinds of flour can be used, to varying results (recommended: all-purpose)"]
-            },
-            {
-                "name": "toppings",
-                "notes": [
-                    "optional",
-                    "recommended: white chocolate chips"
+                "header": "",
+                "list": [
+                    {
+                        "name": "~4 large ripe bananas",
+                        "notes": [
+                            "small bananas account for 1/2 banana (recommended: 6+ inches lengthwise)",
+                            "the riper the banana the better (recommended: 75%+ brown)"
+                        ]
+                    },
+                    {
+                        "name": "1/3 cup butter (melted)",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/2 teaspoon baking soda",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/16 teaspoon salt",
+                        "notes": []
+                    },
+                    {
+                        "name": "~2/3 cup granulated sugar",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 large egg (beaten)",
+                        "notes": []
+                    },
+                    {
+                        "name": "~2 teaspoon vanilla extract",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 1/2 cup flour",
+                        "notes": ["other kinds of flour can be used, to varying results (recommended: all-purpose)"]
+                    },
+                    {
+                        "name": "toppings",
+                        "notes": [
+                            "optional",
+                            "recommended: white chocolate chips"
+                        ]
+                    }
                 ]
             }
         ],
@@ -72,10 +74,7 @@ let recipes = {
                 "list": [
                     {
                         "base": "melt 1/3 cup butter",
-                        "notes": [
-                            "butter can be salted or unsalted (recommended: salted)",
-                            "to melt, cut into smaller pieces, put into a small microwave-safe bowl, cover top with plastic wrap, microwave for 27 seconds, and then in 9 second intervals until it's all/mostly liquid"
-                        ]
+                        "notes": []
                     },
                     {
                         "base": "beat 1 large egg",
@@ -87,9 +86,8 @@ let recipes = {
                 "header": "in a medium bowl:",
                 "list": [
                     {
-                        "base": "mash 3+ large ripe bananas",
+                        "base": "mash ~4 large ripe bananas",
                         "notes": [
-                            "the more bananas the better (recommended: 4 bananas)",
                             "the larger the banana the better (recommended: 6+ inches lengthwise)",
                             "the riper the banana the better (recommended: 75%+ brown)"
                         ]
@@ -103,14 +101,11 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "mix in ~3/4 cup granulated sugar, the beaten egg, and ~1 1/2 teaspoon vanilla extract",
-                        "notes": [
-                            "adjust sugar based on desired sweetness (recommended: 2/3 cup)",
-                            "adjust vanilla extract based on desired vanilla-ness (recommended: 2 teaspoon)"
-                        ]
+                        "base": "mix in ~2/3 cup granulated sugar, the egg, and ~2 teaspoon vanilla extract",
+                        "notes": []
                     },
                     {
-                        "base": "[optional] mix in ~1/3 cup toppings",
+                        "base": "[optional] mix in toppings",
                         "notes": ["recommended: white chocolate chips"]
                     },
                     {
@@ -127,15 +122,15 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "lightly coat all sides of 9x5 inch loaf pan with butter",
-                        "notes": []
-                    },
-                    {
-                        "base": "transfer the banana bread mixture to the loaf pan",
+                        "base": "lightly coat all sides of a loaf pan with butter",
                         "notes": ["the size of the loaf pan determines how long the banana bread will bake for (recommended: 9x5 inches)"]
                     },
                     {
-                        "base": "[optional] spread ~1/4 cup toppings to top of the loaf pan",
+                        "base": "transfer the banana bread mixture to the loaf pan",
+                        "notes": []
+                    },
+                    {
+                        "base": "[optional] spread toppings to top of the banana bread mixture",
                         "notes": ["recommended: white chocolate chips"]
                     },
                     {
@@ -148,7 +143,7 @@ let recipes = {
         "pictures": [
             {
                 "src": "../images/bakyuri/banana-bread/03.jpg",
-                "alt": "🍌🍞🖼️"
+                "alt": "🍌🍞"
             }
         ],
         "flavortext": "it's banana. it's bread. it's banana bread."
@@ -158,60 +153,69 @@ let recipes = {
         "title": "crêpe cake",
         "ingredients": [
             {
-                "name": "water (warm)",
-                "notes": ["to warm, microwave for 9 seconds twice, stirring in between"]
-            },
-            {
-                "name": "milk",
-                "notes": ["any kind of milk is fine"]
-            },
-            {
-                "name": "egg",
-                "notes": []
-            },
-            {
-                "name": "butter (melted)",
-                "notes": [
-                    "butter can be salted or unsalted (recommended: salted)",
-                    "to melt, cut into smaller pieces, put into a small microwave-safe bowl, cover top with plastic wrap, microwave for 27 seconds, and then in 9-second intervals until it's all/mostly liquid",
+                "header": "crêpe",
+                "list": [
+                    {
+                        "name": "3/4 cup water (warm)",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 1/2 cup milk",
+                        "notes": []
+                    },
+                    {
+                        "name": "6 eggs",
+                        "notes": []
+                    },
+                    {
+                        "name": "6 tablespoon butter (melted)",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 1/2 cup all-purpose flour",
+                        "notes": []
+                    },
+                    {
+                        "name": "3 tablespoon granulated sugar",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/8 teaspoon salt",
+                        "notes": []
+                    }
                 ]
             },
             {
-                "name": "butter (softened)",
-                "notes": [
-                    "butter can be salted or unsalted (recommended: salted)",
-                    "to soften, let it sit at room temperature for ~30 minutes or until it gets dented by lightly poking"
+                "header": "frosting",
+                "list": [
+                    {
+                        "name": "1 cup butter (softened)",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 1/2 cup sweetened condensed milk",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 cup cream cheese (softened)",
+                        "notes": []
+                    },
+                    {
+                        "name": "2 teaspoon vanilla extract",
+                        "notes": []
+                    }
                 ]
             },
             {
-                "name": "all-purpose flour",
-                "notes": []
-            },
-            {
-                "name": "granulated sugar",
-                "notes": []
-            },
-            {
-                "name": "salt",
-                "notes": []
-            },
-            {
-                "name": "sweetened condensed milk",
-                "notes": []
-            },
-            {
-                "name": "cream cheese (softened)",
-                "notes": ["to soften, let it sit at room temperature for ~30 minutes or until it gets dented by lightly poking"]
-            },
-            {
-                "name": "vanilla extract",
-                "notes": []
-            },
-            {
-                "name": "toppings",
-                "notes": [
-                    "optional",
-                    "recommended: blueberries, raspberries, powdered sugar"
+                "header": "other",
+                "list": [
+                    {
+                        "name": "decorations",
+                        "notes": [
+                            "optional",
+                            "recommended: blueberries, raspberries, powdered sugar"
+                        ]
+                    }
                 ]
             }
         ],
@@ -229,11 +233,11 @@ let recipes = {
                 "notes": []
             },
             {
-                "name": "serving plate",
+                "name": "stand mixer with a wire whip attachment",
                 "notes": []
             },
             {
-                "name": "stand mixer with a wire whip attachment",
+                "name": "serving plate",
                 "notes": []
             }
         ],
@@ -243,14 +247,11 @@ let recipes = {
                 "list": [
                     {
                         "base": "melt 6 tablespoon butter",
-                        "notes": [
-                            "butter can be salted or unsalted (recommended: salted)",
-                            "to melt, cut into smaller pieces, put into a small microwave-safe bowl, cover top with plastic wrap, microwave for 27 seconds, and then in 9-second intervals until it's all/mostly liquid"
-                        ]
+                        "notes": []
                     },
                     {
                         "base": "warm 3/4 cup water",
-                        "notes": ["to warm, microwave for 9 seconds twice, stirring in between"]
+                        "notes": []
                     }
                 ]
             },
@@ -258,8 +259,8 @@ let recipes = {
                 "header": "crêpe",
                 "list": [
                     {
-                        "base": "blend the water, 1 1/2 cup milk, 6 eggs, the butter, 1 1/2 cup flour, 3 tablespoon granulated sugar, and 1/8 teaspoon salt in a blender until well-combined",
-                        "notes": ["any kind of milk is fine"]
+                        "base": "blend the water, 1 1/2 cup milk, 6 eggs, the butter, 1 1/2 cup all purpose flour, 3 tablespoon granulated sugar, and 1/8 teaspoon salt in a blender until well-combined",
+                        "notes": []
                     },
                     {
                         "base": "heat a 9-inch non-stick pan over medium heat",
@@ -277,7 +278,7 @@ let recipes = {
                         ]
                     },
                     {
-                        "base": "cool to room temperature",
+                        "base": "set aside to cool to room temperature",
                         "notes": []
                     }
                 ]
@@ -287,14 +288,11 @@ let recipes = {
                 "list": [
                     {
                         "base": "soften 1 cup butter",
-                        "notes": [
-                            "butter can be salted or unsalted (recommended: salted)",
-                            "to soften, let it sit at room temperature for ~30 minutes or until it gets dented by lightly poking"
-                        ]
+                        "notes": []
                     },
                     {
-                        "base": "soften 8 ounce cream cheese",
-                        "notes": ["to soften, let it sit at room temperature for ~30 minutes or until it gets dented by lightly poking"]
+                        "base": "soften 1 cup cream cheese",
+                        "notes": []
                     }
                 ]
             },
@@ -302,11 +300,11 @@ let recipes = {
                 "header": "frosting",
                 "list": [
                     {
-                        "base": "beat the butter and 12 ounce sweetened condensed milk using the stand mixer with a wire whip attachment for ~7 minutes or until it looks whipped and light in color",
+                        "base": "beat the butter and 1 1/2 cup sweetened condensed milk using the stand mixer with a wire whip attachment until it looks whipped and light in color",
                         "notes": []
                     },
                     {
-                        "base": "beat in 8 ounce softened cream cheese in ~1 tablespoon increments for ~3 minutes or until it is no longer lumpy",
+                        "base": "beat in 1 cup softened cream cheese in ~1 tablespoon increments for ~3 minutes or until it is no longer lumpy",
                         "notes": []
                     },
                     {
@@ -351,7 +349,7 @@ let recipes = {
         "pictures": [
             {
                 "src": "../images/bakyuri/crepe-cake/02.jpg",
-                "alt": "🫐🥞🖼️"
+                "alt": "🫐🥞"
             }
         ],
         "flavortext": "insert funny description here"
@@ -361,56 +359,74 @@ let recipes = {
         "title": "impostor pumpkin muffins",
         "ingredients": [
             {
-                "name": "all-purpose flour",
-                "notes": []
-            },
-            {
-                "name": "granulated sugar",
-                "notes": []
-            },
-            {
-                "name": "baking powder",
-                "notes": []
-            },
-            {
-                "name": "baking soda",
-                "notes": []
-            },
-            {
-                "name": "salt",
-                "notes": []
-            },
-            {
-                "name": "pumpkin spice",
-                "notes": []
-            },
-            {
-                "name": "pumpkin purée",
-                "notes": []
-            },
-            {
-                "name": "butter (melted and cooled)",
-                "notes": [
-                    "butter can be salted or unsalted (recommended: salted)",
-                    "to melt, cut into smaller pieces, put into a small microwave-safe bowl, cover top with plastic wrap, microwave for 27 seconds, and then in 9 second intervals until it's all/mostly liquid",
-                    "to cool, let it sit at room temperature for ~15 minutes or until the bowl doesn't feel too warm"
+                "header": "muffin batter",
+                "list": [
+                    {
+                        "name": "1 1/2 cup all-purpose flour",
+                        "notes": []
+                    },
+                    {
+                        "name": "3/4 cup granulated sugar",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 teaspoon baking powder",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 teaspoon baking soda",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/4 teaspoon salt",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 teaspoon pumpkin spice",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 1/2 cup pumpkin purée",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/4 cup butter (melted and cooled)",
+                        "notes": []
+                    },
+                    {
+                        "name": "~2 teaspoon vanilla extract",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 egg (lightly beaten)",
+                        "notes": []
+                    }
                 ]
             },
             {
-                "name": "vanilla extract",
-                "notes": ["adjust based on desired vanilla-ness"]
-            },
-            {
-                "name": "egg (beaten)",
-                "notes": ["to beat, crack egg into a small bowl and whisk with a fork"]
-            },
-            {
-                "name": "cream cheese",
-                "notes": ["to soften, let it sit at room temperature for ~30 minutes or until it gets dented by lightly poking"]
-            },
-            {
-                "name": "milk",
-                "notes": ["any kind of milk is fine"]
+                "header": "cream cheese filling",
+                "list": [
+                    {
+                        "name": "1/2 cup cream cheese (softened)",
+                        "notes": []
+                    },
+                    {
+                        "name": "~1 teaspoon vanilla extract",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 teaspoon all-purpose flour",
+                        "notes": []
+                    },
+                    {
+                        "name": "8 teaspoon granulated sugar",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 teaspoon milk",
+                        "notes": []
+                    }
+                ]
             }
         ],
         "equipment": [
@@ -420,7 +436,7 @@ let recipes = {
             },
             {
                 "name": "medium bowl",
-                "notes": ["to be cleaned and reused for both the batter and the filling"]
+                "notes": []
             },
             {
                 "name": "muffin tin",
@@ -443,7 +459,7 @@ let recipes = {
                 "notes": []
             },
             {
-                "name": "cupcake wrappers",
+                "name": "[optional] cupcake wrappers",
                 "notes": []
             }
         ],
@@ -452,12 +468,8 @@ let recipes = {
                 "header": "muffin batter preparation",
                 "list": [
                     {
-                        "base": "melt 1/4 cup butter",
-                        "notes": [
-                            "butter can be salted or unsalted (recommended: salted)",
-                            "to melt, cut into smaller pieces, put into a small microwave-safe bowl, cover top with plastic wrap, microwave for 27 seconds, and then in 9 second intervals until it's all/mostly liquid",
-                            "to cool, let it sit at room temperature for ~15 minutes or until the bowl doesn't feel too warm"
-                        ]
+                        "base": "melt 1/4 cup butter and let cool",
+                        "notes": []
                     },
                     {
                         "base": "lightly beat 1 large egg",
@@ -466,27 +478,27 @@ let recipes = {
                 ]
             },
             {
-                "header": "in the medium bowl:",
+                "header": "muffin batter",
                 "list": [
                     {
-                        "base": "mix 1 1/2 cup pumpkin purée, the butter, ~1 1/2 teaspoon vanilla extract, and the large egg",
-                        "notes": ["adjust vanilla extract based on desired vanilla-ness (recommended: 2 teaspoon)"]
+                        "base": "mix 1 1/2 cup pumpkin purée, the butter, ~1 1/2 teaspoon vanilla extract, and the large egg into a medium bowl",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix 1 1/2 cup all-purpose flour, 3/4 cup granulated sugar, 1 teaspoon baking powder, 1 teaspoon baking soda, 1/4 teaspoon salt, and 1 teaspoon pumpkin spice into a large bowl until combined",
+                        "notes": []
+                    },
+                    {
+                        "base": "make a crater in the middle of the large bowl and mix in with the contents of the medium bowl until the dry ingredients are not visible",
+                        "notes": []
                     }
                 ]
             },
             {
-                "header": "in the large bowl:",
+                "header": "filling preparation",
                 "list": [
                     {
-                        "base": "mix 1 1/2 cup all-purpose flour, 3/4 cup granulated sugar, 1 teaspoon baking powder, 1 teaspoon baking soda, 1/4 teaspoon salt, and 1 teaspoon pumpkin spice until combined",
-                        "notes": []
-                    },
-                    {
-                        "base": "make a crater in the middle of the large bowl and mix with the contents of the medium bowl until the dry ingredients are not visible",
-                        "notes": []
-                    },
-                    {
-                        "base": "transfer and distribute the muffin batter mixture to the muffin tin evenly",
+                        "base": "soften 1/2 cup cream cheese",
                         "notes": []
                     }
                 ]
@@ -495,15 +507,8 @@ let recipes = {
                 "header": "filling",
                 "list": [
                     {
-                        "base": "soften 4 ounce cream cheese",
+                        "base": "mix the cream cheese, ~3/4 teaspoon vanilla extract, 1 teaspoon all-purpose flour, 2 tablespoon 2 teaspoon granulated sugar, and 1 teaspoon milk using a hand mixer on medium speed into a medium bowl until smooth",
                         "notes": []
-                    },
-                    {
-                        "base": "mix the cream cheese, ~3/4 teaspoon vanilla extract, 1 teaspoon all-purpose flour, 2 tablespoon 2 teaspoon granulated sugar, and 1 teaspoon milk into a medium bowl until smooth using a hand mixer on medium speed",
-                        "notes": [
-                            "adjust vanilla extract based on desired vanilla-ness (recommended: 1 teaspoon)",
-                            "any kind of milk is fine"
-                        ]
                     },
                     {
                         "base": "put the mixture into a piping bag with tip/ziplock bag with one of its bottom corners cut off",
@@ -516,6 +521,10 @@ let recipes = {
                 "list": [
                     {
                         "base": "preheat the oven to 350°f",
+                        "notes": []
+                    },
+                    {
+                        "base": "evenly transfer and distribute the muffin batter mixture to a muffin tin",
                         "notes": []
                     },
                     {
@@ -539,7 +548,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "fit each muffin with a cupcake wrapper",
+                        "base": "[optional] fit each muffin with a cupcake wrapper",
                         "notes": []
                     }
                 ]
@@ -548,7 +557,156 @@ let recipes = {
         "pictures": [
             {
                 "src": "../images/bakyuri/impostor-pumpkin-muffins/01.jpg",
-                "alt": "🎃🧁🖼️"
+                "alt": "📮🎃🧁"
+            }
+        ],
+        "flavortext": "insert funny description here"
+    },
+
+    "lemon-blueberry-muffins": {
+        "title": "lemon blueberry muffins",
+        "ingredients": [
+            {
+                "header": "streusel",
+                "list": [
+                    {
+                        "name": "1/2 cup flour",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/3 cup sugar",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 teaspoon lemon zest",
+                        "notes": []
+                    },
+                    {
+                        "name": "3 tablespoon butter",
+                        "notes": []
+                    }
+                ]
+            },
+            {
+                "header": "batter",
+                "list": [
+                    {
+                        "name": "2 cup flour",
+                        "notes": []
+                    },
+                    {
+                        "name": "2 teaspoon baking powder",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/16 teaspoon salt",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/2 cup butter (melted)",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 cup sugar",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/2 cup plain yogurt",
+                        "notes": []
+                    },
+                    {
+                        "name": "2 eggs",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 lemon's zest",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 teaspoon lemonn juice",
+                        "notes": []
+                    },
+                    {
+                        "name": "~2 teaspoon vanilla extract",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/4 cup buttermilk",
+                        "notes": []
+                    },
+                    {
+                        "name": "blueberries",
+                        "notes": []
+                    }
+                ]
+            }
+        ],
+        "equipment": [
+            {
+                "name": "stand mixer with a wire whip attachment",
+                "notes": []
+            }
+        ],
+        "instructions": [
+            {
+                "header": "streusel",
+                "list": [
+                    {
+                        "base": "combine 1/3 cup flour, 1/3 cup sugar, and 1 teaspoon lemon zest",
+                        "notes": []
+                    },
+                    {
+                        "base": "add in 3 tablespoon butter and combine with a fork until it becomes crumbly pea-sized bits",
+                        "notes": []
+                    }
+                ]
+            },
+            {
+                "header": "batter",
+                "list": [
+                    {
+                        "base": "combine 2 cups flour, 2 teaspoon baking powder, and 1/16 teaspoon salt",
+                        "notes": []
+                    },
+                    {
+                        "base": "in the stand mixer with a wire whip attachment, mix 1/2 cup melted butter and 1 cup sugar until nicely combined",
+                        "notes": []
+                    },
+                    {
+                        "base": "add in 1/2 cup plain yogurt and 2 eggs",
+                        "notes": []
+                    },
+                    {
+                        "base": "add in 1 lemon's zest, 1 tsp lemon juice, 1 teaspoon vanilla extract, and 1/4 cup buttermilk",
+                        "notes": []
+                    },
+                    {
+                        "base": "fold in blueberries",
+                        "notes": []
+                    },
+                    {
+                        "base": "preheat the oven to 375°f",
+                        "notes": []
+                    },
+                    {
+                        "base": "transfer the mixture to a muffin baking tin lined with cupcake wrappers",
+                        "notes": []
+                    },
+                    {
+                        "base": "top the mixture with the crumbled streusel from the fridge",
+                        "notes": []
+                    },
+                    {
+                        "base": "bake for ~23-27 minutes or until lightly golden brown",
+                        "notes": []
+                    }
+                ]
+            }
+        ],
+        "pictures": [
+            {
+                "src": "../images/bakyuri/lemon-blueberry-muffins/01.jpg",
+                "alt": "🍋🫐🧁"
             }
         ],
         "flavortext": "insert funny description here"
@@ -558,59 +716,61 @@ let recipes = {
         "title": "red velvet cookies",
         "ingredients": [
             {
-                "name": "butter (softened)",
-                "notes": [
-                    "butter can be salted or unsalted (recommended: salted)",
-                    "to soften, let it sit at room temperature for ~30 minutes or until it gets dented by lightly poking"
+                "header": "",
+                "list": [
+                    {
+                        "name": "1 cup butter (softened)",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 cup granulated sugar",
+                        "notes": []
+                    },
+                    {
+                        "name": "2/3 cup dark brown sugar",
+                        "notes": []
+                    },
+                    {
+                        "name": "2 large eggs",
+                        "notes": []
+                    },
+                    {
+                        "name": "~5 teaspoon vanilla extract",
+                        "notes": []
+                    },
+                    {
+                        "name": "2 teaspoon vinegar",
+                        "notes": []
+                    },
+                    {
+                        "name": "~2 teaspoon red food coloring/gel",
+                        "notes": []
+                    },
+                    {
+                        "name": "3 1/3 cup all-purpose flour",
+                        "notes": []
+                    },
+                    {
+                        "name": "3 tablespoon cocoa powder",
+                        "notes": []
+                    },
+                    {
+                        "name": "4 teaspoon corn starch",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 1/2 teaspoon baking soda",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/2 teaspoon salt",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 cup white chocolate chips",
+                        "notes": []
+                    }
                 ]
-            },
-            {
-                "name": "granulated sugar",
-                "notes": []
-            },
-            {
-                "name": "dark brown sugar",
-                "notes": []
-            },
-            {
-                "name": "large egg",
-                "notes": []
-            },
-            {
-                "name": "vanilla extract",
-                "notes": ["adjust based on desired vanilla-ness (recommended: 6 teaspoon)"]
-            },
-            {
-                "name": "vinegar",
-                "notes": []
-            },
-            {
-                "name": "red food coloring/gel",
-                "notes": ["adjust based on desired color (recommended: 2 teaspoon)"]
-            },
-            {
-                "name": "all-purpose flour",
-                "notes": []
-            },
-            {
-                "name": "cocoa powder",
-                "notes": []
-            },
-            {
-                "name": "corn starch",
-                "notes": []
-            },
-            {
-                "name": "baking soda",
-                "notes": []
-            },
-            {
-                "name": "salt",
-                "notes": []
-            },
-            {
-                "name": "white chocolate chips",
-                "notes": []
             }
         ],
         "equipment": [
@@ -641,10 +801,7 @@ let recipes = {
                 "list": [
                     {
                         "base": "soften 1 cup butter",
-                        "notes": [
-                            "butter can be salted or unsalted (recommended: salted)",
-                            "to soften, let it sit at room temperature for ~30 minutes or until it gets dented by lightly poking"
-                        ]
+                        "notes": []
                     }
                 ]
             },
@@ -657,10 +814,7 @@ let recipes = {
                     },
                     {
                         "base": "beat in 2 large eggs, ~5 teaspoon vanilla extract, 2 tsp vinegar, and ~3 teaspoon red food coloring/gel",
-                        "notes": [
-                            "adjust vanilla extract based on desired vanilla-ness (recommended: 6 teaspoon)",
-                            "adjust red food coloring based on desired color (recommended: 2 teaspoon)"
-                        ]
+                        "notes": []
                     },
                     {
                         "base": "beat in 3 1/3 cup all-purpose flour, 3 tablespoon cocoa powder, 4 teaspoon cornstarch, 1 1/2 teaspoon baking soda, and 1/2 teaspoon salt",
@@ -692,7 +846,7 @@ let recipes = {
                     },
                     {
                         "base": "bake for 9 minutes or until the tops are just set",
-                        "notes": ["recommended: white chocolate chips"]
+                        "notes": []
                     },
                     {
                         "base": "let them cool at room temperature for 5+ minutes",
@@ -704,7 +858,7 @@ let recipes = {
         "pictures": [
             {
                 "src": "../images/bakyuri/red-velvet-cookies/01.jpg",
-                "alt": "❤️🍰🍪🖼️"
+                "alt": "❤️🍰🍪"
             }
         ],
         "flavortext": "but what if it was <i>blue</i>?"
@@ -714,55 +868,78 @@ let recipes = {
         "title": "sachertorte",
         "ingredients": [
             {
-                "name": "cake flour",
-                "notes": []
-            },
-            {
-                "name": "baking powder",
-                "notes": []
-            },
-            {
-                "name": "salt",
-                "notes": []
-            },
-            {
-                "name": "large egg",
-                "notes": ["separate egg yolk and egg white"]
-            },
-            {
-                "name": "butter (softened)",
-                "notes": [
-                    "butter can be salted or unsalted (recommended: salted)",
-                    "to soften, let it sit at room temperature for ~30 minutes or until it gets dented by lightly poking"
+                "header": "cake batter",
+                "list": [
+                    {
+                        "name": "1 cup cake flour",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/2 teaspoon baking powder",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/4 teaspoon salt",
+                        "notes": []
+                    },
+                    {
+                        "name": "8 large eggs (separated into egg yolks and egg whites)",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 cup butter (softened)",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 cup (total) granulated sugar",
+                        "notes": []
+                    },
+                    {
+                        "name": "3 teaspoon vanilla extract",
+                        "notes": []
+                    },
+                    {
+                        "name": "3/4 cup semi-sweet chocolate (melted)",
+                        "notes": []
+                    }
                 ]
             },
             {
-                "name": "granulated sugar",
-                "notes": []
-            },
-            {
-                "name": "vanilla extract",
-                "notes": ["adjust based on desired vanilla-ness (recommended: 3 teaspoon)"]
-            },
-            {
-                "name": "semi-sweet chocolate (melted)",
-                "notes": [
-                    "to melt, cut into smaller pieces, put into a small microwave-safe bowl, microwave for 27 seconds, and then in 9-second intervals until it has a liquid consistency"
+                "header": "assembly",
+                "list": [
+                    {
+                        "name": "2 1/4 cup apricot preserves",
+                        "notes": []
+                    }
                 ]
             },
             {
-                "name": "apricot preserves",
-                "notes": []
+                "header": "glaze",
+                "list": [
+                    {
+                        "name": "1/2 cup semi-sweet chocolate (melted)",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/4 cup butter (melted)",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 tablespoon corn syrup",
+                        "notes": []
+                    }
+                ]
             },
             {
-                "name": "corn syrup",
-                "notes": []
-            },
-            {
-                "name": "toppings",
-                "notes": [
-                    "optional",
-                    "recommended: blueberries, strawberries"
+                "header": "other",
+                "list": [
+                    {
+                        "name": "decorations",
+                        "notes": [
+                            "optional",
+                            "recommended: blueberries, strawberries"
+                        ]
+                    }
                 ]
             }
         ],
@@ -806,23 +983,75 @@ let recipes = {
         ],
         "instructions": [
             {
-                "header": "baking",
+                "header": "cake batter preparation",
                 "list": [
                     {
                         "base": "soften 1 cup butter",
-                        "notes": [
-                            "butter can be salted or unsalted (recommended: salted)",
-                            "to soften, let it sit at room temperature for ~30 minutes or until it gets dented by lightly poking"
-                        ]
+                        "notes": []
                     },
                     {
-                        "base": "melt 6 ounce semi-sweet chocolate",
-                        "notes": [
-                            "to melt, cut into smaller pieces, put into a small microwave-safe bowl, microwave for 27 seconds, and then in 9-second intervals until it has a liquid consistency"
-                        ]
+                        "base": "melt 3/4 cup semi-sweet chocolate",
+                        "notes": []
                     },
                     {
-                        "base": "todo: all this (lazy)",
+                        "base": "sift 1 cup cake flour, 1/2 teaspoon baking powder, and 1/4 teaspoon salt into a bowl",
+                        "notes": []
+                    },
+                    {
+                        "base": "separate 8 large eggs into egg yolks and egg whites in two separate bowls",
+                        "notes": []
+                    },
+                    {
+                        "base": "whip the egg whites to soft peak using a hand mixer",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix in 1/2 cup sugar until the egg whites are whipped to full peak",
+                        "notes": []
+                    },
+                ]
+            },
+            {
+                "header": "cake batter",
+                "list": [
+                    {
+                        "base": "beat together 1 cup room temperature butter and 1/2 cup sugar in a stand mixer with a flat beater attachment until it's light and aerated",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix in the egg yolks and ~2 teaspoon vanilla extract until it is all combined",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix in the cake flour, baking powder, and salt until it is all combined",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix in the semi-sweet chocolate",
+                        "notes": []
+                    },
+                    {
+                        "base": "fold the egg whites into the stand mixer bowl in thirds and and mix until there are no more streaks of egg white visible",
+                        "notes": []
+                    },
+                    {
+                        "base": "preheat the oven to 350°f",
+                        "notes": []
+                    },
+                    {
+                        "base": "pour batter into cake pan and spread it evenly",
+                        "notes": []
+                    },
+                    {
+                        "base": "bake for ~45 minutes or until a toothpick stabbed in the middle comes out clean",
+                        "notes": []
+                    },
+                    {
+                        "base": "cool in the cake pan for ~10 minutes",
+                        "notes": []
+                    },
+                    {
+                        "base": "place cake on a cooling rack and let it cool completely",
                         "notes": []
                     },
                 ]
@@ -831,27 +1060,67 @@ let recipes = {
                 "header": "assembling pt. 1",
                 "list": [
                     {
-                        "base": "",
+                        "base": "trim the top of the cake so it is flat",
                         "notes": []
                     },
+                    {
+                        "base": "split the cake into 2 horizontal layers",
+                        "notes": []
+                    },
+                    {
+                        "base": "spread 1/2 cup apricot preserves on top of one layer and stack the layers",
+                        "notes": []
+                    },
+                    {
+                        "base": "warm 1 cup apricot preserves and get rid of the chunky bits",
+                        "notes": []
+                    },
+                    {
+                        "base": "ice the top and the sides of the cake with the apricot preserves",
+                        "notes": []
+                    },
+                    {
+                        "base": "air-dry the cake for ~1 hour",
+                        "notes": []
+                    }
                 ]
             },
             {
                 "header": "assembling pt. 2",
                 "list": [
                     {
-                        "base": "",
+                        "base": "melt 1/2 cup semi-sweet chocolate and 1/4 cup butter",
                         "notes": []
                     },
+                    {
+                        "base": "mix in 1 tablespoon corn syrup",
+                        "notes": []
+                    },
+                    {
+                        "base": "pour glaze over cake and smooth it out",
+                        "notes": []
+                    },
+                    {
+                        "base": "put the cake on a serving plate once the glaze sets",
+                        "notes": []
+                    },
+                    {
+                        "base": "[optional] decorate the cake however you want",
+                        "notes": []
+                    },
+                    {
+                        "base": "store the cake",
+                        "notes": ["it gets better within 1-2 days as it absorbs the apricot preserves"]
+                    }
                 ]
             }
         ],
         "pictures": [
             {
                 "src": "../images/bakyuri/sachertorte/01.jpg",
-                "alt": "🇦🇹🍫🎂🖼️"
+                "alt": "🇦🇹🍫🎂"
             }
         ],
-        "flavortext": "Bakers Hate Them! This dragon rizzed their partner using this one WEIRD trick! LEARN THE TRUTH NOW!"
+        "flavortext": "Bakers Hate Them! This dragon rizzed their partner using this one SIMPLE* trick! LEARN THE TRUTH NOW<br><br>*not simple."
     }
 }
