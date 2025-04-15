@@ -24,11 +24,11 @@
     }
 
     .yesburger {
-        background-image: url("../images/hamburger/yes.svg");
+        background-image: url("../images/hamburger/yesburger.svg");
     }
 
     .noburger {
-        background-image: url("../images/hamburger/no.svg");
+        background-image: url("../images/hamburger/noburger.svg");
     }
 
     .hbmenu {

@@ -7,10 +7,7 @@ let recipes = {
                 "list": [
                     {
                         "name": "~4 large ripe bananas",
-                        "notes": [
-                            "small bananas account for 1/2 banana (recommended: 6+ inches lengthwise)",
-                            "the riper the banana the better (recommended: 75%+ brown)"
-                        ]
+                        "notes": []
                     },
                     {
                         "name": "1/3 cup butter (melted)",
@@ -37,15 +34,12 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "name": "1 1/2 cup flour",
-                        "notes": ["other kinds of flour can be used, to varying results (recommended: all-purpose)"]
+                        "name": "1 1/2 cup all-purpose flour",
+                        "notes": []
                     },
                     {
-                        "name": "toppings",
-                        "notes": [
-                            "optional",
-                            "recommended: white chocolate chips"
-                        ]
+                        "name": "white chocolate chips",
+                        "notes": []
                     }
                 ]
             }
@@ -56,12 +50,8 @@ let recipes = {
                 "notes": []
             },
             {
-                "name": "large fork",
-                "notes": []
-            },
-            {
                 "name": "loaf pan",
-                "notes": ["the size determines how long the banana bread will bake for (recommended: 9x5 inches)"]
+                "notes": ["the size determines how long the banana bread will bake for (used: 9x5 inches)"]
             },
             {
                 "name": "oven at 350°f",
@@ -87,10 +77,7 @@ let recipes = {
                 "list": [
                     {
                         "base": "mash ~4 large ripe bananas",
-                        "notes": [
-                            "the larger the banana the better (recommended: 6+ inches lengthwise)",
-                            "the riper the banana the better (recommended: 75%+ brown)"
-                        ]
+                        "notes": []
                     },
                     {
                         "base": "mix in the butter",
@@ -105,12 +92,12 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "[optional] mix in toppings",
-                        "notes": ["recommended: white chocolate chips"]
+                        "base": "mix in ~1/3 cup white chocolate chips",
+                        "notes": []
                     },
                     {
-                        "base": "mix in 1 1/2 cup flour until flour is not visible",
-                        "notes": ["other kinds of flour can be used, to varying results (recommended: all-purpose)"]
+                        "base": "mix in 1 1/2 cup all-purpose flour until flour is not visible",
+                        "notes": []
                     }
                 ]
             },
@@ -123,15 +110,15 @@ let recipes = {
                     },
                     {
                         "base": "lightly coat all sides of a loaf pan with butter",
-                        "notes": ["the size of the loaf pan determines how long the banana bread will bake for (recommended: 9x5 inches)"]
+                        "notes": ["the size of the loaf pan determines how long the banana bread will bake for (used: 9x5 inches)"]
                     },
                     {
                         "base": "transfer the banana bread mixture to the loaf pan",
                         "notes": []
                     },
                     {
-                        "base": "[optional] spread toppings to top of the banana bread mixture",
-                        "notes": ["recommended: white chocolate chips"]
+                        "base": "spread 1/4 cup white chocolate chips to the top of the banana bread mixture",
+                        "notes": []
                     },
                     {
                         "base": "bake for ~55 minutes or until a toothpick stabbed into the middle comes out clean",
@@ -207,14 +194,19 @@ let recipes = {
                 ]
             },
             {
-                "header": "other",
+                "header": "decoration",
                 "list": [
                     {
-                        "name": "decorations",
-                        "notes": [
-                            "optional",
-                            "recommended: blueberries, raspberries, powdered sugar"
-                        ]
+                        "name": "blueberries",
+                        "notes": []
+                    },
+                    {
+                        "name": "raspberries",
+                        "notes": []
+                    },
+                    {
+                        "name": "powdered sugar",
+                        "notes": []
                     }
                 ]
             }
@@ -226,7 +218,7 @@ let recipes = {
             },
             {
                 "name": "non-stick pan",
-                "notes": ["the size determines the overall size of the cake (recommended: 9 inches)"]
+                "notes": ["the size determines the overall size of the cake (used: 9 inches)"]
             },
             {
                 "name": "stovetop at medium heat",
@@ -259,7 +251,7 @@ let recipes = {
                 "header": "crêpe",
                 "list": [
                     {
-                        "base": "blend the water, 1 1/2 cup milk, 6 eggs, the butter, 1 1/2 cup all purpose flour, 3 tablespoon granulated sugar, and 1/8 teaspoon salt in a blender until well-combined",
+                        "base": "put the water, 1 1/2 cup milk, 6 eggs, the butter, 1 1/2 cup all purpose flour, 3 tablespoon granulated sugar, and 1/8 teaspoon salt into a blender and blend until well-combined",
                         "notes": []
                     },
                     {
@@ -340,7 +332,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "[optional] decorate as desired",
+                        "base": "decorate with blueberries raspberries, and powdered sugar",
                         "notes": []
                     }
                 ]
@@ -447,7 +439,7 @@ let recipes = {
                 "notes": []
             },
             {
-                "name": "piping bag with tip/ziplock bag with one of its bottom corners cut off",
+                "name": "piping bag with a tip",
                 "notes": []
             },
             {
@@ -459,7 +451,7 @@ let recipes = {
                 "notes": []
             },
             {
-                "name": "[optional] cupcake wrappers",
+                "name": "cupcake wrappers",
                 "notes": []
             }
         ],
@@ -511,7 +503,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "put the mixture into a piping bag with tip/ziplock bag with one of its bottom corners cut off",
+                        "base": "put the mixture into a piping bag with a tip",
                         "notes": []
                     },
                 ]
@@ -548,7 +540,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "[optional] fit each muffin with a cupcake wrapper",
+                        "base": "fit each muffin with a cupcake wrapper",
                         "notes": []
                     }
                 ]
@@ -677,7 +669,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "add in 1 lemon's zest, 1 tsp lemon juice, 1 teaspoon vanilla extract, and 1/4 cup buttermilk",
+                        "base": "add in 1 lemon's zest, 1 tsp lemon juice, ~2 teaspoon vanilla extract, and 1/4 cup buttermilk",
                         "notes": []
                     },
                     {
@@ -697,7 +689,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "bake for ~23-27 minutes or until lightly golden brown",
+                        "base": "bake for ~23 minutes or until lightly golden brown",
                         "notes": []
                     }
                 ]
@@ -934,11 +926,12 @@ let recipes = {
                 "header": "other",
                 "list": [
                     {
-                        "name": "decorations",
-                        "notes": [
-                            "optional",
-                            "recommended: blueberries, strawberries"
-                        ]
+                        "name": "blueberries",
+                        "notes": []
+                    },
+                    {
+                        "name": "strawberries",
+                        "notes": []
                     }
                 ]
             }
@@ -1105,7 +1098,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "[optional] decorate the cake however you want",
+                        "base": "decorate the cake with blueberries and strawberries",
                         "notes": []
                     },
                     {
@@ -1123,4 +1116,4 @@ let recipes = {
         ],
         "flavortext": "Bakers Hate Them! This dragon rizzed their partner using this one SIMPLE* trick! LEARN THE TRUTH NOW<br><br>*not simple."
     }
-}
+};
