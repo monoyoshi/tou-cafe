@@ -611,11 +611,11 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "name": "1 lemon's zest",
+                        "name": "1 lemon's worth of lemon zest",
                         "notes": []
                     },
                     {
-                        "name": "1 teaspoon lemonn juice",
+                        "name": "1 teaspoon lemon juice",
                         "notes": []
                     },
                     {
@@ -648,7 +648,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "add in 3 tablespoon butter and combine with a fork until it becomes crumbly pea-sized bits",
+                        "base": "add in 3 tablespoon butter and combine with a fork until it becomes crumbly",
                         "notes": []
                     }
                 ]
@@ -657,19 +657,23 @@ let recipes = {
                 "header": "batter",
                 "list": [
                     {
-                        "base": "combine 2 cups flour, 2 teaspoon baking powder, and 1/16 teaspoon salt",
+                        "base": "combine 2 cup all-purpose flour, 2 teaspoon baking powder, and 1/16 teaspoon salt into the stand mixer with a wire whip attachment",
                         "notes": []
                     },
                     {
-                        "base": "in the stand mixer with a wire whip attachment, mix 1/2 cup melted butter and 1 cup sugar until nicely combined",
+                        "base": "mix in 1/2 cup melted butter and 1 cup sugar until nicely combined",
                         "notes": []
                     },
                     {
-                        "base": "add in 1/2 cup plain yogurt and 2 eggs",
+                        "base": "mix in 1/2 cup plain yogurt and 2 eggs",
                         "notes": []
                     },
                     {
-                        "base": "add in 1 lemon's zest, 1 tsp lemon juice, ~2 teaspoon vanilla extract, and 1/4 cup buttermilk",
+                        "base": "prepare 1/4 cup buttermilk by mixing 1/4 cup milk with 3/4 teaspoon lemon juice",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix in ~1 lemon's worth of lemon zest, 1 tsp lemon juice, ~2 teaspoon vanilla extract, and the buttermilk*",
                         "notes": []
                     },
                     {
@@ -677,7 +681,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "preheat the oven to 375°f",
+                        "base": "preheat the oven to 370°f",
                         "notes": []
                     },
                     {
@@ -689,7 +693,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "bake for ~23 minutes or until lightly golden brown",
+                        "base": "bake for ~27 minutes or until lightly golden brown",
                         "notes": []
                     }
                 ]
