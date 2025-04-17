@@ -60,27 +60,14 @@ let recipes = {
         ],
         "instructions": [
             {
-                "header": "preparation",
-                "list": [
-                    {
-                        "base": "melt 1/3 cup butter",
-                        "notes": []
-                    },
-                    {
-                        "base": "beat 1 large egg",
-                        "notes": []
-                    }
-                ]
-            },
-            {
-                "header": "in a medium bowl:",
+                "header": "batter",
                 "list": [
                     {
                         "base": "mash ~4 large ripe bananas",
                         "notes": []
                     },
                     {
-                        "base": "mix in the butter",
+                        "base": "mix in 1/3 cup melted butter",
                         "notes": []
                     },
                     {
@@ -235,23 +222,10 @@ let recipes = {
         ],
         "instructions": [
             {
-                "header": "crêpe preparation",
-                "list": [
-                    {
-                        "base": "melt 6 tablespoon butter",
-                        "notes": []
-                    },
-                    {
-                        "base": "warm 3/4 cup water",
-                        "notes": []
-                    }
-                ]
-            },
-            {
                 "header": "crêpe",
                 "list": [
                     {
-                        "base": "put the water, 1 1/2 cup milk, 6 eggs, the butter, 1 1/2 cup all purpose flour, 3 tablespoon granulated sugar, and 1/8 teaspoon salt into a blender and blend until well-combined",
+                        "base": "put 3/4 cup warm water, 1 1/2 cup milk, 6 eggs, 6 tablespoon melted butter, 1 1/2 cup all purpose flour, 3 tablespoon granulated sugar, and 1/8 teaspoon salt into a blender and blend until well-combined",
                         "notes": []
                     },
                     {
@@ -276,23 +250,10 @@ let recipes = {
                 ]
             },
             {
-                "header": "frosting preparation",
-                "list": [
-                    {
-                        "base": "soften 1 cup butter",
-                        "notes": []
-                    },
-                    {
-                        "base": "soften 1 cup cream cheese",
-                        "notes": []
-                    }
-                ]
-            },
-            {
                 "header": "frosting",
                 "list": [
                     {
-                        "base": "beat the butter and 1 1/2 cup sweetened condensed milk using the stand mixer with a wire whip attachment until it looks whipped and light in color",
+                        "base": "beat 1 cup softened butter and 1 1/2 cup sweetened condensed milk using the stand mixer with a wire whip attachment until it looks whipped and light in color",
                         "notes": []
                     },
                     {
@@ -332,7 +293,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "decorate with blueberries raspberries, and powdered sugar",
+                        "base": "decorate with blueberries, raspberries, and powdered sugar",
                         "notes": []
                     }
                 ]
@@ -431,15 +392,15 @@ let recipes = {
                 "notes": []
             },
             {
-                "name": "muffin tin",
-                "notes": []
-            },
-            {
                 "name": "hand mixer",
                 "notes": []
             },
             {
                 "name": "piping bag with a tip",
+                "notes": []
+            },
+            {
+                "name": "muffin tin",
                 "notes": []
             },
             {
@@ -457,23 +418,10 @@ let recipes = {
         ],
         "instructions": [
             {
-                "header": "muffin batter preparation",
-                "list": [
-                    {
-                        "base": "melt 1/4 cup butter and let cool",
-                        "notes": []
-                    },
-                    {
-                        "base": "lightly beat 1 large egg",
-                        "notes": []
-                    }
-                ]
-            },
-            {
                 "header": "muffin batter",
                 "list": [
                     {
-                        "base": "mix 1 1/2 cup pumpkin purée, the butter, ~1 1/2 teaspoon vanilla extract, and the large egg into a medium bowl",
+                        "base": "mix 1 1/2 cup pumpkin purée, 1/4 cup melted and cooled butter, ~1 1/2 teaspoon vanilla extract, and 1 lightly beaten large egg into a medium bowl",
                         "notes": []
                     },
                     {
@@ -487,19 +435,10 @@ let recipes = {
                 ]
             },
             {
-                "header": "filling preparation",
-                "list": [
-                    {
-                        "base": "soften 1/2 cup cream cheese",
-                        "notes": []
-                    }
-                ]
-            },
-            {
                 "header": "filling",
                 "list": [
                     {
-                        "base": "mix the cream cheese, ~3/4 teaspoon vanilla extract, 1 teaspoon all-purpose flour, 2 tablespoon 2 teaspoon granulated sugar, and 1 teaspoon milk using a hand mixer on medium speed into a medium bowl until smooth",
+                        "base": "mix 1/2 cup softened cream cheese, ~3/4 teaspoon vanilla extract, 1 teaspoon all-purpose flour, 2 tablespoon 2 teaspoon granulated sugar, and 1 teaspoon milk using a hand mixer on medium speed into a medium bowl until smooth",
                         "notes": []
                     },
                     {
@@ -623,10 +562,6 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "name": "1/4 cup buttermilk",
-                        "notes": []
-                    },
-                    {
                         "name": "blueberries",
                         "notes": []
                     }
@@ -635,7 +570,35 @@ let recipes = {
         ],
         "equipment": [
             {
+                "name": "bowl",
+                "notes": []
+            },
+            {
+                "name": "fork",
+                "notes": []
+            },
+            {
                 "name": "stand mixer with a wire whip attachment",
+                "notes": []
+            },
+            {
+                "name": "rubber spatula",
+                "notes": []
+            },
+            {
+                "name": "cup",
+                "notes": []
+            },
+            {
+                "name": "oven at 370°f",
+                "notes": []
+            },
+            {
+                "name": "muffin tin",
+                "notes": []
+            },
+            {
+                "name": "cupcake wrappers",
                 "notes": []
             }
         ],
@@ -644,11 +607,15 @@ let recipes = {
                 "header": "streusel",
                 "list": [
                     {
-                        "base": "combine 1/3 cup flour, 1/3 cup sugar, and 1 teaspoon lemon zest",
+                        "base": "combine 1/3 cup flour, 1/3 cup sugar, and 1 teaspoon lemon zest into a bowl",
                         "notes": []
                     },
                     {
                         "base": "add in 3 tablespoon butter and combine with a fork until it becomes crumbly",
+                        "notes": []
+                    },
+                    {
+                        "base": "refrigerate",
                         "notes": []
                     }
                 ]
@@ -669,15 +636,15 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "prepare 1/4 cup buttermilk by mixing 1/4 cup milk with 3/4 teaspoon lemon juice",
+                        "base": `make 1/4 cup "buttermilk" by mixing 1/4 cup milk with 3/4 teaspoon lemon juice in a cup and letting it sit for ~5 minutes`,
                         "notes": []
                     },
                     {
-                        "base": "mix in ~1 lemon's worth of lemon zest, 1 tsp lemon juice, ~2 teaspoon vanilla extract, and the buttermilk*",
+                        "base": `mix in ~1 lemon's worth of lemon zest, 1 tsp lemon juice, ~2 teaspoon vanilla extract, and the "buttermilk"`,
                         "notes": []
                     },
                     {
-                        "base": "fold in blueberries",
+                        "base": "fold in ~1 cup blueberries",
                         "notes": []
                     },
                     {
@@ -686,10 +653,10 @@ let recipes = {
                     },
                     {
                         "base": "transfer the mixture to a muffin baking tin lined with cupcake wrappers",
-                        "notes": []
+                        "notes": ["there should be enough for ~15 muffins"]
                     },
                     {
-                        "base": "top the mixture with the crumbled streusel from the fridge",
+                        "base": "top with the streusel",
                         "notes": []
                     },
                     {
@@ -793,19 +760,10 @@ let recipes = {
         ],
         "instructions": [
             {
-                "header": "preparation",
-                "list": [
-                    {
-                        "base": "soften 1 cup butter",
-                        "notes": []
-                    }
-                ]
-            },
-            {
                 "header": "in the stand mixer with a flat beater attachment:",
                 "list": [
                     {
-                        "base": "beat together the butter, 1 cup granulated sugar, and 2/3 cup dark brown sugar",
+                        "base": "beat together 1 cup softened butter, 1 cup granulated sugar, and 2/3 cup dark brown sugar",
                         "notes": []
                     },
                     {
@@ -983,19 +941,11 @@ let recipes = {
                 "header": "cake batter preparation",
                 "list": [
                     {
-                        "base": "soften 1 cup butter",
-                        "notes": []
-                    },
-                    {
-                        "base": "melt 3/4 cup semi-sweet chocolate",
-                        "notes": []
-                    },
-                    {
                         "base": "sift 1 cup cake flour, 1/2 teaspoon baking powder, and 1/4 teaspoon salt into a bowl",
                         "notes": []
                     },
                     {
-                        "base": "separate 8 large eggs into egg yolks and egg whites in two separate bowls",
+                        "base": "separate 8 large eggs into egg yolks and egg whites into two separate bowls",
                         "notes": []
                     },
                     {
@@ -1012,7 +962,7 @@ let recipes = {
                 "header": "cake batter",
                 "list": [
                     {
-                        "base": "beat together 1 cup room temperature butter and 1/2 cup sugar in a stand mixer with a flat beater attachment until it's light and aerated",
+                        "base": "beat together 1 cup softened butter and 1/2 cup sugar in a stand mixer with a flat beater attachment until it's light and aerated",
                         "notes": []
                     },
                     {
@@ -1024,7 +974,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "mix in the semi-sweet chocolate",
+                        "base": "mix in 3/4 cup melted semi-sweet chocolate",
                         "notes": []
                     },
                     {

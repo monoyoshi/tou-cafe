@@ -1,28 +1,37 @@
-$(document).ready(function () {
-    const $tabtitle = $("#tabtitle");
-    const $title = $("#title");
-    const $ingredients = $("#ingredients");
-    const $equipment = $("#equipment");
-    const $instructions = $("#instructions");
-    // let $images = $("#images");
-    let $flavortext = $("#flavortext");
+// I feel like this is both big brain and small brain
+// like, there's gotta be a better way to do this, right? aha...
+// alas, I coded it like this cuz it works
 
+$(document).ready(function () {
+    // variables
+    // elements
+    const $tabtitle = $("#tabtitle"); // title of tab
+    const $title = $("#title"); // title of recipe
+    const $ingredients = $("#ingredients"); // recipe ingredients
+    const $equipment = $("#equipment"); // recipe equipment
+    const $instructions = $("#instructions"); // recipe instructions, the big boy
+    // let $images = $("#images");
+    let $flavortext = $("#flavortext"); // recipe...description? commentary? life story? I'll figure it out
+
+    // iteration stuff
     let i = 0, ilen = 0;
     let j = 0, jlen = 0;
 
+    // function that displays the recipe
     function displayRecipe(selected) {
         // recipe selection
         let recipe = recipes[selected];
         recipes = null; // it'd be weird to be able to access all recipes from one instance of the webpage, so...
 
         if (recipe) {
-            $tabtitle.prepend(recipe.title);
-            $title.text(recipe.title);
+            $tabtitle.prepend(recipe.title); // tab title
+            $title.text(recipe.title); // recipe title
 
             // ingredients
             i = 0;
             ilen = recipe.ingredients.length;
             while (i < ilen) {
+                // section header
                 if (recipe.ingredients[i].header.length > 0) {
                     $ingredients
                         .append($("<div>", {
@@ -32,6 +41,7 @@ $(document).ready(function () {
                         );
                 };
     
+                // actual stuff
                 j = 0;
                 jlen = recipe.ingredients[i].list.length;
                 $ingredients.append($("<ul>"));
@@ -59,6 +69,7 @@ $(document).ready(function () {
             i = 0;
             ilen = recipe.equipment.length;
             while (i < ilen) {
+                // stuff (no section header needed cuz i don't think it's necessary)
                 $equipment
                     .append($("<li>")
                         .text(recipe.equipment[i].name)
@@ -77,6 +88,7 @@ $(document).ready(function () {
             i = 0;
             ilen = recipe.instructions.length;
             while (i < ilen) {
+                // section header
                 if (recipe.instructions[i].header.length > 0) {
                     $instructions
                         .append($("<div>", {
@@ -86,6 +98,7 @@ $(document).ready(function () {
                         );
                 };
     
+                // actual stuff
                 j = 0;
                 jlen = recipe.instructions[i].list.length;
                 while (j < jlen) {
@@ -108,13 +121,12 @@ $(document).ready(function () {
                 ++i;
             };
 
-            // flavortext
-            $flavortext.html(recipe.flavortext);
+            $flavortext.html(recipe.flavortext); // flavortext
         }
-        else window.location.href = "404.html";
+        else window.location.href = "404.html"; // I was gonna make it so like, all recipes end up in banana bread just for funsies but nah 404 to the face
     };
 
-    // get selected recipe
+    // initialize: get selected recipe
     let urlp = gURLP("q");
     displayRecipe(urlp);
 
