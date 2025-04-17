@@ -1,10 +1,10 @@
-@media only screen and not (max-aspect-ratio: 1) {
+@media only screen and not (max-width: 600px) {
     .navbar > .hamburger {
         display: none;
     }
 }
 
-@media only screen and (max-aspect-ratio: 1) {
+@media only screen and (max-width: 600px) {
     .navbar > div:not(.logo, #burgerbox) {
         display: none;
     }
