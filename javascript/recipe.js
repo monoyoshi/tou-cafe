@@ -6,6 +6,7 @@ $(document).ready(function () {
     // variables
     // elements
     const $tabtitle = $("#tabtitle"); // title of tab
+    const $menulink = $("#menulink"); // link to menu
     const $title = $("#title"); // title of recipe
     const $ingredients = $("#ingredients"); // recipe ingredients
     const $equipment = $("#equipment"); // recipe equipment
@@ -25,6 +26,7 @@ $(document).ready(function () {
 
         if (recipe) {
             $tabtitle.prepend(recipe.title); // tab title
+            $menulink.attr("href", `../menu.html?q=${menutitle}`); // link to parent menu
             $title.text(recipe.title); // recipe title
 
             // ingredients

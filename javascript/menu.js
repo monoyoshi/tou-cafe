@@ -154,9 +154,7 @@ $(document).ready(function() {
                         .append($("<a>", {
                             class: "menuitem",
                             id: menuitems[j].id,
-                            href: `${menus[selection].id}/?q=${menuitems[j].id}`,
-                            target: "_blank",
-                            rel: "noopener noreferrer"
+                            href: `${menus[selection].id}/?q=${menuitems[j].id}`
                         })
                             .append($("<div>", {
                                 class: "miheader"

@@ -1071,3 +1071,5 @@ let recipes = {
         "flavortext": "Bakers Hate Them! This dragon rizzed their partner using this one SIMPLE* trick! LEARN THE TRUTH NOW<br><br>*not simple."
     }
 };
+
+const menutitle = "bakyuri";
