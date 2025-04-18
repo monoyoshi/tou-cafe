@@ -115,15 +115,20 @@ $(document).ready(function() {
         // special empty menu output
         if (menus[selection].contents.length == 0 || (jQuery.isEmptyObject(menus[selection].contents[0]) && jQuery.isEmptyObject(menus[selection].contents[1]))) {
             $menucontent.empty();
-            $menucontent.append($("<div>", {
-                class: "column-100",
-                css: {
-                    "text-align": "center"
-                }
-            })
-                .append($("<p>")
-                    .text("there's nothing here..."))
-            );
+            $menucontent
+                .append($("<div>", {
+                    class: "row"
+                })
+                    .append($("<div>", {
+                        class: "column-100",
+                        css: {
+                            "text-align": "center"
+                        }
+                    })
+                        .append($("<p>")
+                            .text("there's nothing here..."))
+                    )
+                );
             return;
         };
 

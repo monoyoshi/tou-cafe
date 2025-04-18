@@ -99,7 +99,7 @@
     }
 
     #sfmap {
-        text-align: center;
+        justify-content: center;
     }
 
     @keyframes hbmwipe {

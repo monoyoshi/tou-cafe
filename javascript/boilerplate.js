@@ -199,22 +199,19 @@ function sFooter() {
             }
         })
             .append($("<div>", {
-                class: "column-90"
+                class: "column-90",
+                id: "sfmap"
             })
-                .append($("<div>", {
-                    id: "sfmap"
+                .append($("<a>", {
+                    href: "https://bladewyrm.dev",
+                    target: "_blank",
+                    rel: "noopener noreferrer"
                 })
-                    .append($("<a>", {
-                        href: "https://bladewyrm.dev",
-                        target: "_blank",
-                        rel: "noopener noreferrer"
-                    })
-                        .append($("<img>", {
-                            src: "https://cdn.bladewyrm.dev/images/logo.svg",
-                            height: "90px",
-                            alt: "bladewyrm logo"
-                        }))
-                    )
+                    .append($("<img>", {
+                        src: "https://cdn.bladewyrm.dev/images/logo.svg",
+                        alt: "bladewyrm logo",
+                        height: "90"
+                    }))
                 )
             )
         );

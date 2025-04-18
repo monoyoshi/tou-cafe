@@ -8,6 +8,8 @@ $(document).ready(function () {
     const $tabtitle = $("#tabtitle"); // title of tab
     const $menulink = $("#menulink"); // link to menu
     const $title = $("#title"); // title of recipe
+    const $wlcontainer = $("#wlcontainer"); // wakelock container
+    const $recipecontent = $("#recipecontent"); // content of recipe
     const $ingredients = $("#ingredients"); // recipe ingredients
     const $equipment = $("#equipment"); // recipe equipment
     const $instructions = $("#instructions"); // recipe instructions, the big boy
@@ -24,9 +26,10 @@ $(document).ready(function () {
         let recipe = recipes[selected];
         recipes = null; // it'd be weird to be able to access all recipes from one instance of the webpage, so...
 
+        $menulink.attr("href", `../menu.html?q=${menutitle}`); // link to parent menu
+
         if (recipe) {
             $tabtitle.prepend(recipe.title); // tab title
-            $menulink.attr("href", `../menu.html?q=${menutitle}`); // link to parent menu
             $title.text(recipe.title); // recipe title
 
             // ingredients
@@ -125,7 +128,20 @@ $(document).ready(function () {
 
             $flavortext.html(recipe.flavortext); // flavortext
         }
-        else window.location.href = "404.html"; // I was gonna make it so like, all recipes end up in banana bread just for funsies but nah 404 to the face
+        else {
+            $tabtitle.prepend("404");
+            $title.text("Error 404: recipe not found"); // recipe title
+            $wlcontainer.toggleClass("mobileshow");
+            $("#wlcontainer>.column-100")
+                .empty()
+                .append($("<br>"))
+                .append($("<p>")
+                    .text("there's nothing here...")
+                );
+            $recipecontent.empty();
+            return;
+
+        }
     };
 
     // initialize: get selected recipe
