@@ -215,28 +215,6 @@ function sFooter() {
                             alt: "bladewyrm logo"
                         }))
                     )
-                    .append($("<br>"))
-                    .append($("<div>")
-                        .append($("<a>", {
-                            href: "https://bladewyrm.dev"
-                        })
-                            .text("main site")
-                        )
-                        .append($("<span>")
-                            .text(" > ")
-                        )
-                        .append($("<a>", {
-                            href: "https://bladewyrm.dev/projects.html"
-                        })
-                            .text("projects")
-                        )
-                        .append($("<span>")
-                            .text(" > ")
-                        )
-                        .append($("<a>")
-                            .text("tou café")
-                        )
-                    )
                 )
             )
         );
