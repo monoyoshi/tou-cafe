@@ -308,6 +308,105 @@ let recipes = {
         "flavortext": "insert funny description here"
     },
 
+    "dog-muffins": {
+        "title": "dog muffins",
+        "ingredients": [
+            {
+                "header": "",
+                "list": [
+                    {
+                        "name": "2 tablespoon coconut oil (melted)",
+                        "notes": []
+                    },
+                    {
+                        "name": "~2 medium-sized ripe bananas",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/2 cup pumpkin purée",
+                        "notes": []
+                    },
+                    {
+                        "name": "1 large egg",
+                        "notes": []
+                    },
+                    {
+                        "name": "3/4 cup flour",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/4 cup rolled oats",
+                        "notes": []
+                    },
+                    {
+                        "name": "1/2 teaspoon baking soda",
+                        "notes": []
+                    }
+                ]
+            }
+        ],
+        "equipment": [
+            {
+                "name": "bowl",
+                "notes": []
+            },
+            {
+                "name": "fork",
+                "notes": []
+            },
+            {
+                "name": "oven at 350°f",
+                "notes": []
+            },
+            {
+                "name": "muffin tin",
+                "notes": []
+            }
+        ],
+        "instructions": [
+            {
+                "header": "",
+                "list": [
+                    {
+                        "base": "mash ~2 medium-sized ripe bananas into a bowl",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix in 1/2 cup pumpkin purée, 1 large egg, and 2 tablespoon coconut oil",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix in 3/4 cup flour, 1/4 cup rolled oats, 1/2 teaspoon baking soda, and 1/4 teaspoon baking powder until flour is not visible",
+                        "notes": []
+                    },
+                    {
+                        "base": "preheat the oven to 350°f",
+                        "notes": []
+                    },
+                    {
+                        "base": "lightly coat a muffin tin with coconut oil",
+                        "notes": []
+                    },
+                    {
+                        "base": "evenly transfer and distribute the muffin batter mixture to a muffin tin",
+                        "notes": ["there should be enough for ~12 muffins"]
+                    },
+                    {
+                        "base": "bake for ~15 minutes or until a toothpick stabbed into the middle comes out clean",
+                        "notes": []
+                    }
+                ]
+            }
+        ],
+        "pictures": [
+            {
+                "src": "../images/bakyuri/dog-muffins/01.jpg",
+                "alt": "🎃🍌🐶🧁"
+            }
+        ],
+        "flavortext": "woof"
+    },
+
     "impostor-pumpkin-muffins": {
         "title": "impostor pumpkin muffins",
         "ingredients": [
@@ -652,7 +751,7 @@ let recipes = {
                         "notes": []
                     },
                     {
-                        "base": "transfer the mixture to a muffin baking tin lined with cupcake wrappers",
+                        "base": "evenly transfer and distribute the muffin batter mixture to a muffin tin lined with cupcake wrappers",
                         "notes": ["there should be enough for ~15 muffins"]
                     },
                     {
@@ -816,6 +915,139 @@ let recipes = {
             }
         ],
         "flavortext": "but what if it was <i>blue</i>?"
+    },
+
+    "rvchb": {
+        "title": "red velvet cheesecake heart brownies",
+        "ingredients": [
+            {
+                "header": "",
+                "list": [
+                    {
+                        "name": "work in progress",
+                        "notes": []
+                    }
+                ]
+            }
+        ],
+        "equipment": [
+            {
+                "name": "work in progress",
+                "notes": []
+            }
+        ],
+        "instructions": [
+            {
+                "header": "cheesecake batter",
+                "list": [
+                    {
+                        "base": "mix 1 cup cream cheese, 1 large egg, 1 teaspoon vanilla extract, 2 tablespoon plain yogurt, 1 teaspoon vinegar, 1 teaspoon cornstarch, and 1/4 cup granulated sugar into a bowl",
+                        "notes": []
+                    },
+                    {
+                        "base": "reserve 3 tablespoon of the batter",
+                        "notes": []
+                    },
+                ]
+            },
+            {
+                "header": "brownie batter",
+                "list": [
+                    {
+                        "base": "preheat the oven to 350°f",
+                        "notes": []
+                    },
+                    {
+                        "base": "brown 1 cup butter and put into a bowl",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix in 3 tablespoon cocoa powder, 3 tablespoon olive oil, and ~2 teaspoon vanilla extract",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix in 1 teaspoon vinegar and 1 1/2 teaspoon red food coloring",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix 3 large eggs and 1/2 cup dark brown sugar into another bowl",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix in 1 3/4 cup powdered sugar",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix both bowls into each other",
+                        "notes": []
+                    },
+                    {
+                        "base": "mix in 3/4 cup flour and ~1 cup white chocolate chips until flour is not visible",
+                        "notes": []
+                    }
+                ]
+            },
+            {
+                "header": "baking",
+                "list": [
+                    {
+                        "base": "preheat the oven to 350°f",
+                        "notes": []
+                    },
+                    {
+                        "base": "coat a square pan with butter and line with parchment paper",
+                        "notes": []
+                    },
+                    {
+                        "base": "transfer 1/2 brownie batter to the square pan",
+                        "notes": []
+                    },
+                    {
+                        "base": "transfer cheesecake batter to the square pan",
+                        "notes": []
+                    },
+                    {
+                        "base": "transfer other half of brownie batter to the square pan",
+                        "notes": []
+                    },
+                    {
+                        "base": "transfer reserved cheesecake batter to the square pan",
+                        "notes": []
+                    },
+                    {
+                        "base": "swirl the top of the batter (make white hearts) with a toothpick",
+                        "notes": []
+                    },
+                    {
+                        "base": "top with heart sprinkles",
+                        "notes": []
+                    },
+                    {
+                        "base": "bake for ~45 minutes",
+                        "notes": []
+                    },
+                    {
+                        "base": "let it cool completely",
+                        "notes": []
+                    },
+                    {
+                        "base": "cut out squares",
+                        "notes": []
+                    },
+                    {
+                        "base": "cut out heart shapes from those squares with a cookie cutter",
+                        "notes": []
+                    }
+                ]
+            }
+        ],
+        "pictures": [
+            {
+                "src": "../images/bakyuri/rv-cheesecake-heart-brownies/01.jpg",
+                "alt": "❤️🍰🧀🍰❤️🍫🍪"
+            }
+        ],
+        "flavortext": "insert funny description here"
     },
 
     "sachertorte": {

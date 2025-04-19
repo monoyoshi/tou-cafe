@@ -29,6 +29,15 @@ const menus = [
                 ],
                 "muffins": [
                     {
+                        "title": "dog muffins",
+                        "id": "dog-muffins",
+                        "attributes": {
+                            "hot": false,
+                            "new": false
+                        },
+                        "description": ""
+                    },
+                    {
                         "title": "impostor pumpkin muffins",
                         "id": "impostor-pumpkin-muffins",
                         "attributes": {
@@ -49,6 +58,17 @@ const menus = [
                 ]
             },
             {
+                "brownies": [
+                    {
+                        "title": "red velvet cheesecake heart brownies",
+                        "id": "rvchb",
+                        "attributes": {
+                            "hot": false,
+                            "new": true
+                        },
+                        "description": "brownies that are red velvet and also cheesecake and also heart"
+                    }
+                ],
                 "cakes": [
                     {
                         "title": "banana bread",
