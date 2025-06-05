@@ -13,10 +13,10 @@ function preheader(active) {
     // active = active "section" of the website
     // my funny workaround is just an array
     let current = {
-        index: ["", "/"],
-        menu: ["", "/menu.html"],
-        about: ["", "/about.html"],
-        shop: ["", "/shop.html"],
+        index: ["", "/tou-cafe"],
+        menu: ["", "/tou-cafe/menu.html"],
+        about: ["", "/tou-cafe/about.html"],
+        shop: ["", "/tou-cafe/shop.html"],
         contact: ["", "https://bsky.app/profile/bladewyrm.dev"]
     };
 
@@ -60,7 +60,7 @@ function header(active) {
 <header>
     <div class="navbar">
         <div class="logo" id="${current.index[0]}">
-            <a href="${current.index[1]} style="height: 56px;"><img src="/images/logo.svg" alt="tou café logo" style="height: 100%;"></a>
+            <a href="${current.index[1]}" style="height: 56px;"><img src="/tou-cafe/images/logo.svg" alt="tou café logo" style="height: 100%;"></a>
         </div>
         <div id="${current.menu[0]}">
             <a href="${current.menu[1]}">menu</a>
