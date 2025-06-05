@@ -95,6 +95,8 @@ function hamburger(active, close = false) {
     const HBMShadow = document.getElementById("hbmshadow");
     const HBMenu = document.getElementById("hbmenu");
 
+    BurgerBox.style.pointerEvents = "none";
+
     if (close) {
         MainElement.style.overflow = "visible";
         HBMShadow.classList.replace("show", "hide");
@@ -110,6 +112,7 @@ function hamburger(active, close = false) {
         );
         setTimeout(() => {
             BurgerBox.setAttribute("onclick", `hamburger("${active}")`);
+            BurgerBox.style.pointerEvents = "auto";
 
             document.getElementsByClassName("noburger")[0].classList.replace("noburger", "yesburger");
 
@@ -131,7 +134,7 @@ function hamburger(active, close = false) {
             MainElement.style.overflow ="hidden";
             
             BurgerBox.setAttribute("onclick", `hamburger("${active}", true)`);
-            BurgerBox.pointerEvents = "auto";
+            BurgerBox.style.pointerEvents = "auto";
 
             document.getElementsByClassName("yesburger")[0].classList.replace("yesburger", "noburger");
 
@@ -143,13 +146,13 @@ function sHeader() {
     const LocalHeader = generateElement(`
 <section id="sheader" style="background-color: var(--a_lightpink);">
     <div class="row center">
-        <div class="column-70 hfont h1" style="margin-bottom: 1rem; text-align: center;">this website is no longer up to date</div>
+        <div class="column-70 hfont h1" style="margin-bottom: 1rem; text-align: center;">this version is no longer up to date</div>
     </div>
     <div class="row center">
         <div class="column-75" style="margin-bottom: 1rem; text-align: center;">
             <p>tou café has evolved, and by evolved I mean shedding that hyphen (not really, it's just a redirect now)</p>
-            <p>click <a href="toucafe.bladewyrm.dev">here</a> to go to the new and improved site. there's bread!</p>
-            <p>these pages will remain as proof that it once existed. throwback to the days...</p>
+            <p>click <a href="https://toucafe.bladewyrm.dev" target="_blank" rel="noopener noreferrer">here</a> to go to the new and improved site. there's bread!</p>
+            <p>these pages will remain as proof that I cooked. I mean, look at the <a href="https://github.com/monoyoshi/tou-cafe" target="_blank" rel="noopener noreferrer">source code</a>!</p>
         </div>
     </div>
 </section>
