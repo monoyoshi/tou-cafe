@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, height=device.height, initial-scale=1.0">
     <title>tou café | bladewyrm.dev</title>
 
-    <link rel="icon" type="image/svg+xml" href="https://tou-cafe.bladewyrm.dev/images/icon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg">
 
     <!-- stylesheets -->
     <!-- global -->
@@ -14,55 +14,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=RocknRoll+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/style.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/mobile.css">
-    
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/cursor.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- local -->
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/localstyle.css">
+    <link rel="stylesheet" href="css/localmobile.css">
 
     <!-- scripts -->
     <!-- global -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="https://cdn.bladewyrm.dev/javascript/boilerplate.js"></script>
-    
-    <script src="https://cdn.bladewyrm.dev/javascript/cursor.js"></script>
-
-    <!-- local -->
     <script src="javascript/boilerplate.js"></script>
 
     <script>
         // insert header and footer
-        $(document).ready(function () {
+        document.addEventListener("DOMContentLoaded", () => {
             header("index");
             footer();
 
+            sHeader();
             sFooter();
         });
     </script>
 </head>
 
 <body>
-    <div id="asset_cursor"></div>
-
-    <header></header>
-
     <main>
-        <div class="widescreen center bgimage" style="height: 100%; max-height: 256px; margin-top: 64px; background-image: linear-gradient(var(--glow)), url(images/stock/01.png);">
+        <section class="center bgimage" style="height: 100%; max-height: 256px; margin-top: 64px; background-image: linear-gradient(var(--glow)), url(images/stock/01.png);">
             <!-- image used and altered from lina kivaka from pexels: https://www.pexels.com/photo/black-and-white-ceramic-mug-1813466 -->
             <div class="row">
                 <div class="column-100" style="display: flex; justify-content: center; align-items: center;">
                     <img src="images/icon.svg" style="position: relative; bottom: -60px; width: 256px; margin-left: 72px;">
                 </div>
-             </div>
-        </div>
+            </div>
+        </section>
 
-        <div class="widescreen" style="padding: 64px 0; background-color: var(--white);">
+        <section style="padding: 64px 0; background-color: var(--white);">
              <div class="row center">
                 <div class="column-40" style="text-align: center;">
                     <br>
@@ -91,18 +80,14 @@
                         <br class="mobileshow">
                         <div class="hfont h1">Fueled by swords, coding, and banana bread</div>
                         <br>
-                        <p>From the depths of the infinite void, rises another strange and seemingly random project... *evil chuc—I mean, woah! Doesn't this website look cool? Please say it does I worked really hard on it 🥺</p>
+                        <p>From the depths of the infinite void, rises another strange and seemingly random project... muahahaha... MWAHAHAHAH—</p>
                         <br>
-                        <p>All stock photos used on this site are attributed within the comments in the page's code. Those without credit are original pictures made by yours truly and their cool phone camera.</p>
+                        <p>All stock photos used on this site are attributed within the comments in the page's source code. Those without credit are original pictures taken by yours truly and their cool phone camera.</p>
                     </div>
                 </div>
              </div>
-        </div>
-
-        <div id="sfooter"></div>
+        </section>
     </main>
-
-    <footer></footer>
 </body>
 
 </html>

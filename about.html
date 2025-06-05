@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device.height, initial-scale=1.0">
-    <title>about | tou café | bladewyrm.dev</title>
+    <title>tou café | bladewyrm.dev</title>
 
-    <link rel="icon" type="image/svg+xml" href="https://tou-cafe.bladewyrm.dev/images/icon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg">
 
     <!-- stylesheets -->
     <!-- global -->
@@ -14,55 +14,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=RocknRoll+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/style.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/mobile.css">
-    
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/cursor.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- local -->
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/localstyle.css">
+    <link rel="stylesheet" href="css/localmobile.css">
 
     <!-- scripts -->
     <!-- global -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="https://cdn.bladewyrm.dev/javascript/boilerplate.js"></script>
-    
-    <script src="https://cdn.bladewyrm.dev/javascript/cursor.js"></script>
-
-    <!-- local -->
     <script src="javascript/boilerplate.js"></script>
 
     <script>
         // insert header and footer
-        $(document).ready(function () {
+        document.addEventListener("DOMContentLoaded", () => {
             header("about");
             footer();
 
+            sHeader();
             sFooter();
         });
     </script>
 </head>
 
 <body>
-    <div id="asset_cursor"></div>
-
-    <header></header>
-
     <main>
-        <div class="widescreen center" style="margin-top: 64px; padding: 64px; background-color: var(--white);">
-            <!-- image used and altered from lina kivaka from pexels: https://www.pexels.com/photo/black-and-white-ceramic-mug-1813466 -->
+        <section class="center" style="margin-top: 64px; padding: 64px; background-color: var(--white);">
             <div class="row center">
                 <div class="column-20" style="text-align: center;">
                     <div class="hfont h1">about</div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="widescreen center" style="padding-bottom: 32px; background-color: var(--white);">
+        <section class="center" style="padding: 32px 0; background-color: var(--white);">
             <div class="row center">
                 <div class="column-100">
                     <div style="display: flex; justify-content: center; align-items: center;">
@@ -72,64 +60,7 @@
             </div>
         </div>
 
-        <div class="widescreen center" style="padding: 32px 0 64px; background-color: var(--white);">
-            <div class="row center">
-                <div class="column-70 hfont h1" style="text-align: center;">
-                    tou café's mission: to let those with nut allergies feel seen.<br>
-                </div>
-            </div>
-            <div class="row center">
-                <div class="column-75" style="text-align: center;">
-                    <br>
-                    <p>Have you ever wanted to eat something that looks delicious, only to find out it was made with nuts in some way? Does your body ever hate nuts so much that it would rather die than consume one? If you answered yes to any of these questions, then you're in luck!</p>
-                    <br>
-                    <p>As someone with severe nut allergies, I am forced to pass up on mouth-watering food every single day of my life. Cookies? Has traces of nuts. Cake? Manufactured in a facility that processes nuts. A <i>whole</i> restaurant? Nope, there's cross-contamination with nuts.</p>
-                    <br>
-                    <p>Anyway, guess what? I got tired of it, so I manifested tou café (the lowercase makes it chill). The purpose of tou café is to keep track of recipes so you too can enjoy cool and yummy desserts (among other stuff).</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="widescreen center" style="padding: 32px 0; background-color: var(--white);">
-            <div class="row center">
-                <div class="column-100">
-                    <div style="display: flex; justify-content: center; align-items: center;">
-                        <hr style="width: 5vw;">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="widescreen center" style="padding: 64px 0; background-color: var(--white);">
-            <div class="row center">
-                <div class="column-40 hfont" style="text-align: center;">
-                    <div class="h1">the meaning of "SFK"</div>
-                    <div class="h3">tou café is dedicated to being 100% nut-free*.</div>
-                </div>
-            </div>
-            <div class="row center">
-                <div class="column-60" style="text-align: center;">
-                    <br>
-                    <p>SFK is an acronym that stands for "Safe For Kyu" (Kyu being, well, me). Conversely, NSFK stands for "Not Safe For Kyu."</p>
-                    <br>
-                    <p>It's used to describe food I can eat without dying, so essentially it's a label for any food item that doesn't contain nuts. I think it started off as a joke I made with my friends, but then we ended up using it more and then it stuck.</p>
-                    <br>
-                    <p>*Some "-nuts" are special exceptions, like coconut.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="widescreen center" style="padding: 32px 0; background-color: var(--white);">
-            <div class="row center">
-                <div class="column-100">
-                    <div style="display: flex; justify-content: center; align-items: center;">
-                        <hr style="width: 5vw;">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="widescreen center" style="padding: 64px 0; background-color: var(--white);">
+        <section class="center" style="padding: 64px 0; background-color: var(--white);">
             <div class="row center">
                 <div class="column-15" style="text-align: center;">
                     <img src="https://cdn.bladewyrm.dev/images/placeholder/kyutear.png" alt="self-portrait (real) (not clickbait (you can't even click on the picture))" style="width: 256px;">
@@ -142,24 +73,9 @@
                     <div class="hfont italics h3">the Bladewyrm</div>
                     <br>
                     <p>Some guy who lives in the void. They made banana bread once and instantly rizzed everyone that ate it. Their disgust for nuts is so absolute that they'd rather choke to death than be in the same room as a cashew.</p>
-                </div>
             </div>
-        </div>
-
-        <div class="widescreen center" style="padding: 64px 0; background-color: var(--white);">
-            <div class="row center">
-                <div class="column-100">
-                    <div style="display: flex; justify-content: center; align-items: center;">
-                        <hr style="width: 5vw;">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="sfooter"></div>
+        </section>
     </main>
-
-    <footer></footer>
 </body>
 
 </html>

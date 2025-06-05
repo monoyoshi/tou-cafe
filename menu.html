@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device.height, initial-scale=1.0">
-    <title>menu | tou café | bladewyrm.dev</title>
+    <title>tou café | bladewyrm.dev</title>
 
-    <link rel="icon" type="image/svg+xml" href="https://tou-cafe.bladewyrm.dev/images/icon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg">
 
     <!-- stylesheets -->
     <!-- global -->
@@ -14,56 +14,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=RocknRoll+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/style.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/mobile.css">
-    
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/cursor.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- local -->
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/localstyle.css">
+    <link rel="stylesheet" href="css/localmobile.css">
 
     <!-- scripts -->
     <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="https://cdn.bladewyrm.dev/javascript/boilerplate.js"></script>
-    
-    <script src="https://cdn.bladewyrm.dev/javascript/cursor.js"></script>
-
-    <!-- local -->
     <script src="javascript/boilerplate.js"></script>
 
+    <!-- local -->
     <script src="javascript/menu.js"></script>
 
     <script>
         // insert header and footer
-        $(document).ready(function () {
+        document.addEventListener("DOMContentLoaded", () => {
             header("menu");
             footer();
 
+            sHeader();
             sFooter();
         });
     </script>
 </head>
 
 <body>
-    <div id="asset_cursor"></div>
-
-    <header></header>
-
     <main>
-        <div class="widescreen center" style="margin-top: 64px; padding: 64px 0 32px; background-color: var(--white);">
+        <section class="center" style="margin-top: 64px; padding: 64px 0 32px; background-color: var(--white);">
             <div class="row center">
                 <div class="column-50">
                     <div class="menulist"></div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="widescreen" style="min-height: calc(100vh - 208px); padding: 32px 0 64px; background-color: var(--white);">
+        <section style="min-height: calc(100vh - 208px); padding: 32px 0 64px; background-color: var(--white);">
             <div class="row center">
                 <div class="column-80" style="text-align: center;">
                     <div class="menuheader">
@@ -81,12 +72,8 @@
                 <div class="column-10"></div>
                 <div class="column-35" id="mcright"></div>
             </div>
-        </div>
-
-        <div id="sfooter"></div>
+        </section>
     </main>
-
-    <footer></footer>
 </body>
 
 </html>

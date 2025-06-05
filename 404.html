@@ -6,9 +6,9 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device.height, initial-scale=1.0">
-    <title>404 | tou café | bladewyrm.dev</title>
+    <title>tou café | bladewyrm.dev</title>
 
-    <link rel="icon" type="image/svg+xml" href="https://tou-cafe.bladewyrm.dev/images/icon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg">
 
     <!-- stylesheets -->
     <!-- global -->
@@ -16,56 +16,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=RocknRoll+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/colors.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/fonts.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/style.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/mobile.css">
-
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/cursor.css">
-    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/css/dust.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- local -->
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/localstyle.css">
+    <link rel="stylesheet" href="css/localmobile.css">
 
     <!-- scripts -->
     <!-- global -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="https://cdn.bladewyrm.dev/javascript/boilerplate.js"></script>
-    <script src="https://cdn.bladewyrm.dev/javascript/cursor.js"></script>
-    <script src="https://cdn.bladewyrm.dev/javascript/dust.js"></script>
-
-    <script src="https://cdn.bladewyrm.dev/javascript/404.js"></script>
-
-    <!-- local -->
     <script src="javascript/boilerplate.js"></script>
 
     <script>
-        // insert header and footer and 404
-        $(document).ready(function () {
+        // insert header and footer
+        document.addEventListener("DOMContentLoaded", () => {
             header();
-            main404();
             footer();
 
+            sHeader();
             sFooter();
         });
     </script>
 </head>
 
 <body>
-    <div id="asset_cursor"></div>
-
-    <header></header>
-
-    <main></main>
-
-    <div id="asset_dust"></div>
-    <div id="viewport"></div>
-
-    <footer style="color: var(--white);"></footer>
+    <main>
+        <section class="center" style="margin-top: 64px; padding: 64px; background-color: var(--white);">
+            <div class="row center">
+                <div class="column-70 hfont h1" style="margin-bottom: 1rem; text-align: center;">error 404: page not found</div>
+            </div>
+            <div class="row center">
+                <div class="column-75" style="margin-bottom: 1rem; text-align: center;">
+                    <p><i>"...and where do <b>you</b> think you're going?"</i></p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

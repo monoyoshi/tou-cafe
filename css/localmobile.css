@@ -1,0 +1,116 @@
+@media only screen and not (max-width: 600px) {
+    .navbar > .hamburger,
+    #hbmenu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar > div:not(.logo, #burgerbox) {
+        display: none;
+    }
+
+    .navbar div.logo {
+        position: fixed;
+        left: 16px;
+        width: fit-content;
+    }
+
+    .yesburger, .noburger {
+        position: fixed;
+        top: 0;
+        right: 0.5rem;
+        width: 64px;
+        height: 64px;
+    }
+
+    .yesburger {
+        background-image: url("../images/hamburger/yesburger.svg");
+    }
+
+    .noburger {
+        background-image: url("../images/hamburger/noburger.svg");
+    }
+
+    #hbmenu {
+        position: fixed;
+        top: 64px;
+        right: -100vw;
+        width: 100vw;
+        height: calc(100vh - 64px);
+        background-color: var(--white);
+        z-index: 72;
+    }
+
+    #hbmshadow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--shadow);
+        z-index: 64;
+    }
+    
+    #hbmenu > * {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 64px;
+        padding-right: 1.5rem;
+    }
+    
+    #hbmenu > a {
+        color: var(--black);
+    }
+    
+    #hbmenu > a:hover {
+        background: linear-gradient(to right, var(--white) 0%, var(--white) 50%, var(--a_lightbrown) 50%) right;
+        background-size: 400%;
+        animation: hbmwipe 360ms linear forwards;
+    }
+    
+    #hbmenu > a:hover:active {
+        background: var(--a_strongpink);
+        color: var(--white);
+    }
+
+    .menuheader {
+        padding: 1rem;
+    }
+
+    .menuitem {
+        margin: 0 1rem;
+    }
+
+    footer {
+        top: auto;
+        bottom: 0;
+        padding: 0 0 10px 16px;
+        border-radius: 15px 0 0 0;
+    }
+
+    .rtc {
+        flex-direction: column;
+    }
+
+    .row.recipe {
+        flex-direction: column-reverse;
+    }
+
+    #sfmap {
+        justify-content: center;
+    }
+
+    @keyframes hbmwipe {
+        0% {
+            background-position: 0;
+        }
+        100% {
+            background-position: 100%;
+        }
+    }
+}
+
+/* - - - - - - - - - */
