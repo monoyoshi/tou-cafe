@@ -17,7 +17,7 @@ function preheader(active) {
         menu: ["", "/tou-cafe/menu.html"],
         about: ["", "/tou-cafe/about.html"],
         shop: ["", "/tou-cafe/shop.html"],
-        contact: ["", "https://bsky.app/profile/bladewyrm.dev"]
+        contact: ["", "https://bladewyrm.dev/"]
     };
 
     switch (active) {
@@ -150,8 +150,8 @@ function sHeader() {
     </div>
     <div class="row center">
         <div class="column-75" style="margin-bottom: 1rem; text-align: center;">
-            <p>tou café has evolved, and by evolved I mean shedding that hyphen (not really, it's just a redirect now)</p>
-            <p>click <a href="https://toucafe.bladewyrm.dev" target="_blank" rel="noopener noreferrer">here</a> to go to the new and improved site. there's bread!</p>
+            <p>tou café has evolved, and by evolved I mean that I'm no longer a high schooler obsessed with personified Japanese swords</p>
+            <p>click <a href="https://tdsg.bladewyrm.dev" target="_blank" rel="noopener noreferrer">here</a> to go to the new and improved site. there's bread!</p>
             <p>these pages will remain as proof that I cooked. I mean, look at the <a href="https://github.com/monoyoshi/tou-cafe" target="_blank" rel="noopener noreferrer">source code</a>!</p>
         </div>
     </div>
@@ -164,8 +164,7 @@ function sHeader() {
 function footer() {
     const FooterElement = generateElement(`
 <footer>
-    <div>made with love and pure hyperfixation from <b>kyu(ren)</b></div>
-    <img src="https://cdn.bladewyrm.dev/images/kyurem/sprite-animated_kyurem.png" height=32 width=32>
+    <div>made with love and pure hyperfixation from <b>kyu(ren)</b> 💙🩶</div>
 </footer>
     `);
 
@@ -177,7 +176,7 @@ function sFooter() {
 <section id="sfooter">
     <div class="row center" style="height: 208px;">
         <div class="column-90" id="sfmap">
-            <a href="https://bladewyrm.dev" target="_blank" rel="noopener noreferrer"><img src="https://cdn.bladewyrm.dev/images/logo.svg" alt="bladewyrm logo" style="height: 90px;"></a>
+            <a href="https://bladewyrm.dev" target="_blank" rel="noopener noreferrer"><img src="https://bladewyrm.dev/logo.svg" alt="bladewyrm logo" style="height: 90px;"></a>
         </div>
     </div>
 </section>
